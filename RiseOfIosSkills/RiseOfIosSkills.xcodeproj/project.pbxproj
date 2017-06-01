@@ -10,7 +10,15 @@
 		2140F85C1EE04D62000942A4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2140F8591EE04D62000942A4 /* Assets.xcassets */; };
 		2140F85E1EE04D62000942A4 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 2140F85B1EE04D62000942A4 /* Info.plist */; };
 		2140F8651EE0508B000942A4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2140F8641EE0508B000942A4 /* AppDelegate.swift */; };
-		2140F8671EE05120000942A4 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2140F8661EE05120000942A4 /* ViewController.swift */; };
+		2140F86D1EE05774000942A4 /* PageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2140F86C1EE05774000942A4 /* PageViewController.swift */; };
+		2140F8701EE05AA9000942A4 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2140F86F1EE05AA9000942A4 /* ViewController.swift */; };
+		2140F8741EE05BC0000942A4 /* ViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2140F8731EE05BC0000942A4 /* ViewController.storyboard */; };
+		2140F8761EE06273000942A4 /* TableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2140F8751EE06273000942A4 /* TableViewController.swift */; };
+		2140F8781EE062BD000942A4 /* CollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2140F8771EE062BD000942A4 /* CollectionViewController.swift */; };
+		2140F87D1EE06766000942A4 /* TableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2140F87C1EE06766000942A4 /* TableViewCell.swift */; };
+		2140F87F1EE0682E000942A4 /* CollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2140F87E1EE0682E000942A4 /* CollectionViewCell.swift */; };
+		2140F8811EE06871000942A4 /* TableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2140F8801EE06871000942A4 /* TableViewCell.xib */; };
+		2140F8831EE068B5000942A4 /* CollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2140F8821EE068B5000942A4 /* CollectionViewCell.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -18,7 +26,15 @@
 		2140F8591EE04D62000942A4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Assets.xcassets; path = Ressources/Assets.xcassets; sourceTree = "<group>"; };
 		2140F85B1EE04D62000942A4 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Info.plist; path = Ressources/Info.plist; sourceTree = "<group>"; };
 		2140F8641EE0508B000942A4 /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = AppDelegate.swift; path = Code/AppDelegate/AppDelegate.swift; sourceTree = "<group>"; };
-		2140F8661EE05120000942A4 /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ViewController.swift; path = Code/Controllers/ViewController.swift; sourceTree = "<group>"; };
+		2140F86C1EE05774000942A4 /* PageViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = PageViewController.swift; path = Code/Controllers/UIViewController/PageView/PageViewController.swift; sourceTree = "<group>"; };
+		2140F86F1EE05AA9000942A4 /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ViewController.swift; path = Code/Controllers/UIViewController/ViewController/ViewController.swift; sourceTree = "<group>"; };
+		2140F8731EE05BC0000942A4 /* ViewController.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = ViewController.storyboard; path = Code/Controllers/UIViewController/ViewController.storyboard; sourceTree = "<group>"; };
+		2140F8751EE06273000942A4 /* TableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = TableViewController.swift; path = Code/Controllers/UIViewController/TableView/TableViewController.swift; sourceTree = "<group>"; };
+		2140F8771EE062BD000942A4 /* CollectionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CollectionViewController.swift; path = Code/Controllers/UIViewController/CollectionView/CollectionViewController.swift; sourceTree = "<group>"; };
+		2140F87C1EE06766000942A4 /* TableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = TableViewCell.swift; path = Code/Views/UIView/TableViewCell/TableViewCell.swift; sourceTree = "<group>"; };
+		2140F87E1EE0682E000942A4 /* CollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CollectionViewCell.swift; path = Code/Views/UIView/CollectionViewCell/CollectionViewCell.swift; sourceTree = "<group>"; };
+		2140F8801EE06871000942A4 /* TableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = TableViewCell.xib; path = Code/Views/UIView/TableViewCell/TableViewCell.xib; sourceTree = "<group>"; };
+		2140F8821EE068B5000942A4 /* CollectionViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = CollectionViewCell.xib; path = Code/Views/UIView/CollectionViewCell/CollectionViewCell.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -89,6 +105,7 @@
 		2140F8601EE04D98000942A4 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				2140F8791EE066EB000942A4 /* UIView */,
 			);
 			name = Views;
 			sourceTree = "<group>";
@@ -103,7 +120,7 @@
 		2140F8621EE04DB6000942A4 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
-				2140F8661EE05120000942A4 /* ViewController.swift */,
+				2140F8681EE05503000942A4 /* UIViewController */,
 			);
 			name = Controllers;
 			sourceTree = "<group>";
@@ -113,6 +130,77 @@
 			children = (
 			);
 			name = Utils;
+			sourceTree = "<group>";
+		};
+		2140F8681EE05503000942A4 /* UIViewController */ = {
+			isa = PBXGroup;
+			children = (
+				2140F8731EE05BC0000942A4 /* ViewController.storyboard */,
+				2140F86E1EE05A42000942A4 /* ViewController */,
+				2140F86A1EE05533000942A4 /* TableView */,
+				2140F86B1EE0553B000942A4 /* CollectionView */,
+				2140F8691EE05522000942A4 /* PageView */,
+			);
+			name = UIViewController;
+			sourceTree = "<group>";
+		};
+		2140F8691EE05522000942A4 /* PageView */ = {
+			isa = PBXGroup;
+			children = (
+				2140F86C1EE05774000942A4 /* PageViewController.swift */,
+			);
+			name = PageView;
+			sourceTree = "<group>";
+		};
+		2140F86A1EE05533000942A4 /* TableView */ = {
+			isa = PBXGroup;
+			children = (
+				2140F8751EE06273000942A4 /* TableViewController.swift */,
+			);
+			name = TableView;
+			sourceTree = "<group>";
+		};
+		2140F86B1EE0553B000942A4 /* CollectionView */ = {
+			isa = PBXGroup;
+			children = (
+				2140F8771EE062BD000942A4 /* CollectionViewController.swift */,
+			);
+			name = CollectionView;
+			sourceTree = "<group>";
+		};
+		2140F86E1EE05A42000942A4 /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				2140F86F1EE05AA9000942A4 /* ViewController.swift */,
+			);
+			name = ViewController;
+			sourceTree = "<group>";
+		};
+		2140F8791EE066EB000942A4 /* UIView */ = {
+			isa = PBXGroup;
+			children = (
+				2140F87A1EE066FB000942A4 /* TableViewCell */,
+				2140F87B1EE06703000942A4 /* CollectionViewCell */,
+			);
+			name = UIView;
+			sourceTree = "<group>";
+		};
+		2140F87A1EE066FB000942A4 /* TableViewCell */ = {
+			isa = PBXGroup;
+			children = (
+				2140F87C1EE06766000942A4 /* TableViewCell.swift */,
+				2140F8801EE06871000942A4 /* TableViewCell.xib */,
+			);
+			name = TableViewCell;
+			sourceTree = "<group>";
+		};
+		2140F87B1EE06703000942A4 /* CollectionViewCell */ = {
+			isa = PBXGroup;
+			children = (
+				2140F87E1EE0682E000942A4 /* CollectionViewCell.swift */,
+				2140F8821EE068B5000942A4 /* CollectionViewCell.xib */,
+			);
+			name = CollectionViewCell;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -177,7 +265,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				2140F85C1EE04D62000942A4 /* Assets.xcassets in Resources */,
+				2140F8811EE06871000942A4 /* TableViewCell.xib in Resources */,
 				2140F85E1EE04D62000942A4 /* Info.plist in Resources */,
+				2140F8741EE05BC0000942A4 /* ViewController.storyboard in Resources */,
+				2140F8831EE068B5000942A4 /* CollectionViewCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -188,8 +279,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2140F8671EE05120000942A4 /* ViewController.swift in Sources */,
+				2140F8701EE05AA9000942A4 /* ViewController.swift in Sources */,
 				2140F8651EE0508B000942A4 /* AppDelegate.swift in Sources */,
+				2140F86D1EE05774000942A4 /* PageViewController.swift in Sources */,
+				2140F87F1EE0682E000942A4 /* CollectionViewCell.swift in Sources */,
+				2140F87D1EE06766000942A4 /* TableViewCell.swift in Sources */,
+				2140F8761EE06273000942A4 /* TableViewController.swift in Sources */,
+				2140F8781EE062BD000942A4 /* CollectionViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -297,7 +393,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
 				DEVELOPMENT_TEAM = L457P7P756;
-				INFOPLIST_FILE = RiseOfIosSkills/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/RiseOfIosSkills/Ressources/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.wildine.RiseOfIosSkills;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -312,7 +408,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
 				DEVELOPMENT_TEAM = L457P7P756;
-				INFOPLIST_FILE = RiseOfIosSkills/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/RiseOfIosSkills/Ressources/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.wildine.RiseOfIosSkills;
 				PRODUCT_NAME = "$(TARGET_NAME)";
