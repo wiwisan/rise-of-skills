@@ -7,21 +7,18 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		2140F8461EE04BC8000942A4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2140F8451EE04BC8000942A4 /* AppDelegate.swift */; };
-		2140F8481EE04BC8000942A4 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2140F8471EE04BC8000942A4 /* ViewController.swift */; };
-		2140F84B1EE04BC8000942A4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2140F8491EE04BC8000942A4 /* Main.storyboard */; };
-		2140F84D1EE04BC8000942A4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2140F84C1EE04BC8000942A4 /* Assets.xcassets */; };
-		2140F8501EE04BC8000942A4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2140F84E1EE04BC8000942A4 /* LaunchScreen.storyboard */; };
+		2140F85C1EE04D62000942A4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2140F8591EE04D62000942A4 /* Assets.xcassets */; };
+		2140F85E1EE04D62000942A4 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 2140F85B1EE04D62000942A4 /* Info.plist */; };
+		2140F8651EE0508B000942A4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2140F8641EE0508B000942A4 /* AppDelegate.swift */; };
+		2140F8671EE05120000942A4 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2140F8661EE05120000942A4 /* ViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		2140F8421EE04BC8000942A4 /* RiseOfIosSkills.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RiseOfIosSkills.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		2140F8451EE04BC8000942A4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		2140F8471EE04BC8000942A4 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		2140F84A1EE04BC8000942A4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		2140F84C1EE04BC8000942A4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		2140F84F1EE04BC8000942A4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
-		2140F8511EE04BC8000942A4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2140F8591EE04D62000942A4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Assets.xcassets; path = Ressources/Assets.xcassets; sourceTree = "<group>"; };
+		2140F85B1EE04D62000942A4 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Info.plist; path = Ressources/Info.plist; sourceTree = "<group>"; };
+		2140F8641EE0508B000942A4 /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = AppDelegate.swift; path = Code/AppDelegate/AppDelegate.swift; sourceTree = "<group>"; };
+		2140F8661EE05120000942A4 /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ViewController.swift; path = Code/Controllers/ViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,14 +51,68 @@
 		2140F8441EE04BC8000942A4 /* RiseOfIosSkills */ = {
 			isa = PBXGroup;
 			children = (
-				2140F8451EE04BC8000942A4 /* AppDelegate.swift */,
-				2140F8471EE04BC8000942A4 /* ViewController.swift */,
-				2140F8491EE04BC8000942A4 /* Main.storyboard */,
-				2140F84C1EE04BC8000942A4 /* Assets.xcassets */,
-				2140F84E1EE04BC8000942A4 /* LaunchScreen.storyboard */,
-				2140F8511EE04BC8000942A4 /* Info.plist */,
+				2140F8571EE04C16000942A4 /* Code */,
+				2140F8581EE04C21000942A4 /* Resources */,
 			);
 			path = RiseOfIosSkills;
+			sourceTree = "<group>";
+		};
+		2140F8571EE04C16000942A4 /* Code */ = {
+			isa = PBXGroup;
+			children = (
+				2140F85F1EE04D87000942A4 /* AppDelegate */,
+				2140F8621EE04DB6000942A4 /* Controllers */,
+				2140F8611EE04DA0000942A4 /* ViewModels */,
+				2140F8601EE04D98000942A4 /* Views */,
+				2140F8631EE04F74000942A4 /* Utils */,
+			);
+			name = Code;
+			sourceTree = "<group>";
+		};
+		2140F8581EE04C21000942A4 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				2140F8591EE04D62000942A4 /* Assets.xcassets */,
+				2140F85B1EE04D62000942A4 /* Info.plist */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		2140F85F1EE04D87000942A4 /* AppDelegate */ = {
+			isa = PBXGroup;
+			children = (
+				2140F8641EE0508B000942A4 /* AppDelegate.swift */,
+			);
+			name = AppDelegate;
+			sourceTree = "<group>";
+		};
+		2140F8601EE04D98000942A4 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Views;
+			sourceTree = "<group>";
+		};
+		2140F8611EE04DA0000942A4 /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = ViewModels;
+			sourceTree = "<group>";
+		};
+		2140F8621EE04DB6000942A4 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				2140F8661EE05120000942A4 /* ViewController.swift */,
+			);
+			name = Controllers;
+			sourceTree = "<group>";
+		};
+		2140F8631EE04F74000942A4 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Utils;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -97,6 +148,7 @@
 					2140F8411EE04BC8000942A4 = {
 						CreatedOnToolsVersion = 8.3.2;
 						DevelopmentTeam = L457P7P756;
+						LastSwiftMigration = 0830;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -124,9 +176,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2140F8501EE04BC8000942A4 /* LaunchScreen.storyboard in Resources */,
-				2140F84D1EE04BC8000942A4 /* Assets.xcassets in Resources */,
-				2140F84B1EE04BC8000942A4 /* Main.storyboard in Resources */,
+				2140F85C1EE04D62000942A4 /* Assets.xcassets in Resources */,
+				2140F85E1EE04D62000942A4 /* Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -137,31 +188,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2140F8481EE04BC8000942A4 /* ViewController.swift in Sources */,
-				2140F8461EE04BC8000942A4 /* AppDelegate.swift in Sources */,
+				2140F8671EE05120000942A4 /* ViewController.swift in Sources */,
+				2140F8651EE0508B000942A4 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
-
-/* Begin PBXVariantGroup section */
-		2140F8491EE04BC8000942A4 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				2140F84A1EE04BC8000942A4 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
-		2140F84E1EE04BC8000942A4 /* LaunchScreen.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				2140F84F1EE04BC8000942A4 /* Base */,
-			);
-			name = LaunchScreen.storyboard;
-			sourceTree = "<group>";
-		};
-/* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
 		2140F8521EE04BC8000942A4 /* Debug */ = {
@@ -263,11 +295,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				DEVELOPMENT_TEAM = L457P7P756;
 				INFOPLIST_FILE = RiseOfIosSkills/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.wildine.RiseOfIosSkills;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
@@ -276,6 +310,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				DEVELOPMENT_TEAM = L457P7P756;
 				INFOPLIST_FILE = RiseOfIosSkills/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
