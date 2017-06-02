@@ -48,3 +48,19 @@ extension CollectionViewController: UICollectionViewDataSource {
 extension CollectionViewController: UICollectionViewDelegate {
   // Delegate methods here
 }
+
+// MARK - UICollectionViewDelegateFlowLayout
+extension CollectionViewController: UICollectionViewDelegateFlowLayout {
+  
+  func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
+    return CGSize(width: 130, height: 130)
+  }
+  
+  func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, minimumInteritemSpacingForSectionAt section: Int) -> CGFloat {
+    return 5.0
+  }
+  
+  func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, insetForSectionAt section: Int) -> UIEdgeInsets {
+    return UIEdgeInsetsMake(0, 5, 0, 5)
+  }
+}
