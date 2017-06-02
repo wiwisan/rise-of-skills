@@ -24,6 +24,7 @@ final class CollectionViewController: UIViewController {
     super.viewDidLoad()
     
     self.ibCollectionView.register(UINib(nibName: "CollectionViewCell", bundle: nil), forCellWithReuseIdentifier: "collectionViewCell")
+    self.ibCollectionView.register(UINib(nibName: "CollectionReusableView", bundle: nil), forSupplementaryViewOfKind: UICollectionElementKindSectionHeader, withReuseIdentifier: "CollectionReusableView")
   }
 }
 
@@ -41,6 +42,25 @@ extension CollectionViewController: UICollectionViewDataSource {
       fatalError("Oh No 😯! Unable to dequeue cell with identifier: \(cellIdentifier). ☹️")
     }
     return cell
+  }
+  
+  func collectionView(_ collectionView: UICollectionView, viewForSupplementaryElementOfKind kind: String, at indexPath: IndexPath) -> UICollectionReusableView {
+    let viewIdentifier = "CollectionReusableView"
+    var reusableView : UICollectionReusableView? = nil
+    
+    switch kind {
+    case UICollectionElementKindSectionHeader:
+      let view = self.ibCollectionView.dequeueReusableSupplementaryView(ofKind: UICollectionElementKindSectionHeader, withReuseIdentifier: viewIdentifier, for: indexPath)
+      reusableView = view
+    default:
+      print("Unable to find element of kind \(kind).")
+    }
+    
+    guard let headerView = reusableView else {
+      fatalError("Oh No 😯! Unable to dequeue view with identifier: \(viewIdentifier). ☹️")
+    }
+    
+    return headerView
   }
 }
 
@@ -62,5 +82,9 @@ extension CollectionViewController: UICollectionViewDelegateFlowLayout {
   
   func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, insetForSectionAt section: Int) -> UIEdgeInsets {
     return UIEdgeInsetsMake(0, 5, 0, 5)
+  }
+  
+  func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, referenceSizeForHeaderInSection section: Int) -> CGSize {
+    return CGSize(width: self.view.frame.width, height: 100)
   }
 }

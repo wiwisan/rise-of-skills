@@ -1,13 +1,12 @@
 //
-//  CollectionViewCell.swift
+//  CollectionReusableView.swift
 //  RiseOfIosSkills
 //
 //  Copyright © 2017 Wildine Anthony. All rights reserved.
 
-
 import UIKit
 
-final class CollectionViewCell: UICollectionViewCell {
+final class CollectionReusableView: UICollectionReusableView {
   
   // MARK - Outlets
   
@@ -21,6 +20,6 @@ final class CollectionViewCell: UICollectionViewCell {
   override func awakeFromNib() {
     super.awakeFromNib()
     
-    self.ibTitleLabel.text = "UICollectionViewCells I am, and I'm so great.. 😏"
+    self.ibTitleLabel.text = "UICollectionReusableView is here !! 🎉"
   }
 }
