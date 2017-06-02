@@ -5,7 +5,6 @@
 //  Copyright © 2017 Wildine Anthony. All rights reserved.
 
 
-import Foundation
 import UIKit
 
 final class PageViewController: UIPageViewController {
@@ -21,9 +20,6 @@ final class PageViewController: UIPageViewController {
   
   override func viewDidLoad() {
     super.viewDidLoad()
-    
-    self.delegate = self
-    self.dataSource = self
     
     // Add view controllers
     let storyboard = UIStoryboard(name: "ViewController", bundle: nil)
@@ -67,5 +63,5 @@ extension PageViewController: UIPageViewControllerDataSource {
 
 // MARK - UIPageViewControllerDelegate
 extension PageViewController: UIPageViewControllerDelegate {
-  
+  // Delegate methods here
 }

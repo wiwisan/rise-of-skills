@@ -24,7 +24,4 @@ final class ViewController: UIViewController {
     
     self.ibTitleLabel.text = "Hi ! I'm a UIViewController! That's coool 😎"
   }
-  
-  // MARK - Internal Methods
-
 }

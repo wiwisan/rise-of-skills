@@ -36,8 +36,8 @@ extension TableViewController: UITableViewDataSource {
   func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
     let cellIdentifier = "tableViewCell"
     
-    guard let cell = self.ibTableView.dequeueReusableCell(withIdentifier: cellIdentifier) else {
-      fatalError("Cannot dequeue cell.")
+    guard let cell = self.ibTableView.dequeueReusableCell(withIdentifier: cellIdentifier) as? TableViewCell else {
+      fatalError("Oh No 😯! Unable to dequeue cell with identifier: \(cellIdentifier). ☹️")
     }
     return cell
   }

@@ -23,12 +23,6 @@ final class CollectionViewController: UIViewController {
   override func viewDidLoad() {
     super.viewDidLoad()
     
-    self.ibCollectionView.delegate = self
-    self.ibCollectionView.dataSource = self
-   
-//    self.ibCollectionView.register(CollectionViewCell.self, forCellWithReuseIdentifier: "collectionViewCell")
-//    self.ibCollectionView.register(UINib(nibName: "CollectionViewCell", bundle: nil), forCellReuseIdentifier: "collectionViewCell")
-    
     self.ibCollectionView.register(UINib(nibName: "CollectionViewCell", bundle: nil), forCellWithReuseIdentifier: "collectionViewCell")
   }
 }
@@ -44,7 +38,7 @@ extension CollectionViewController: UICollectionViewDataSource {
     let cellIdentifier = "collectionViewCell"
     
     guard let cell = self.ibCollectionView.dequeueReusableCell(withReuseIdentifier: cellIdentifier, for: indexPath) as? CollectionViewCell else {
-      fatalError("")
+      fatalError("Oh No 😯! Unable to dequeue cell with identifier: \(cellIdentifier). ☹️")
     }
     return cell
   }

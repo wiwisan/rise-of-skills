@@ -23,4 +23,3 @@ final class TableViewCell: UITableViewCell {
     self.ibTitleLabel.text = "UITableViewCells are the best !! 🎉"
   }
 }
-
