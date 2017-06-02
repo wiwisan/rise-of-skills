@@ -19,8 +19,10 @@
 		2140F87F1EE0682E000942A4 /* CollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2140F87E1EE0682E000942A4 /* CollectionViewCell.swift */; };
 		2140F8811EE06871000942A4 /* TableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2140F8801EE06871000942A4 /* TableViewCell.xib */; };
 		2140F8831EE068B5000942A4 /* CollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2140F8821EE068B5000942A4 /* CollectionViewCell.xib */; };
-		2140F8861EE18CC1000942A4 /* CollectionReusableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2140F8851EE18CC1000942A4 /* CollectionReusableView.swift */; };
-		2140F8881EE18CD9000942A4 /* CollectionReusableView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2140F8871EE18CD9000942A4 /* CollectionReusableView.xib */; };
+		2140F8901EE1AF1B000942A4 /* CollectionReusableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2140F88E1EE1AF1B000942A4 /* CollectionReusableView.swift */; };
+		2140F8911EE1AF1B000942A4 /* CollectionReusableView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2140F88F1EE1AF1B000942A4 /* CollectionReusableView.xib */; };
+		2140F8981EE1B365000942A4 /* TableViewHeaderFooterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2140F8961EE1B365000942A4 /* TableViewHeaderFooterView.swift */; };
+		2140F8991EE1B365000942A4 /* TableViewHeaderFooterView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2140F8971EE1B365000942A4 /* TableViewHeaderFooterView.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -37,8 +39,10 @@
 		2140F87E1EE0682E000942A4 /* CollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CollectionViewCell.swift; path = Code/Views/UIView/CollectionViewCell/CollectionViewCell.swift; sourceTree = "<group>"; };
 		2140F8801EE06871000942A4 /* TableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = TableViewCell.xib; path = Code/Views/UIView/TableViewCell/TableViewCell.xib; sourceTree = "<group>"; };
 		2140F8821EE068B5000942A4 /* CollectionViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = CollectionViewCell.xib; path = Code/Views/UIView/CollectionViewCell/CollectionViewCell.xib; sourceTree = "<group>"; };
-		2140F8851EE18CC1000942A4 /* CollectionReusableView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CollectionReusableView.swift; path = Code/Views/UIView/View/CollectionReusableView.swift; sourceTree = "<group>"; };
-		2140F8871EE18CD9000942A4 /* CollectionReusableView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = CollectionReusableView.xib; path = Code/Views/UIView/View/CollectionReusableView.xib; sourceTree = "<group>"; };
+		2140F88E1EE1AF1B000942A4 /* CollectionReusableView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CollectionReusableView.swift; path = Code/Views/UIView/CollectionReusableView/CollectionReusableView.swift; sourceTree = "<group>"; };
+		2140F88F1EE1AF1B000942A4 /* CollectionReusableView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = CollectionReusableView.xib; path = Code/Views/UIView/CollectionReusableView/CollectionReusableView.xib; sourceTree = "<group>"; };
+		2140F8961EE1B365000942A4 /* TableViewHeaderFooterView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = TableViewHeaderFooterView.swift; path = Code/Views/UIView/TableViewHeaderFooterView/TableViewHeaderFooterView.swift; sourceTree = "<group>"; };
+		2140F8971EE1B365000942A4 /* TableViewHeaderFooterView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = TableViewHeaderFooterView.xib; path = Code/Views/UIView/TableViewHeaderFooterView/TableViewHeaderFooterView.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -183,7 +187,8 @@
 		2140F8791EE066EB000942A4 /* UIView */ = {
 			isa = PBXGroup;
 			children = (
-				2140F8841EE18B15000942A4 /* View */,
+				2140F8891EE1AECE000942A4 /* tableViewHeaderFooterView */,
+				2140F8841EE18B15000942A4 /* CollectionReusableView */,
 				2140F87A1EE066FB000942A4 /* TableViewCell */,
 				2140F87B1EE06703000942A4 /* CollectionViewCell */,
 			);
@@ -208,13 +213,22 @@
 			name = CollectionViewCell;
 			sourceTree = "<group>";
 		};
-		2140F8841EE18B15000942A4 /* View */ = {
+		2140F8841EE18B15000942A4 /* CollectionReusableView */ = {
 			isa = PBXGroup;
 			children = (
-				2140F8851EE18CC1000942A4 /* CollectionReusableView.swift */,
-				2140F8871EE18CD9000942A4 /* CollectionReusableView.xib */,
+				2140F88E1EE1AF1B000942A4 /* CollectionReusableView.swift */,
+				2140F88F1EE1AF1B000942A4 /* CollectionReusableView.xib */,
 			);
-			name = View;
+			name = CollectionReusableView;
+			sourceTree = "<group>";
+		};
+		2140F8891EE1AECE000942A4 /* tableViewHeaderFooterView */ = {
+			isa = PBXGroup;
+			children = (
+				2140F8961EE1B365000942A4 /* TableViewHeaderFooterView.swift */,
+				2140F8971EE1B365000942A4 /* TableViewHeaderFooterView.xib */,
+			);
+			name = tableViewHeaderFooterView;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -278,12 +292,13 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2140F8911EE1AF1B000942A4 /* CollectionReusableView.xib in Resources */,
 				2140F85C1EE04D62000942A4 /* Assets.xcassets in Resources */,
 				2140F8811EE06871000942A4 /* TableViewCell.xib in Resources */,
 				2140F85E1EE04D62000942A4 /* Info.plist in Resources */,
 				2140F8741EE05BC0000942A4 /* ViewController.storyboard in Resources */,
-				2140F8881EE18CD9000942A4 /* CollectionReusableView.xib in Resources */,
 				2140F8831EE068B5000942A4 /* CollectionViewCell.xib in Resources */,
+				2140F8991EE1B365000942A4 /* TableViewHeaderFooterView.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -294,7 +309,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2140F8861EE18CC1000942A4 /* CollectionReusableView.swift in Sources */,
+				2140F8901EE1AF1B000942A4 /* CollectionReusableView.swift in Sources */,
+				2140F8981EE1B365000942A4 /* TableViewHeaderFooterView.swift in Sources */,
 				2140F8701EE05AA9000942A4 /* ViewController.swift in Sources */,
 				2140F8651EE0508B000942A4 /* AppDelegate.swift in Sources */,
 				2140F86D1EE05774000942A4 /* PageViewController.swift in Sources */,

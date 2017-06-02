@@ -24,7 +24,7 @@ final class CollectionViewController: UIViewController {
     super.viewDidLoad()
     
     self.ibCollectionView.register(UINib(nibName: "CollectionViewCell", bundle: nil), forCellWithReuseIdentifier: "collectionViewCell")
-    self.ibCollectionView.register(UINib(nibName: "CollectionReusableView", bundle: nil), forSupplementaryViewOfKind: UICollectionElementKindSectionHeader, withReuseIdentifier: "CollectionReusableView")
+    self.ibCollectionView.register(UINib(nibName: "CollectionReusableView", bundle: nil), forSupplementaryViewOfKind: UICollectionElementKindSectionHeader, withReuseIdentifier: "collectionReusableView")
   }
 }
 
@@ -45,7 +45,7 @@ extension CollectionViewController: UICollectionViewDataSource {
   }
   
   func collectionView(_ collectionView: UICollectionView, viewForSupplementaryElementOfKind kind: String, at indexPath: IndexPath) -> UICollectionReusableView {
-    let viewIdentifier = "CollectionReusableView"
+    let viewIdentifier = "collectionReusableView"
     var reusableView : UICollectionReusableView? = nil
     
     switch kind {

@@ -23,6 +23,7 @@ final class TableViewController: UIViewController {
     super.viewDidLoad()
     
     self.ibTableView.register(UINib(nibName: "TableViewCell", bundle: nil), forCellReuseIdentifier: "tableViewCell")
+    self.ibTableView.register(UINib(nibName: "TableViewHeaderFooterView", bundle: nil), forHeaderFooterViewReuseIdentifier: "tableViewHeaderFooterView")
   }
 }
 
@@ -45,5 +46,18 @@ extension TableViewController: UITableViewDataSource {
 
 // MARK - UITableViewDelegate
 extension TableViewController: UITableViewDelegate {
-  // Delegate methods here
+  
+  func tableView(_ tableView: UITableView, viewForHeaderInSection section: Int) -> UIView? {
+    let viewIdentifier = "tableViewHeaderFooterView"
+    
+    guard let view = self.ibTableView.dequeueReusableHeaderFooterView(withIdentifier: viewIdentifier) else {
+      fatalError("Oh No 😯! Unable to dequeue view with identifier: \(viewIdentifier). ☹️")
+    }
+    return view
+  }
+  
+  
+  func tableView(_ tableView: UITableView, heightForHeaderInSection section: Int) -> CGFloat {
+    return 100.0
+  }
 }
