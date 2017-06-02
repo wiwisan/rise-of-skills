@@ -11,6 +11,7 @@ final class TableViewCell: UITableViewCell {
   
   // MARK - Outlets
   
+  @IBOutlet weak var ibContainerView: UIView!
   @IBOutlet weak var ibTitleLabel: UILabel!
   
   // MARK - Initializers

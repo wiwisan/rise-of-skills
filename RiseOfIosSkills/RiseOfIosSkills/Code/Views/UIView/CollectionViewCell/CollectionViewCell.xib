@@ -18,21 +18,33 @@
                 <rect key="frame" x="0.0" y="0.0" width="269" height="223"/>
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
-                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="N0e-Eu-kiA">
-                        <rect key="frame" x="113" y="101" width="42" height="21"/>
-                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                        <nil key="textColor"/>
-                        <nil key="highlightedColor"/>
-                    </label>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="KGu-uj-RC5">
+                        <rect key="frame" x="0.0" y="0.0" width="269" height="223"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="N0e-Eu-kiA">
+                                <rect key="frame" x="113.5" y="101" width="42" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="0.54386113739999997" green="0.73143943550000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="N0e-Eu-kiA" firstAttribute="centerY" secondItem="KGu-uj-RC5" secondAttribute="centerY" id="69z-Qb-ORX"/>
+                            <constraint firstItem="N0e-Eu-kiA" firstAttribute="centerX" secondItem="KGu-uj-RC5" secondAttribute="centerX" id="IwR-Cu-l7p"/>
+                        </constraints>
+                    </view>
                 </subviews>
             </view>
-            <color key="backgroundColor" red="0.54386113739999997" green="0.73143943550000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
             <constraints>
-                <constraint firstItem="N0e-Eu-kiA" firstAttribute="centerY" secondItem="1Zr-0b-9fs" secondAttribute="centerY" id="Jo8-TW-fHw"/>
-                <constraint firstItem="N0e-Eu-kiA" firstAttribute="centerX" secondItem="1Zr-0b-9fs" secondAttribute="centerX" id="rYl-FW-14D"/>
+                <constraint firstItem="KGu-uj-RC5" firstAttribute="top" secondItem="1Zr-0b-9fs" secondAttribute="top" id="6fu-wJ-MKT"/>
+                <constraint firstAttribute="trailing" secondItem="KGu-uj-RC5" secondAttribute="trailing" id="Zf1-wS-JjJ"/>
+                <constraint firstItem="KGu-uj-RC5" firstAttribute="leading" secondItem="1Zr-0b-9fs" secondAttribute="leading" id="lZk-x1-Vs9"/>
+                <constraint firstAttribute="bottom" secondItem="KGu-uj-RC5" secondAttribute="bottom" id="nFS-tk-vbC"/>
             </constraints>
             <size key="customSize" width="269" height="223"/>
             <connections>
+                <outlet property="ibContainerView" destination="KGu-uj-RC5" id="aYk-UJ-S5g"/>
                 <outlet property="ibTitleLabel" destination="N0e-Eu-kiA" id="jWZ-3b-uzy"/>
             </connections>
             <point key="canvasLocation" x="-146.5" y="-140.5"/>

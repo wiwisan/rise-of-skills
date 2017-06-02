@@ -21,6 +21,9 @@ final class PageViewController: UIPageViewController {
   override func viewDidLoad() {
     super.viewDidLoad()
     
+    self.dataSource = self
+    self.delegate = self
+    
     // Add view controllers
     let storyboard = UIStoryboard(name: "ViewController", bundle: nil)
     let viewController = storyboard.instantiateViewController(withIdentifier: "ViewController")

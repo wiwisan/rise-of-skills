@@ -11,6 +11,7 @@ final class CollectionViewCell: UICollectionViewCell {
   
   // MARK - Outlets
   
+  @IBOutlet weak var ibContainerView: UIView!
   @IBOutlet weak var ibTitleLabel: UILabel!
   
   // MARK - Initializers
@@ -20,6 +21,6 @@ final class CollectionViewCell: UICollectionViewCell {
   override func awakeFromNib() {
     super.awakeFromNib()
     
-    self.ibTitleLabel.text = "UICollectionViewCells I am and i'm so great.. 😏"
+    self.ibTitleLabel.text = "UICollectionViewCells I am, and i'm so great.. 😏"
   }
 }

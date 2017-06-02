@@ -18,20 +18,32 @@
                 <rect key="frame" x="0.0" y="0.0" width="486" height="109"/>
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
-                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Eq6-j7-hpv">
-                        <rect key="frame" x="222" y="44" width="42" height="21"/>
-                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                        <nil key="textColor"/>
-                        <nil key="highlightedColor"/>
-                    </label>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="1BJ-N7-Rg1">
+                        <rect key="frame" x="0.0" y="0.0" width="486" height="108.5"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Eq6-j7-hpv">
+                                <rect key="frame" x="222" y="44" width="42" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="0.54386113739999997" green="0.73143943550000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="Eq6-j7-hpv" firstAttribute="centerY" secondItem="1BJ-N7-Rg1" secondAttribute="centerY" id="bSs-CU-GZm"/>
+                            <constraint firstItem="Eq6-j7-hpv" firstAttribute="centerX" secondItem="1BJ-N7-Rg1" secondAttribute="centerX" id="dsl-nS-wdY"/>
+                        </constraints>
+                    </view>
                 </subviews>
                 <constraints>
-                    <constraint firstItem="Eq6-j7-hpv" firstAttribute="centerX" secondItem="mvo-LV-yiG" secondAttribute="centerX" id="H5K-ny-hif"/>
-                    <constraint firstItem="Eq6-j7-hpv" firstAttribute="centerY" secondItem="mvo-LV-yiG" secondAttribute="centerY" id="SuF-y6-dgr"/>
+                    <constraint firstAttribute="trailing" secondItem="1BJ-N7-Rg1" secondAttribute="trailing" id="CIe-k8-xY9"/>
+                    <constraint firstItem="1BJ-N7-Rg1" firstAttribute="top" secondItem="mvo-LV-yiG" secondAttribute="top" id="Sdr-Nt-vy2"/>
+                    <constraint firstItem="1BJ-N7-Rg1" firstAttribute="leading" secondItem="mvo-LV-yiG" secondAttribute="leading" id="b6M-Ws-fkN"/>
+                    <constraint firstAttribute="bottom" secondItem="1BJ-N7-Rg1" secondAttribute="bottom" id="rBt-wD-Fyu"/>
                 </constraints>
             </tableViewCellContentView>
-            <color key="backgroundColor" red="0.54386113735105823" green="0.73143943548001955" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
             <connections>
+                <outlet property="ibContainerView" destination="1BJ-N7-Rg1" id="KOJ-Gu-wYq"/>
                 <outlet property="ibTitleLabel" destination="Eq6-j7-hpv" id="giD-Os-6Dq"/>
             </connections>
             <point key="canvasLocation" x="-20" y="28.5"/>
