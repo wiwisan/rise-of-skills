@@ -23,6 +23,8 @@
 		21A362A91F0679B600F663BD /* CollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 21A362A71F0679B600F663BD /* CollectionViewCell.xib */; };
 		21A362AC1F0679C600F663BD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 21A362AA1F0679C600F663BD /* Assets.xcassets */; };
 		21A362AD1F0679C600F663BD /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 21A362AB1F0679C600F663BD /* Info.plist */; };
+		21A362C11F068F2400F663BD /* Router.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21A362BF1F068F2400F663BD /* Router.swift */; };
+		21A362C21F068F2400F663BD /* Routing.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21A362C01F068F2400F663BD /* Routing.swift */; };
 		45059EFE56308BCCB3CBEC98 /* Pods_RiseOfSkills.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CAE2AC0E39AB39429D821B9B /* Pods_RiseOfSkills.framework */; };
 /* End PBXBuildFile section */
 
@@ -44,6 +46,8 @@
 		21A362A71F0679B600F663BD /* CollectionViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = CollectionViewCell.xib; path = RiseOfSkills/Code/Views/UIView/CollectionViewCell/CollectionViewCell.xib; sourceTree = SOURCE_ROOT; };
 		21A362AA1F0679C600F663BD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Assets.xcassets; path = RiseOfSkills/Ressources/Assets.xcassets; sourceTree = SOURCE_ROOT; };
 		21A362AB1F0679C600F663BD /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Info.plist; path = RiseOfSkills/Ressources/Info.plist; sourceTree = SOURCE_ROOT; };
+		21A362BF1F068F2400F663BD /* Router.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Router.swift; sourceTree = "<group>"; };
+		21A362C01F068F2400F663BD /* Routing.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Routing.swift; sourceTree = "<group>"; };
 		426E3BB6612FC3C981406E7B /* Pods-RiseOfSkills.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RiseOfSkills.debug.xcconfig"; path = "Pods/Target Support Files/Pods-RiseOfSkills/Pods-RiseOfSkills.debug.xcconfig"; sourceTree = "<group>"; };
 		8419ED1F702D8830315879A3 /* Pods-RiseOfSkills.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RiseOfSkills.release.xcconfig"; path = "Pods/Target Support Files/Pods-RiseOfSkills/Pods-RiseOfSkills.release.xcconfig"; sourceTree = "<group>"; };
 		CAE2AC0E39AB39429D821B9B /* Pods_RiseOfSkills.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RiseOfSkills.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -93,6 +97,7 @@
 			isa = PBXGroup;
 			children = (
 				2140F85F1EE04D87000942A4 /* AppDelegate */,
+				21A362B01F06891100F663BD /* Services */,
 				2140F8621EE04DB6000942A4 /* Controllers */,
 				2140F8611EE04DA0000942A4 /* ViewModels */,
 				2140F8601EE04D98000942A4 /* Views */,
@@ -237,6 +242,32 @@
 				21A3629B1F06797A00F663BD /* TableViewHeaderFooterView.xib */,
 			);
 			name = tableViewHeaderFooterView;
+			sourceTree = "<group>";
+		};
+		21A362B01F06891100F663BD /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				21A362BD1F068F2400F663BD /* Networking */,
+			);
+			name = Services;
+			path = RiseOfSkills/Code/Services;
+			sourceTree = SOURCE_ROOT;
+		};
+		21A362BD1F068F2400F663BD /* Networking */ = {
+			isa = PBXGroup;
+			children = (
+				21A362BE1F068F2400F663BD /* Router */,
+			);
+			path = Networking;
+			sourceTree = "<group>";
+		};
+		21A362BE1F068F2400F663BD /* Router */ = {
+			isa = PBXGroup;
+			children = (
+				21A362C01F068F2400F663BD /* Routing.swift */,
+				21A362BF1F068F2400F663BD /* Router.swift */,
+			);
+			path = Router;
 			sourceTree = "<group>";
 		};
 		5F7B72F3DF2F80BE5A150E52 /* Frameworks */ = {
@@ -387,8 +418,10 @@
 			files = (
 				21A362A81F0679B600F663BD /* CollectionViewCell.swift in Sources */,
 				21A362931F06793200F663BD /* ViewController.swift in Sources */,
+				21A362C11F068F2400F663BD /* Router.swift in Sources */,
 				21A362991F06796500F663BD /* PageViewController.swift in Sources */,
 				21A362A01F06798D00F663BD /* CollectionReusableView.swift in Sources */,
+				21A362C21F068F2400F663BD /* Routing.swift in Sources */,
 				21A3629C1F06797A00F663BD /* TableViewHeaderFooterView.swift in Sources */,
 				21A362951F06794700F663BD /* TableViewController.swift in Sources */,
 				21A362A41F06799C00F663BD /* TableViewCell.swift in Sources */,
