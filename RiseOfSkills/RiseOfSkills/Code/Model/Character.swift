@@ -17,11 +17,11 @@ final class Character: Object {
   dynamic var mass      = ""
   dynamic var skinColor = ""
   dynamic var homeworld = ""
-  let films             = List<Film>()
   dynamic var species   = ""
-  dynamic var starships = ""
   dynamic var vehicles  = ""
   dynamic var url       = ""
   dynamic var created   = ""
   dynamic var edited    = ""
+  let films             = List<Film>()
+  let starships         = List<Starship>()
 }

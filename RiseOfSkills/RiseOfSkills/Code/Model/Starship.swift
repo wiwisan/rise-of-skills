@@ -21,9 +21,9 @@ final class Starship: Object {
   dynamic var MGLT                 = ""
   dynamic var cargoCapacity        = ""
   dynamic var consumables          = ""
-  let films                        = List<Film>()
-  let pilots                       = List<Character>()
   dynamic var url                  = ""
   dynamic var created              = ""
   dynamic var edited               = ""
+  let films                        = List<Film>()
+  let pilots                       = List<Character>()
 }
