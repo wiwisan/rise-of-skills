@@ -17,7 +17,7 @@ final class Film: Object {
   dynamic var species = ""
   dynamic var starships = ""
   dynamic var vehicles = ""
-  dynamic var characters = ""
+  let characters = List<Character>()
   dynamic var planets = ""
   dynamic var url = ""
   dynamic var created = ""
