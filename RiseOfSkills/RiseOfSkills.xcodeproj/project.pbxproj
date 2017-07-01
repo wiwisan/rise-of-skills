@@ -25,6 +25,7 @@
 		21A362AD1F0679C600F663BD /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 21A362AB1F0679C600F663BD /* Info.plist */; };
 		21A362C11F068F2400F663BD /* Router.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21A362BF1F068F2400F663BD /* Router.swift */; };
 		21A362C21F068F2400F663BD /* Routing.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21A362C01F068F2400F663BD /* Routing.swift */; };
+		21A6E7781F07FF6C0018CE26 /* Planet.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21A6E7771F07FF6C0018CE26 /* Planet.swift */; };
 		21BC33301F07DCF4000DCD1B /* Film.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21BC332F1F07DCF4000DCD1B /* Film.swift */; };
 		21BC33321F07E1E3000DCD1B /* Character.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21BC33311F07E1E3000DCD1B /* Character.swift */; };
 		21BC33341F07ED62000DCD1B /* Starship.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21BC33331F07ED62000DCD1B /* Starship.swift */; };
@@ -53,6 +54,7 @@
 		21A362AB1F0679C600F663BD /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Info.plist; path = RiseOfSkills/Ressources/Info.plist; sourceTree = SOURCE_ROOT; };
 		21A362BF1F068F2400F663BD /* Router.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Router.swift; sourceTree = "<group>"; };
 		21A362C01F068F2400F663BD /* Routing.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Routing.swift; sourceTree = "<group>"; };
+		21A6E7771F07FF6C0018CE26 /* Planet.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Planet.swift; path = RiseOfSkills/Code/Model/Planet.swift; sourceTree = SOURCE_ROOT; };
 		21BC332F1F07DCF4000DCD1B /* Film.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Film.swift; path = RiseOfSkills/Code/Model/Film.swift; sourceTree = SOURCE_ROOT; };
 		21BC33311F07E1E3000DCD1B /* Character.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Character.swift; path = RiseOfSkills/Code/Model/Character.swift; sourceTree = SOURCE_ROOT; };
 		21BC33331F07ED62000DCD1B /* Starship.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Starship.swift; path = RiseOfSkills/Code/Model/Starship.swift; sourceTree = SOURCE_ROOT; };
@@ -149,6 +151,7 @@
 				21BC33331F07ED62000DCD1B /* Starship.swift */,
 				21BC33351F07F3F7000DCD1B /* Vehicle.swift */,
 				21BC33371F07FD32000DCD1B /* Species.swift */,
+				21A6E7771F07FF6C0018CE26 /* Planet.swift */,
 			);
 			name = Model;
 			sourceTree = "<group>";
@@ -440,6 +443,7 @@
 				21A362C11F068F2400F663BD /* Router.swift in Sources */,
 				21A362991F06796500F663BD /* PageViewController.swift in Sources */,
 				21A362A01F06798D00F663BD /* CollectionReusableView.swift in Sources */,
+				21A6E7781F07FF6C0018CE26 /* Planet.swift in Sources */,
 				21BC33361F07F3F7000DCD1B /* Vehicle.swift in Sources */,
 				21A362C21F068F2400F663BD /* Routing.swift in Sources */,
 				21A3629C1F06797A00F663BD /* TableViewHeaderFooterView.swift in Sources */,
