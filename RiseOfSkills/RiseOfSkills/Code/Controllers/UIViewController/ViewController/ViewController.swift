@@ -7,6 +7,7 @@
 
 import Foundation
 import UIKit
+import Alamofire
 
 final class ViewController: UIViewController {
   
@@ -23,5 +24,15 @@ final class ViewController: UIViewController {
     super.viewDidLoad()
     
     self.ibTitleLabel.text = "Hi ! I'm a UIViewController! That's coool 😎"
+    
+    let url = URL(string: Router.films(id: "").baseURL)!
+    let urlRequest = URLRequest(url: url)
+    Alamofire.request(urlRequest).responseJSON { response in
+      debugPrint(response)
+      
+      if let json = response.result.value {
+        print("JSON: \(json)")
+      }
+    }
   }
 }

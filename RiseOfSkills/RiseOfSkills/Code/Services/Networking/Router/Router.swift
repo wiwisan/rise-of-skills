@@ -9,36 +9,37 @@ import Alamofire
 
 enum Router {
   
-  case films(id: Int?)
-  case people(id: Int?)
-  case planets(id: Int?)
-  case species(id: Int?)
-  case starships(id: Int?)
-  case vehicles(id: Int?)
+  case films(id: String)
+  case people(id: String)
+  case planets(id: String)
+  case species(id: String)
+  case starships(id: String)
+  case vehicles(id: String)
 }
 
 // MARK - Routing
 extension Router: Routing {
   
   var baseURL: String {
-    return "http://swapi.co/api"
+    let url = "http://swapi.co/api"
+    return url.appending(self.path)
   }
   
   var path: String {
     var path = ""
     switch self {
     case .films(let id):
-      path = "/films" + "/\(String(describing: id))"
+      path = "/films" + "/\(id)"
     case .people(let id):
-      path = "/people" + "/\(String(describing: id))"
+      path = "/people" + "/\(id)"
     case .planets(let id):
-      path = "/planets" + "/\(String(describing: id))"
+      path = "/planets" + "/\(id)"
     case .species(let id):
-      path = "/species" + "/\(String(describing: id))"
+      path = "/species" + "/\(id)"
     case .starships(let id):
-      path = "/starships" + "/\(String(describing: id))"
+      path = "/starships" + "/\(id)"
     case .vehicles(let id):
-      path = "/vehicles" + "/\(String(describing: id))"
+      path = "/vehicles" + "/\(id)"
     }
     return path
   }
