@@ -28,6 +28,7 @@
 		21BC33301F07DCF4000DCD1B /* Film.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21BC332F1F07DCF4000DCD1B /* Film.swift */; };
 		21BC33321F07E1E3000DCD1B /* Character.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21BC33311F07E1E3000DCD1B /* Character.swift */; };
 		21BC33341F07ED62000DCD1B /* Starship.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21BC33331F07ED62000DCD1B /* Starship.swift */; };
+		21BC33361F07F3F7000DCD1B /* Vehicle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21BC33351F07F3F7000DCD1B /* Vehicle.swift */; };
 		45059EFE56308BCCB3CBEC98 /* Pods_RiseOfSkills.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CAE2AC0E39AB39429D821B9B /* Pods_RiseOfSkills.framework */; };
 /* End PBXBuildFile section */
 
@@ -54,6 +55,7 @@
 		21BC332F1F07DCF4000DCD1B /* Film.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Film.swift; path = RiseOfSkills/Code/Model/Film.swift; sourceTree = SOURCE_ROOT; };
 		21BC33311F07E1E3000DCD1B /* Character.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Character.swift; path = RiseOfSkills/Code/Model/Character.swift; sourceTree = SOURCE_ROOT; };
 		21BC33331F07ED62000DCD1B /* Starship.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Starship.swift; path = RiseOfSkills/Code/Model/Starship.swift; sourceTree = SOURCE_ROOT; };
+		21BC33351F07F3F7000DCD1B /* Vehicle.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Vehicle.swift; path = RiseOfSkills/Code/Model/Vehicle.swift; sourceTree = SOURCE_ROOT; };
 		426E3BB6612FC3C981406E7B /* Pods-RiseOfSkills.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RiseOfSkills.debug.xcconfig"; path = "Pods/Target Support Files/Pods-RiseOfSkills/Pods-RiseOfSkills.debug.xcconfig"; sourceTree = "<group>"; };
 		8419ED1F702D8830315879A3 /* Pods-RiseOfSkills.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RiseOfSkills.release.xcconfig"; path = "Pods/Target Support Files/Pods-RiseOfSkills/Pods-RiseOfSkills.release.xcconfig"; sourceTree = "<group>"; };
 		CAE2AC0E39AB39429D821B9B /* Pods_RiseOfSkills.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RiseOfSkills.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -143,6 +145,7 @@
 				21BC332F1F07DCF4000DCD1B /* Film.swift */,
 				21BC33311F07E1E3000DCD1B /* Character.swift */,
 				21BC33331F07ED62000DCD1B /* Starship.swift */,
+				21BC33351F07F3F7000DCD1B /* Vehicle.swift */,
 			);
 			name = Model;
 			sourceTree = "<group>";
@@ -433,6 +436,7 @@
 				21A362C11F068F2400F663BD /* Router.swift in Sources */,
 				21A362991F06796500F663BD /* PageViewController.swift in Sources */,
 				21A362A01F06798D00F663BD /* CollectionReusableView.swift in Sources */,
+				21BC33361F07F3F7000DCD1B /* Vehicle.swift in Sources */,
 				21A362C21F068F2400F663BD /* Routing.swift in Sources */,
 				21A3629C1F06797A00F663BD /* TableViewHeaderFooterView.swift in Sources */,
 				21A362951F06794700F663BD /* TableViewController.swift in Sources */,

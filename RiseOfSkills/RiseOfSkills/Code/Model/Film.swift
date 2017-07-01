@@ -15,11 +15,11 @@ final class Film: Object {
   dynamic var producer     = ""
   dynamic var releaseDate  = ""
   dynamic var species      = ""
-  dynamic var vehicles     = ""
   dynamic var planets      = ""
   dynamic var url          = ""
   dynamic var created      = ""
   dynamic var edited       = ""
+  let vehicles             = List<Vehicle>()
   let starships            = List<Starship>()
   let characters           = List<Character>()
 }
