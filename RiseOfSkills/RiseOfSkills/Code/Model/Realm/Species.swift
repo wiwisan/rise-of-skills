@@ -21,6 +21,6 @@ final class Species: Object {
   dynamic var url             = ""
   dynamic var created         = ""
   dynamic var edited          = ""
-  let people                  = List<Character>()
-  let films                   = List<Film>()
+  let people                  = List<RealmString>()
+  let films                   = List<RealmString>()
 }

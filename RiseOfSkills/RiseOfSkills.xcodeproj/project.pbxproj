@@ -7,6 +7,13 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		215340D11F0A70B7009FB0CF /* Character.swift in Sources */ = {isa = PBXBuildFile; fileRef = 215340CA1F0A70B7009FB0CF /* Character.swift */; };
+		215340D21F0A70B7009FB0CF /* Film.swift in Sources */ = {isa = PBXBuildFile; fileRef = 215340CB1F0A70B7009FB0CF /* Film.swift */; };
+		215340D31F0A70B7009FB0CF /* Planet.swift in Sources */ = {isa = PBXBuildFile; fileRef = 215340CC1F0A70B7009FB0CF /* Planet.swift */; };
+		215340D41F0A70B7009FB0CF /* RealmString.swift in Sources */ = {isa = PBXBuildFile; fileRef = 215340CD1F0A70B7009FB0CF /* RealmString.swift */; };
+		215340D51F0A70B7009FB0CF /* Species.swift in Sources */ = {isa = PBXBuildFile; fileRef = 215340CE1F0A70B7009FB0CF /* Species.swift */; };
+		215340D61F0A70B8009FB0CF /* Starship.swift in Sources */ = {isa = PBXBuildFile; fileRef = 215340CF1F0A70B7009FB0CF /* Starship.swift */; };
+		215340D71F0A70B8009FB0CF /* Vehicle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 215340D01F0A70B7009FB0CF /* Vehicle.swift */; };
 		21A3628F1F06790A00F663BD /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21A3628E1F06790A00F663BD /* AppDelegate.swift */; };
 		21A362911F06792100F663BD /* ViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 21A362901F06792100F663BD /* ViewController.storyboard */; };
 		21A362931F06793200F663BD /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21A362921F06793200F663BD /* ViewController.swift */; };
@@ -25,17 +32,18 @@
 		21A362AD1F0679C600F663BD /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 21A362AB1F0679C600F663BD /* Info.plist */; };
 		21A362C11F068F2400F663BD /* Router.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21A362BF1F068F2400F663BD /* Router.swift */; };
 		21A362C21F068F2400F663BD /* Routing.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21A362C01F068F2400F663BD /* Routing.swift */; };
-		21A6E7781F07FF6C0018CE26 /* Planet.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21A6E7771F07FF6C0018CE26 /* Planet.swift */; };
-		21BC33301F07DCF4000DCD1B /* Film.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21BC332F1F07DCF4000DCD1B /* Film.swift */; };
-		21BC33321F07E1E3000DCD1B /* Character.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21BC33311F07E1E3000DCD1B /* Character.swift */; };
-		21BC33341F07ED62000DCD1B /* Starship.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21BC33331F07ED62000DCD1B /* Starship.swift */; };
-		21BC33361F07F3F7000DCD1B /* Vehicle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21BC33351F07F3F7000DCD1B /* Vehicle.swift */; };
-		21BC33381F07FD32000DCD1B /* Species.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21BC33371F07FD32000DCD1B /* Species.swift */; };
 		45059EFE56308BCCB3CBEC98 /* Pods_RiseOfSkills.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CAE2AC0E39AB39429D821B9B /* Pods_RiseOfSkills.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		2140F8421EE04BC8000942A4 /* RiseOfSkills.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RiseOfSkills.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		215340CA1F0A70B7009FB0CF /* Character.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Character.swift; path = RiseOfSkills/Code/Model/Realm/Character.swift; sourceTree = SOURCE_ROOT; };
+		215340CB1F0A70B7009FB0CF /* Film.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Film.swift; path = RiseOfSkills/Code/Model/Realm/Film.swift; sourceTree = SOURCE_ROOT; };
+		215340CC1F0A70B7009FB0CF /* Planet.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Planet.swift; path = RiseOfSkills/Code/Model/Realm/Planet.swift; sourceTree = SOURCE_ROOT; };
+		215340CD1F0A70B7009FB0CF /* RealmString.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = RealmString.swift; path = RiseOfSkills/Code/Model/Realm/RealmString.swift; sourceTree = SOURCE_ROOT; };
+		215340CE1F0A70B7009FB0CF /* Species.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Species.swift; path = RiseOfSkills/Code/Model/Realm/Species.swift; sourceTree = SOURCE_ROOT; };
+		215340CF1F0A70B7009FB0CF /* Starship.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Starship.swift; path = RiseOfSkills/Code/Model/Realm/Starship.swift; sourceTree = SOURCE_ROOT; };
+		215340D01F0A70B7009FB0CF /* Vehicle.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Vehicle.swift; path = RiseOfSkills/Code/Model/Realm/Vehicle.swift; sourceTree = SOURCE_ROOT; };
 		21A3628E1F06790A00F663BD /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = AppDelegate.swift; path = RiseOfSkills/Code/AppDelegate/AppDelegate.swift; sourceTree = SOURCE_ROOT; };
 		21A362901F06792100F663BD /* ViewController.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = ViewController.storyboard; path = RiseOfSkills/Code/Controllers/UIViewController/ViewController.storyboard; sourceTree = SOURCE_ROOT; };
 		21A362921F06793200F663BD /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ViewController.swift; path = RiseOfSkills/Code/Controllers/UIViewController/ViewController/ViewController.swift; sourceTree = SOURCE_ROOT; };
@@ -54,12 +62,6 @@
 		21A362AB1F0679C600F663BD /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Info.plist; path = RiseOfSkills/Ressources/Info.plist; sourceTree = SOURCE_ROOT; };
 		21A362BF1F068F2400F663BD /* Router.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Router.swift; sourceTree = "<group>"; };
 		21A362C01F068F2400F663BD /* Routing.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Routing.swift; sourceTree = "<group>"; };
-		21A6E7771F07FF6C0018CE26 /* Planet.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Planet.swift; path = RiseOfSkills/Code/Model/Planet.swift; sourceTree = SOURCE_ROOT; };
-		21BC332F1F07DCF4000DCD1B /* Film.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Film.swift; path = RiseOfSkills/Code/Model/Film.swift; sourceTree = SOURCE_ROOT; };
-		21BC33311F07E1E3000DCD1B /* Character.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Character.swift; path = RiseOfSkills/Code/Model/Character.swift; sourceTree = SOURCE_ROOT; };
-		21BC33331F07ED62000DCD1B /* Starship.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Starship.swift; path = RiseOfSkills/Code/Model/Starship.swift; sourceTree = SOURCE_ROOT; };
-		21BC33351F07F3F7000DCD1B /* Vehicle.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Vehicle.swift; path = RiseOfSkills/Code/Model/Vehicle.swift; sourceTree = SOURCE_ROOT; };
-		21BC33371F07FD32000DCD1B /* Species.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Species.swift; path = RiseOfSkills/Code/Model/Species.swift; sourceTree = SOURCE_ROOT; };
 		426E3BB6612FC3C981406E7B /* Pods-RiseOfSkills.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RiseOfSkills.debug.xcconfig"; path = "Pods/Target Support Files/Pods-RiseOfSkills/Pods-RiseOfSkills.debug.xcconfig"; sourceTree = "<group>"; };
 		8419ED1F702D8830315879A3 /* Pods-RiseOfSkills.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RiseOfSkills.release.xcconfig"; path = "Pods/Target Support Files/Pods-RiseOfSkills/Pods-RiseOfSkills.release.xcconfig"; sourceTree = "<group>"; };
 		CAE2AC0E39AB39429D821B9B /* Pods_RiseOfSkills.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RiseOfSkills.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -146,12 +148,8 @@
 		2140F8611EE04DA0000942A4 /* Model */ = {
 			isa = PBXGroup;
 			children = (
-				21BC332F1F07DCF4000DCD1B /* Film.swift */,
-				21BC33311F07E1E3000DCD1B /* Character.swift */,
-				21BC33331F07ED62000DCD1B /* Starship.swift */,
-				21BC33351F07F3F7000DCD1B /* Vehicle.swift */,
-				21BC33371F07FD32000DCD1B /* Species.swift */,
-				21A6E7771F07FF6C0018CE26 /* Planet.swift */,
+				215340C81F0A7072009FB0CF /* Extensions */,
+				215340C91F0A707F009FB0CF /* Realm */,
 			);
 			name = Model;
 			sourceTree = "<group>";
@@ -260,6 +258,27 @@
 				21A3629B1F06797A00F663BD /* TableViewHeaderFooterView.xib */,
 			);
 			name = tableViewHeaderFooterView;
+			sourceTree = "<group>";
+		};
+		215340C81F0A7072009FB0CF /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Extensions;
+			sourceTree = "<group>";
+		};
+		215340C91F0A707F009FB0CF /* Realm */ = {
+			isa = PBXGroup;
+			children = (
+				215340CA1F0A70B7009FB0CF /* Character.swift */,
+				215340CB1F0A70B7009FB0CF /* Film.swift */,
+				215340CC1F0A70B7009FB0CF /* Planet.swift */,
+				215340CD1F0A70B7009FB0CF /* RealmString.swift */,
+				215340CE1F0A70B7009FB0CF /* Species.swift */,
+				215340CF1F0A70B7009FB0CF /* Starship.swift */,
+				215340D01F0A70B7009FB0CF /* Vehicle.swift */,
+			);
+			name = Realm;
 			sourceTree = "<group>";
 		};
 		21A362B01F06891100F663BD /* Services */ = {
@@ -434,21 +453,22 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				21BC33321F07E1E3000DCD1B /* Character.swift in Sources */,
-				21BC33341F07ED62000DCD1B /* Starship.swift in Sources */,
+				215340D71F0A70B8009FB0CF /* Vehicle.swift in Sources */,
+				215340D41F0A70B7009FB0CF /* RealmString.swift in Sources */,
 				21A362A81F0679B600F663BD /* CollectionViewCell.swift in Sources */,
-				21BC33301F07DCF4000DCD1B /* Film.swift in Sources */,
-				21BC33381F07FD32000DCD1B /* Species.swift in Sources */,
 				21A362931F06793200F663BD /* ViewController.swift in Sources */,
 				21A362C11F068F2400F663BD /* Router.swift in Sources */,
+				215340D51F0A70B7009FB0CF /* Species.swift in Sources */,
+				215340D21F0A70B7009FB0CF /* Film.swift in Sources */,
+				215340D11F0A70B7009FB0CF /* Character.swift in Sources */,
+				215340D61F0A70B8009FB0CF /* Starship.swift in Sources */,
 				21A362991F06796500F663BD /* PageViewController.swift in Sources */,
 				21A362A01F06798D00F663BD /* CollectionReusableView.swift in Sources */,
-				21A6E7781F07FF6C0018CE26 /* Planet.swift in Sources */,
-				21BC33361F07F3F7000DCD1B /* Vehicle.swift in Sources */,
 				21A362C21F068F2400F663BD /* Routing.swift in Sources */,
 				21A3629C1F06797A00F663BD /* TableViewHeaderFooterView.swift in Sources */,
 				21A362951F06794700F663BD /* TableViewController.swift in Sources */,
 				21A362A41F06799C00F663BD /* TableViewCell.swift in Sources */,
+				215340D31F0A70B7009FB0CF /* Planet.swift in Sources */,
 				21A362971F06795700F663BD /* CollectionViewController.swift in Sources */,
 				21A3628F1F06790A00F663BD /* AppDelegate.swift in Sources */,
 			);

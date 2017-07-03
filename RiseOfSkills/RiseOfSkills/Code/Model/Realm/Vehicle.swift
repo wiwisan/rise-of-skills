@@ -1,4 +1,4 @@
-//  Starship.swift
+//  Vehicle.swift
 //  RiseOfSkills
 //
 //  Copyright © 2017 Wildine Anthony. All rights reserved.
@@ -6,24 +6,22 @@
 
 import RealmSwift
 
-final class Starship: Object {
+final class Vehicle: Object {
 
   dynamic var name                 = ""
   dynamic var model                = ""
-  dynamic var starshipClass        = ""
+  dynamic var vehicleClass         = ""
   dynamic var manufacturer         = ""
-  dynamic var costInCredits        = ""
   dynamic var length               = ""
+  dynamic var costInCredits        = ""
   dynamic var crew                 = ""
   dynamic var passengers           = ""
   dynamic var maxAtmospheringSpeed = ""
-  dynamic var hyperdriveRating     = ""
-  dynamic var MGLT                 = ""
   dynamic var cargoCapacity        = ""
   dynamic var consumables          = ""
   dynamic var url                  = ""
   dynamic var created              = ""
   dynamic var edited               = ""
-  let films                        = List<Film>()
-  let pilots                       = List<Character>()
+  let films                        = List<RealmString>()
+  let pilots                       = List<RealmString>()
 }

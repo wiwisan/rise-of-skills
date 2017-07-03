@@ -17,9 +17,9 @@ final class Film: Object {
   dynamic var url          = ""
   dynamic var created      = ""
   dynamic var edited       = ""
-  let planets              = List<Planet>()
-  let species              = List<Species>()
-  let vehicles             = List<Vehicle>()
-  let starships            = List<Starship>()
-  let characters           = List<Character>()
+  let planets              = List<RealmString>()
+  let species              = List<RealmString>()
+  let vehicles             = List<RealmString>()
+  let starships            = List<RealmString>()
+  let characters           = List<RealmString>()
 }

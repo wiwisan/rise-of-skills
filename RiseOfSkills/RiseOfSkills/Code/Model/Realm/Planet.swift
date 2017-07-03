@@ -21,6 +21,6 @@ final class Planet: Object {
   dynamic var url            = ""
   dynamic var created        = ""
   dynamic var edited         = ""
-  let residents              = List<Character>()
-  let films                  = List<Film>()
+  let residents              = List<RealmString>()
+  let films                  = List<RealmString>()
 }

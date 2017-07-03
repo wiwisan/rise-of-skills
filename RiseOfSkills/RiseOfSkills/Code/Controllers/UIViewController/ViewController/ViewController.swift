@@ -28,13 +28,24 @@ final class ViewController: UIViewController {
     var filmJson: Film?
     let url = URL(string: Router.films(id: "").baseURL)!
     let urlRequest = URLRequest(url: url)
+    
+    
     Alamofire.request(urlRequest).responseJSON { response in
-      debugPrint(response)
-      
-      if let json = response.result.value {
-        print("JSON: \(json)")
-        filmJson = json as? Film
-        print("FILM: \(filmJson)")
+      print(response)
+      //to get status code
+      if let status = response.response?.statusCode {
+        switch(status){
+        case 201:
+          print("example success")
+        default:
+          print("error with response status: \(status)")
+        }
+      }
+      //to get JSON return value
+      if let result = response.result.value {
+        if let JSON = result as? NSDictionary {
+//          print(JSON.object(forKey: "planets"))
+        }
       }
     }
   }

@@ -20,8 +20,8 @@ final class Character: Object {
   dynamic var url       = ""
   dynamic var created   = ""
   dynamic var edited    = ""
-  let species           = List<Species>()
-  let vehicles          = List<Vehicle>()
-  let films             = List<Film>()
-  let starships         = List<Starship>()
+  let species           = List<RealmString>()
+  let vehicles          = List<RealmString>()
+  let films             = List<RealmString>()
+  let starships         = List<RealmString>()
 }
