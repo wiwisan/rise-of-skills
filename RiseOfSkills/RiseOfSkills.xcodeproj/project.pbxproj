@@ -14,6 +14,8 @@
 		215340D51F0A70B7009FB0CF /* Species.swift in Sources */ = {isa = PBXBuildFile; fileRef = 215340CE1F0A70B7009FB0CF /* Species.swift */; };
 		215340D61F0A70B8009FB0CF /* Starship.swift in Sources */ = {isa = PBXBuildFile; fileRef = 215340CF1F0A70B7009FB0CF /* Starship.swift */; };
 		215340D71F0A70B8009FB0CF /* Vehicle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 215340D01F0A70B7009FB0CF /* Vehicle.swift */; };
+		215340D91F0A7C50009FB0CF /* Film+Marshal.swift in Sources */ = {isa = PBXBuildFile; fileRef = 215340D81F0A7C50009FB0CF /* Film+Marshal.swift */; };
+		215340DB1F0A87FD009FB0CF /* RealmString+Marshal.swift in Sources */ = {isa = PBXBuildFile; fileRef = 215340DA1F0A87FD009FB0CF /* RealmString+Marshal.swift */; };
 		21A3628F1F06790A00F663BD /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21A3628E1F06790A00F663BD /* AppDelegate.swift */; };
 		21A362911F06792100F663BD /* ViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 21A362901F06792100F663BD /* ViewController.storyboard */; };
 		21A362931F06793200F663BD /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21A362921F06793200F663BD /* ViewController.swift */; };
@@ -44,6 +46,8 @@
 		215340CE1F0A70B7009FB0CF /* Species.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Species.swift; path = RiseOfSkills/Code/Model/Realm/Species.swift; sourceTree = SOURCE_ROOT; };
 		215340CF1F0A70B7009FB0CF /* Starship.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Starship.swift; path = RiseOfSkills/Code/Model/Realm/Starship.swift; sourceTree = SOURCE_ROOT; };
 		215340D01F0A70B7009FB0CF /* Vehicle.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Vehicle.swift; path = RiseOfSkills/Code/Model/Realm/Vehicle.swift; sourceTree = SOURCE_ROOT; };
+		215340D81F0A7C50009FB0CF /* Film+Marshal.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "Film+Marshal.swift"; path = "RiseOfSkills/Code/Model/Extensions/Film+Marshal.swift"; sourceTree = SOURCE_ROOT; };
+		215340DA1F0A87FD009FB0CF /* RealmString+Marshal.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "RealmString+Marshal.swift"; path = "RiseOfSkills/Code/Model/Extensions/RealmString+Marshal.swift"; sourceTree = SOURCE_ROOT; };
 		21A3628E1F06790A00F663BD /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = AppDelegate.swift; path = RiseOfSkills/Code/AppDelegate/AppDelegate.swift; sourceTree = SOURCE_ROOT; };
 		21A362901F06792100F663BD /* ViewController.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = ViewController.storyboard; path = RiseOfSkills/Code/Controllers/UIViewController/ViewController.storyboard; sourceTree = SOURCE_ROOT; };
 		21A362921F06793200F663BD /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ViewController.swift; path = RiseOfSkills/Code/Controllers/UIViewController/ViewController/ViewController.swift; sourceTree = SOURCE_ROOT; };
@@ -263,6 +267,8 @@
 		215340C81F0A7072009FB0CF /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
+				215340D81F0A7C50009FB0CF /* Film+Marshal.swift */,
+				215340DA1F0A87FD009FB0CF /* RealmString+Marshal.swift */,
 			);
 			name = Extensions;
 			sourceTree = "<group>";
@@ -466,11 +472,13 @@
 				21A362A01F06798D00F663BD /* CollectionReusableView.swift in Sources */,
 				21A362C21F068F2400F663BD /* Routing.swift in Sources */,
 				21A3629C1F06797A00F663BD /* TableViewHeaderFooterView.swift in Sources */,
+				215340D91F0A7C50009FB0CF /* Film+Marshal.swift in Sources */,
 				21A362951F06794700F663BD /* TableViewController.swift in Sources */,
 				21A362A41F06799C00F663BD /* TableViewCell.swift in Sources */,
 				215340D31F0A70B7009FB0CF /* Planet.swift in Sources */,
 				21A362971F06795700F663BD /* CollectionViewController.swift in Sources */,
 				21A3628F1F06790A00F663BD /* AppDelegate.swift in Sources */,
+				215340DB1F0A87FD009FB0CF /* RealmString+Marshal.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
