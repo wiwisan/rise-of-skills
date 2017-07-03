@@ -25,6 +25,7 @@ final class ViewController: UIViewController {
     
     self.ibTitleLabel.text = "Hi ! I'm a UIViewController! That's coool 😎"
     
+    var filmJson: Film?
     let url = URL(string: Router.films(id: "").baseURL)!
     let urlRequest = URLRequest(url: url)
     Alamofire.request(urlRequest).responseJSON { response in
@@ -32,6 +33,8 @@ final class ViewController: UIViewController {
       
       if let json = response.result.value {
         print("JSON: \(json)")
+        filmJson = json as? Film
+        print("FILM: \(filmJson)")
       }
     }
   }
