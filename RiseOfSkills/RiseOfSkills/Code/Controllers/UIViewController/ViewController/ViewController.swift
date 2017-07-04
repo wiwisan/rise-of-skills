@@ -29,6 +29,8 @@ final class ViewController: UIViewController {
     let url = URL(string: Router.films(id: "").baseURL)!
     let urlRequest = URLRequest(url: url)
     
+    print(Realm.Configuration.defaultConfiguration.fileURL ?? "")
+    
     Alamofire.request(urlRequest)
       .responseJSON(completionHandler: { (response) in
         switch response.result {
