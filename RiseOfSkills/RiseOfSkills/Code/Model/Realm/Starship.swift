@@ -7,6 +7,12 @@
 import RealmSwift
 
 final class Starship: Object {
+  
+  convenience init(url: String) {
+    self.init()
+    
+    self.url = url
+  }
 
   dynamic var name                 = ""
   dynamic var model                = ""
@@ -24,6 +30,6 @@ final class Starship: Object {
   dynamic var url                  = ""
   dynamic var created              = ""
   dynamic var edited               = ""
-  let films                        = List<RealmString>()
-  let pilots                       = List<RealmString>()
+  let films                        = List<Film>()
+  let pilots                       = List<Character>()
 }

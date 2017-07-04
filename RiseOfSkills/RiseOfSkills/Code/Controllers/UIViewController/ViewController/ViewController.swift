@@ -8,6 +8,7 @@
 import Foundation
 import UIKit
 import Alamofire
+import RealmSwift
 
 final class ViewController: UIViewController {
   
@@ -25,28 +26,30 @@ final class ViewController: UIViewController {
     
     self.ibTitleLabel.text = "Hi ! I'm a UIViewController! That's coool 😎"
     
-    var filmJson: Film?
     let url = URL(string: Router.films(id: "").baseURL)!
     let urlRequest = URLRequest(url: url)
     
-    
-    Alamofire.request(urlRequest).responseJSON { response in
-      print(response)
-      //to get status code
-      if let status = response.response?.statusCode {
-        switch(status){
-        case 201:
-          print("example success")
-        default:
-          print("error with response status: \(status)")
+    Alamofire.request(urlRequest)
+      .responseJSON(completionHandler: { (response) in
+        switch response.result {
+        case .success:
+          if let valueDict = response.result.value as? [String: Any], let results = valueDict["results"] as? [Any] {
+            do {
+              let realm = try Realm()
+              try realm.write {
+                for result in results {
+                  if let film: Film = try? Film.value(from: result) {
+                    realm.add(film, update: true)
+                  }
+                }
+              }
+            } catch {
+              print("error..")
+            }
+          }
+        case .failure:
+          print("FAILURE..")
         }
-      }
-      //to get JSON return value
-      if let result = response.result.value {
-        if let JSON = result as? NSDictionary {
-//          print(JSON.object(forKey: "planets"))
-        }
-      }
-    }
+      })
   }
 }

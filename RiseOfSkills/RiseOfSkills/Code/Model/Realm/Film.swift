@@ -7,9 +7,15 @@
 import RealmSwift
 
 final class Film: Object {
+  
+  convenience init(url: String) {
+    self.init()
+    
+    self.url = url
+  }
 
   dynamic var title        = ""
-  dynamic var episodeId    = ""
+  dynamic var episodeId    = 0
   dynamic var openingCrawl = ""
   dynamic var director     = ""
   dynamic var producer     = ""
@@ -17,9 +23,13 @@ final class Film: Object {
   dynamic var url          = ""
   dynamic var created      = ""
   dynamic var edited       = ""
-  var planets              = List<RealmString>()
-  var species              = List<RealmString>()
-  var vehicles             = List<RealmString>()
-  var starships            = List<RealmString>()
-  var characters           = List<RealmString>()
+  var planets              = List<Planet>()
+  var species              = List<Species>()
+  var vehicles             = List<Vehicle>()
+  var starships            = List<Starship>()
+  var characters           = List<Character>()
+  
+  override static func primaryKey() -> String? {
+    return "episodeId"
+  }
 }

@@ -7,15 +7,18 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2132C0151F0B8C4D00FA352E /* Planet+Marshal.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2132C0141F0B8C4D00FA352E /* Planet+Marshal.swift */; };
+		2132C0171F0B961400FA352E /* Character+Marshal.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2132C0161F0B961400FA352E /* Character+Marshal.swift */; };
+		2132C0191F0B99E600FA352E /* Species+Marshal.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2132C0181F0B99E600FA352E /* Species+Marshal.swift */; };
+		2132C01B1F0B9A3A00FA352E /* Starship+Marshal.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2132C01A1F0B9A3A00FA352E /* Starship+Marshal.swift */; };
+		2132C01D1F0B9A4800FA352E /* Vehicle+Marshal.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2132C01C1F0B9A4800FA352E /* Vehicle+Marshal.swift */; };
 		215340D11F0A70B7009FB0CF /* Character.swift in Sources */ = {isa = PBXBuildFile; fileRef = 215340CA1F0A70B7009FB0CF /* Character.swift */; };
 		215340D21F0A70B7009FB0CF /* Film.swift in Sources */ = {isa = PBXBuildFile; fileRef = 215340CB1F0A70B7009FB0CF /* Film.swift */; };
 		215340D31F0A70B7009FB0CF /* Planet.swift in Sources */ = {isa = PBXBuildFile; fileRef = 215340CC1F0A70B7009FB0CF /* Planet.swift */; };
-		215340D41F0A70B7009FB0CF /* RealmString.swift in Sources */ = {isa = PBXBuildFile; fileRef = 215340CD1F0A70B7009FB0CF /* RealmString.swift */; };
 		215340D51F0A70B7009FB0CF /* Species.swift in Sources */ = {isa = PBXBuildFile; fileRef = 215340CE1F0A70B7009FB0CF /* Species.swift */; };
 		215340D61F0A70B8009FB0CF /* Starship.swift in Sources */ = {isa = PBXBuildFile; fileRef = 215340CF1F0A70B7009FB0CF /* Starship.swift */; };
 		215340D71F0A70B8009FB0CF /* Vehicle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 215340D01F0A70B7009FB0CF /* Vehicle.swift */; };
 		215340D91F0A7C50009FB0CF /* Film+Marshal.swift in Sources */ = {isa = PBXBuildFile; fileRef = 215340D81F0A7C50009FB0CF /* Film+Marshal.swift */; };
-		215340DB1F0A87FD009FB0CF /* RealmString+Marshal.swift in Sources */ = {isa = PBXBuildFile; fileRef = 215340DA1F0A87FD009FB0CF /* RealmString+Marshal.swift */; };
 		21A3628F1F06790A00F663BD /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21A3628E1F06790A00F663BD /* AppDelegate.swift */; };
 		21A362911F06792100F663BD /* ViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 21A362901F06792100F663BD /* ViewController.storyboard */; };
 		21A362931F06793200F663BD /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21A362921F06793200F663BD /* ViewController.swift */; };
@@ -38,16 +41,19 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		2132C0141F0B8C4D00FA352E /* Planet+Marshal.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "Planet+Marshal.swift"; path = "RiseOfSkills/Code/Model/Extensions/Planet+Marshal.swift"; sourceTree = SOURCE_ROOT; };
+		2132C0161F0B961400FA352E /* Character+Marshal.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "Character+Marshal.swift"; path = "RiseOfSkills/Code/Model/Extensions/Character+Marshal.swift"; sourceTree = SOURCE_ROOT; };
+		2132C0181F0B99E600FA352E /* Species+Marshal.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "Species+Marshal.swift"; path = "RiseOfSkills/Code/Model/Extensions/Species+Marshal.swift"; sourceTree = SOURCE_ROOT; };
+		2132C01A1F0B9A3A00FA352E /* Starship+Marshal.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "Starship+Marshal.swift"; path = "RiseOfSkills/Code/Model/Extensions/Starship+Marshal.swift"; sourceTree = SOURCE_ROOT; };
+		2132C01C1F0B9A4800FA352E /* Vehicle+Marshal.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "Vehicle+Marshal.swift"; path = "RiseOfSkills/Code/Model/Extensions/Vehicle+Marshal.swift"; sourceTree = SOURCE_ROOT; };
 		2140F8421EE04BC8000942A4 /* RiseOfSkills.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RiseOfSkills.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		215340CA1F0A70B7009FB0CF /* Character.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Character.swift; path = RiseOfSkills/Code/Model/Realm/Character.swift; sourceTree = SOURCE_ROOT; };
 		215340CB1F0A70B7009FB0CF /* Film.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Film.swift; path = RiseOfSkills/Code/Model/Realm/Film.swift; sourceTree = SOURCE_ROOT; };
 		215340CC1F0A70B7009FB0CF /* Planet.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Planet.swift; path = RiseOfSkills/Code/Model/Realm/Planet.swift; sourceTree = SOURCE_ROOT; };
-		215340CD1F0A70B7009FB0CF /* RealmString.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = RealmString.swift; path = RiseOfSkills/Code/Model/Realm/RealmString.swift; sourceTree = SOURCE_ROOT; };
 		215340CE1F0A70B7009FB0CF /* Species.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Species.swift; path = RiseOfSkills/Code/Model/Realm/Species.swift; sourceTree = SOURCE_ROOT; };
 		215340CF1F0A70B7009FB0CF /* Starship.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Starship.swift; path = RiseOfSkills/Code/Model/Realm/Starship.swift; sourceTree = SOURCE_ROOT; };
 		215340D01F0A70B7009FB0CF /* Vehicle.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Vehicle.swift; path = RiseOfSkills/Code/Model/Realm/Vehicle.swift; sourceTree = SOURCE_ROOT; };
 		215340D81F0A7C50009FB0CF /* Film+Marshal.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "Film+Marshal.swift"; path = "RiseOfSkills/Code/Model/Extensions/Film+Marshal.swift"; sourceTree = SOURCE_ROOT; };
-		215340DA1F0A87FD009FB0CF /* RealmString+Marshal.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "RealmString+Marshal.swift"; path = "RiseOfSkills/Code/Model/Extensions/RealmString+Marshal.swift"; sourceTree = SOURCE_ROOT; };
 		21A3628E1F06790A00F663BD /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = AppDelegate.swift; path = RiseOfSkills/Code/AppDelegate/AppDelegate.swift; sourceTree = SOURCE_ROOT; };
 		21A362901F06792100F663BD /* ViewController.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = ViewController.storyboard; path = RiseOfSkills/Code/Controllers/UIViewController/ViewController.storyboard; sourceTree = SOURCE_ROOT; };
 		21A362921F06793200F663BD /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ViewController.swift; path = RiseOfSkills/Code/Controllers/UIViewController/ViewController/ViewController.swift; sourceTree = SOURCE_ROOT; };
@@ -267,8 +273,12 @@
 		215340C81F0A7072009FB0CF /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
+				2132C0161F0B961400FA352E /* Character+Marshal.swift */,
 				215340D81F0A7C50009FB0CF /* Film+Marshal.swift */,
-				215340DA1F0A87FD009FB0CF /* RealmString+Marshal.swift */,
+				2132C0141F0B8C4D00FA352E /* Planet+Marshal.swift */,
+				2132C0181F0B99E600FA352E /* Species+Marshal.swift */,
+				2132C01A1F0B9A3A00FA352E /* Starship+Marshal.swift */,
+				2132C01C1F0B9A4800FA352E /* Vehicle+Marshal.swift */,
 			);
 			name = Extensions;
 			sourceTree = "<group>";
@@ -279,7 +289,6 @@
 				215340CA1F0A70B7009FB0CF /* Character.swift */,
 				215340CB1F0A70B7009FB0CF /* Film.swift */,
 				215340CC1F0A70B7009FB0CF /* Planet.swift */,
-				215340CD1F0A70B7009FB0CF /* RealmString.swift */,
 				215340CE1F0A70B7009FB0CF /* Species.swift */,
 				215340CF1F0A70B7009FB0CF /* Starship.swift */,
 				215340D01F0A70B7009FB0CF /* Vehicle.swift */,
@@ -459,8 +468,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2132C0171F0B961400FA352E /* Character+Marshal.swift in Sources */,
 				215340D71F0A70B8009FB0CF /* Vehicle.swift in Sources */,
-				215340D41F0A70B7009FB0CF /* RealmString.swift in Sources */,
 				21A362A81F0679B600F663BD /* CollectionViewCell.swift in Sources */,
 				21A362931F06793200F663BD /* ViewController.swift in Sources */,
 				21A362C11F068F2400F663BD /* Router.swift in Sources */,
@@ -471,14 +480,17 @@
 				21A362991F06796500F663BD /* PageViewController.swift in Sources */,
 				21A362A01F06798D00F663BD /* CollectionReusableView.swift in Sources */,
 				21A362C21F068F2400F663BD /* Routing.swift in Sources */,
+				2132C0151F0B8C4D00FA352E /* Planet+Marshal.swift in Sources */,
+				2132C0191F0B99E600FA352E /* Species+Marshal.swift in Sources */,
 				21A3629C1F06797A00F663BD /* TableViewHeaderFooterView.swift in Sources */,
 				215340D91F0A7C50009FB0CF /* Film+Marshal.swift in Sources */,
+				2132C01B1F0B9A3A00FA352E /* Starship+Marshal.swift in Sources */,
 				21A362951F06794700F663BD /* TableViewController.swift in Sources */,
 				21A362A41F06799C00F663BD /* TableViewCell.swift in Sources */,
 				215340D31F0A70B7009FB0CF /* Planet.swift in Sources */,
 				21A362971F06795700F663BD /* CollectionViewController.swift in Sources */,
+				2132C01D1F0B9A4800FA352E /* Vehicle+Marshal.swift in Sources */,
 				21A3628F1F06790A00F663BD /* AppDelegate.swift in Sources */,
-				215340DB1F0A87FD009FB0CF /* RealmString+Marshal.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

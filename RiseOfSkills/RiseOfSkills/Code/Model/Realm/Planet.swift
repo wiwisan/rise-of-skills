@@ -7,6 +7,12 @@
 import RealmSwift
 
 final class Planet: Object {
+  
+  convenience init(url: String) {
+    self.init()
+    
+    self.url = url
+  }
 
   dynamic var name           = ""
   dynamic var diameter       = ""
@@ -21,6 +27,6 @@ final class Planet: Object {
   dynamic var url            = ""
   dynamic var created        = ""
   dynamic var edited         = ""
-  let residents              = List<RealmString>()
-  let films                  = List<RealmString>()
+  let residents              = List<Character>()
+  let films                  = List<Film>()
 }

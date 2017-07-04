@@ -7,6 +7,12 @@
 import RealmSwift
 
 final class Species: Object {
+  
+  convenience init(url: String) {
+    self.init()
+    
+    self.url = url
+  }
 
   dynamic var name            = ""
   dynamic var classification  = ""
@@ -21,6 +27,6 @@ final class Species: Object {
   dynamic var url             = ""
   dynamic var created         = ""
   dynamic var edited          = ""
-  let people                  = List<RealmString>()
-  let films                   = List<RealmString>()
+  let people                  = List<Character>()
+  let films                   = List<Film>()
 }

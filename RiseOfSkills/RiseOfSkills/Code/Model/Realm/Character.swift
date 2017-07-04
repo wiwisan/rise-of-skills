@@ -8,6 +8,12 @@ import RealmSwift
 
 final class Character: Object {
 
+  convenience init(url: String) {
+    self.init()
+    
+    self.url = url
+  }
+  
   dynamic var name      = ""
   dynamic var birthYear = ""
   dynamic var eyeColor  = ""
@@ -20,8 +26,9 @@ final class Character: Object {
   dynamic var url       = ""
   dynamic var created   = ""
   dynamic var edited    = ""
-  let species           = List<RealmString>()
-  let vehicles          = List<RealmString>()
-  let films             = List<RealmString>()
-  let starships         = List<RealmString>()
+  let species           = List<Species>()
+  let vehicles          = List<Vehicle>()
+  let films             = List<Film>()
+  let starships         = List<Starship>()
+
 }
