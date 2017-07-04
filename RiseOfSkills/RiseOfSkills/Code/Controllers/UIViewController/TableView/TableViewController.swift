@@ -16,14 +16,28 @@ final class TableViewController: UIViewController {
   // MARK - Initializers
   
   let numberOfCells = 3
+  var menuListTitle: [String]?
+  var menuListEmoji: [String]?
+  var menuListImage: [String]?
   
   // MARK - Overrides
   
   override func viewDidLoad() {
     super.viewDidLoad()
     
+    self.menuListTitle = ["Films", "Personnages", "Planètes", "Espèces", "Vaisseaux", "Véhicules"]
+    self.menuListEmoji = ["🎥", "👨🏻", "🌏", "👽", "🚀", "🚡"]
+    self.menuListImage = ["swfilms.jpg", "swchar.jpg", "swplanet.jpg", "swspecies.jpg", "swstarship.jpg", "swvehicles.jpeg"]
+
+    
+    let backgroundColor = UIColor(red: 0, green: 185, blue: 255, alpha: 1.0)
+    self.navigationController?.navigationBar.barTintColor = backgroundColor
+    
     self.ibTableView.register(UINib(nibName: "TableViewCell", bundle: nil), forCellReuseIdentifier: "tableViewCell")
     self.ibTableView.register(UINib(nibName: "TableViewHeaderFooterView", bundle: nil), forHeaderFooterViewReuseIdentifier: "tableViewHeaderFooterView")
+    
+    self.ibTableView.rowHeight = 200
+    self.ibTableView.estimatedRowHeight = 200
   }
 }
 
@@ -31,7 +45,10 @@ final class TableViewController: UIViewController {
 extension TableViewController: UITableViewDataSource {
   
   func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-    return self.numberOfCells
+    guard let menu = self.menuListTitle else {
+      fatalError("Oh no ! Theres is no menu ! ☹️")
+    }
+    return menu.count
   }
   
   func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
@@ -40,6 +57,13 @@ extension TableViewController: UITableViewDataSource {
     guard let cell = self.ibTableView.dequeueReusableCell(withIdentifier: cellIdentifier) as? TableViewCell else {
       fatalError("Oh No 😯! Unable to dequeue cell with identifier: \(cellIdentifier). ☹️")
     }
+    
+    cell.ibMenuTitle.text = self.menuListTitle?[indexPath.row]
+    cell.ibMenuItemEmoji.text = self.menuListEmoji?[indexPath.row]
+    if let image = self.menuListImage?[indexPath.row] {
+      cell.ibMenuImage.image = UIImage(named: image)
+    }
+    
     return cell
   }
 }
@@ -47,17 +71,4 @@ extension TableViewController: UITableViewDataSource {
 // MARK - UITableViewDelegate
 extension TableViewController: UITableViewDelegate {
   
-  func tableView(_ tableView: UITableView, viewForHeaderInSection section: Int) -> UIView? {
-    let viewIdentifier = "tableViewHeaderFooterView"
-    
-    guard let view = self.ibTableView.dequeueReusableHeaderFooterView(withIdentifier: viewIdentifier) else {
-      fatalError("Oh No 😯! Unable to dequeue view with identifier: \(viewIdentifier). ☹️")
-    }
-    return view
-  }
-  
-  
-  func tableView(_ tableView: UITableView, heightForHeaderInSection section: Int) -> CGFloat {
-    return 100.0
-  }
 }

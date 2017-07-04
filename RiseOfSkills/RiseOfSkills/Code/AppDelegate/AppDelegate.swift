@@ -18,11 +18,15 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     self.window = UIWindow(frame: UIScreen.main.bounds)
     
     let storyboard = UIStoryboard(name: "ViewController", bundle: nil)
-    let initialViewController = storyboard.instantiateViewController(withIdentifier: "PageViewController")
     
-    self.window?.rootViewController = initialViewController
+    guard let navigationController:UINavigationController = storyboard.instantiateInitialViewController() as? UINavigationController else {
+      fatalError("Could not get navigation controller.")
+    }
+    
+    let rootViewController:UIViewController = storyboard.instantiateViewController(withIdentifier: "PageViewController") as UIViewController
+    navigationController.viewControllers = [rootViewController]
+    self.window?.rootViewController = navigationController
     self.window?.makeKeyAndVisible()
-    
     return true
   }
 

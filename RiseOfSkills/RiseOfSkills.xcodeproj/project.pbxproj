@@ -37,6 +37,12 @@
 		21A362AD1F0679C600F663BD /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 21A362AB1F0679C600F663BD /* Info.plist */; };
 		21A362C11F068F2400F663BD /* Router.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21A362BF1F068F2400F663BD /* Router.swift */; };
 		21A362C21F068F2400F663BD /* Routing.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21A362C01F068F2400F663BD /* Routing.swift */; };
+		21A6E7821F0C4F770018CE26 /* swchar.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 21A6E77C1F0C4F770018CE26 /* swchar.jpg */; };
+		21A6E7831F0C4F770018CE26 /* swfilms.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 21A6E77D1F0C4F770018CE26 /* swfilms.jpg */; };
+		21A6E7841F0C4F770018CE26 /* swplanet.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 21A6E77E1F0C4F770018CE26 /* swplanet.jpg */; };
+		21A6E7851F0C4F770018CE26 /* swspecies.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 21A6E77F1F0C4F770018CE26 /* swspecies.jpg */; };
+		21A6E7861F0C4F770018CE26 /* swstarship.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 21A6E7801F0C4F770018CE26 /* swstarship.jpg */; };
+		21A6E7871F0C4F770018CE26 /* swvehicles.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 21A6E7811F0C4F770018CE26 /* swvehicles.jpeg */; };
 		45059EFE56308BCCB3CBEC98 /* Pods_RiseOfSkills.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CAE2AC0E39AB39429D821B9B /* Pods_RiseOfSkills.framework */; };
 /* End PBXBuildFile section */
 
@@ -72,6 +78,12 @@
 		21A362AB1F0679C600F663BD /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Info.plist; path = RiseOfSkills/Ressources/Info.plist; sourceTree = SOURCE_ROOT; };
 		21A362BF1F068F2400F663BD /* Router.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Router.swift; sourceTree = "<group>"; };
 		21A362C01F068F2400F663BD /* Routing.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Routing.swift; sourceTree = "<group>"; };
+		21A6E77C1F0C4F770018CE26 /* swchar.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = swchar.jpg; path = RiseOfSkills/Ressources/Images/swchar.jpg; sourceTree = SOURCE_ROOT; };
+		21A6E77D1F0C4F770018CE26 /* swfilms.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = swfilms.jpg; path = RiseOfSkills/Ressources/Images/swfilms.jpg; sourceTree = SOURCE_ROOT; };
+		21A6E77E1F0C4F770018CE26 /* swplanet.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = swplanet.jpg; path = RiseOfSkills/Ressources/Images/swplanet.jpg; sourceTree = SOURCE_ROOT; };
+		21A6E77F1F0C4F770018CE26 /* swspecies.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = swspecies.jpg; path = RiseOfSkills/Ressources/Images/swspecies.jpg; sourceTree = SOURCE_ROOT; };
+		21A6E7801F0C4F770018CE26 /* swstarship.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = swstarship.jpg; path = RiseOfSkills/Ressources/Images/swstarship.jpg; sourceTree = SOURCE_ROOT; };
+		21A6E7811F0C4F770018CE26 /* swvehicles.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = swvehicles.jpeg; path = RiseOfSkills/Ressources/Images/swvehicles.jpeg; sourceTree = SOURCE_ROOT; };
 		426E3BB6612FC3C981406E7B /* Pods-RiseOfSkills.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RiseOfSkills.debug.xcconfig"; path = "Pods/Target Support Files/Pods-RiseOfSkills/Pods-RiseOfSkills.debug.xcconfig"; sourceTree = "<group>"; };
 		8419ED1F702D8830315879A3 /* Pods-RiseOfSkills.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RiseOfSkills.release.xcconfig"; path = "Pods/Target Support Files/Pods-RiseOfSkills/Pods-RiseOfSkills.release.xcconfig"; sourceTree = "<group>"; };
 		CAE2AC0E39AB39429D821B9B /* Pods_RiseOfSkills.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RiseOfSkills.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -133,6 +145,7 @@
 		2140F8581EE04C21000942A4 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				21A6E7791F0C4C5E0018CE26 /* Images */,
 				21A362AA1F0679C600F663BD /* Assets.xcassets */,
 				21A362AB1F0679C600F663BD /* Info.plist */,
 			);
@@ -322,6 +335,19 @@
 			path = Router;
 			sourceTree = "<group>";
 		};
+		21A6E7791F0C4C5E0018CE26 /* Images */ = {
+			isa = PBXGroup;
+			children = (
+				21A6E77C1F0C4F770018CE26 /* swchar.jpg */,
+				21A6E77D1F0C4F770018CE26 /* swfilms.jpg */,
+				21A6E77E1F0C4F770018CE26 /* swplanet.jpg */,
+				21A6E77F1F0C4F770018CE26 /* swspecies.jpg */,
+				21A6E7801F0C4F770018CE26 /* swstarship.jpg */,
+				21A6E7811F0C4F770018CE26 /* swvehicles.jpeg */,
+			);
+			name = Images;
+			sourceTree = "<group>";
+		};
 		5F7B72F3DF2F80BE5A150E52 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
@@ -404,10 +430,16 @@
 			buildActionMask = 2147483647;
 			files = (
 				21A362AD1F0679C600F663BD /* Info.plist in Resources */,
+				21A6E7861F0C4F770018CE26 /* swstarship.jpg in Resources */,
+				21A6E7841F0C4F770018CE26 /* swplanet.jpg in Resources */,
+				21A6E7821F0C4F770018CE26 /* swchar.jpg in Resources */,
 				21A3629D1F06797A00F663BD /* TableViewHeaderFooterView.xib in Resources */,
 				21A362A11F06798D00F663BD /* CollectionReusableView.xib in Resources */,
+				21A6E7851F0C4F770018CE26 /* swspecies.jpg in Resources */,
 				21A362A51F06799C00F663BD /* TableViewCell.xib in Resources */,
 				21A362A91F0679B600F663BD /* CollectionViewCell.xib in Resources */,
+				21A6E7871F0C4F770018CE26 /* swvehicles.jpeg in Resources */,
+				21A6E7831F0C4F770018CE26 /* swfilms.jpg in Resources */,
 				21A362AC1F0679C600F663BD /* Assets.xcassets in Resources */,
 				21A362911F06792100F663BD /* ViewController.storyboard in Resources */,
 			);
