@@ -23,7 +23,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
       fatalError("Could not get navigation controller.")
     }
     
-    let rootViewController:UIViewController = storyboard.instantiateViewController(withIdentifier: "PageViewController") as UIViewController
+    let rootViewController:UIViewController = storyboard.instantiateViewController(withIdentifier: "TableViewController") as UIViewController
     navigationController.viewControllers = [rootViewController]
     self.window?.rootViewController = navigationController
     self.window?.makeKeyAndVisible()
