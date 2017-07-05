@@ -37,6 +37,9 @@ final class TableViewController: UIViewController {
     
     self.ibTableView.rowHeight = 200
     self.ibTableView.estimatedRowHeight = 200
+    
+    self.ibTableView.dataSource = self
+    self.ibTableView.delegate = self
   }
 }
 
@@ -72,5 +75,11 @@ extension TableViewController: UITableViewDelegate {
   
   func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
     
+    let storyBoard : UIStoryboard = UIStoryboard(name: "ViewController", bundle:nil)
+    
+    guard let collectionViewController = storyBoard.instantiateViewController(withIdentifier: "CollectionViewController") as? CollectionViewController else {
+      fatalError("Could not instantiate CollectionViewController")
+    }
+    self.show(collectionViewController, sender: nil)
   }
 }

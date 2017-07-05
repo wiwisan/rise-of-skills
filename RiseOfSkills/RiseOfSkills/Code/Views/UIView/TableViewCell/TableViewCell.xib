@@ -11,11 +11,11 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
-        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" reuseIdentifier="tableViewCell" rowHeight="209" id="6w9-4M-shP" customClass="TableViewCell" customModule="RiseOfSkills" customModuleProvider="target">
+        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="tableViewCell" rowHeight="209" id="6w9-4M-shP" customClass="TableViewCell" customModule="RiseOfSkills" customModuleProvider="target">
             <rect key="frame" x="0.0" y="0.0" width="568" height="209"/>
             <autoresizingMask key="autoresizingMask"/>
             <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="6w9-4M-shP" id="mvo-LV-yiG">
-                <rect key="frame" x="0.0" y="0.0" width="568" height="208.5"/>
+                <rect key="frame" x="0.0" y="0.0" width="568" height="209"/>
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
                     <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="starwars.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="WJO-lg-KyD">
@@ -24,12 +24,9 @@
                             <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="200" id="1tw-3z-hz5"/>
                         </constraints>
                     </imageView>
-                    <button opaque="NO" alpha="0.84999999999999998" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jlC-mn-FkK">
+                    <button opaque="NO" userInteractionEnabled="NO" alpha="0.84999999999999998" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jlC-mn-FkK">
                         <rect key="frame" x="0.0" y="0.0" width="568" height="209"/>
                         <state key="normal" backgroundImage="menuMask"/>
-                        <connections>
-                            <action selector="goToViewTouchUpInside:" destination="6w9-4M-shP" eventType="touchUpInside" id="Gvz-Fo-LcD"/>
-                        </connections>
                     </button>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eg1-W9-h3P">
                         <rect key="frame" x="223" y="58" width="122" height="40"/>
@@ -56,7 +53,6 @@
                 <constraints>
                     <constraint firstItem="WJO-lg-KyD" firstAttribute="bottom" secondItem="mvo-LV-yiG" secondAttribute="bottom" id="3ox-eY-9z9"/>
                     <constraint firstItem="CeQ-Jr-3Hw" firstAttribute="centerX" secondItem="mvo-LV-yiG" secondAttribute="centerX" id="5Hd-oc-XOu"/>
-                    <constraint firstAttribute="bottom" secondItem="jlC-mn-FkK" secondAttribute="bottom" id="5Wz-sE-W44"/>
                     <constraint firstAttribute="trailing" secondItem="WJO-lg-KyD" secondAttribute="trailing" id="8qr-GZ-1IQ"/>
                     <constraint firstAttribute="trailing" secondItem="jlC-mn-FkK" secondAttribute="trailing" id="VIK-PO-Bxe"/>
                     <constraint firstItem="CeQ-Jr-3Hw" firstAttribute="top" secondItem="eg1-W9-h3P" secondAttribute="bottom" constant="20" id="X2O-OS-42e"/>
@@ -69,6 +65,7 @@
                     <constraint firstAttribute="bottomMargin" secondItem="CeQ-Jr-3Hw" secondAttribute="bottom" constant="30" id="sQW-Ut-yd8"/>
                     <constraint firstItem="eg1-W9-h3P" firstAttribute="top" secondItem="mvo-LV-yiG" secondAttribute="topMargin" constant="50" id="saT-X0-iTO"/>
                     <constraint firstItem="jlC-mn-FkK" firstAttribute="top" secondItem="mvo-LV-yiG" secondAttribute="top" id="wNZ-Qq-0VL"/>
+                    <constraint firstItem="jlC-mn-FkK" firstAttribute="bottom" secondItem="WJO-lg-KyD" secondAttribute="bottom" id="ypF-Lx-Jsj"/>
                 </constraints>
             </tableViewCellContentView>
             <connections>
