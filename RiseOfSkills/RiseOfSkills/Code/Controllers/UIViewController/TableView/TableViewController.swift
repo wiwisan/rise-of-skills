@@ -69,6 +69,8 @@ extension TableViewController: UITableViewDataSource {
 }
 
 // MARK - UITableViewDelegate
-extension TableViewController: UITableViewDelegate {
-  
+extension TableViewController: TableViewCellDelegate {
+  func goToView() {
+    <#code#>
+  }
 }

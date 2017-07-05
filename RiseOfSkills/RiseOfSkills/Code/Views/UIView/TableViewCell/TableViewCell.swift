@@ -7,6 +7,10 @@
 
 import UIKit
 
+protocol TableViewCellDelegate: class {
+  func goToView()
+}
+
 final class TableViewCell: UITableViewCell {
   
   // MARK - Outlets
@@ -17,6 +21,8 @@ final class TableViewCell: UITableViewCell {
   
   // MARK - Initializers
   
+  weak var tableViewCellDelegate: TableViewCellDelegate?
+  
   // MARK - Overrides
   
   override func awakeFromNib() {
@@ -26,5 +32,9 @@ final class TableViewCell: UITableViewCell {
     self.ibMenuTitle.font = UIFont(name: "Avenir Book", size: 40)
     self.ibMenuItemEmoji.textColor = .white
     self.ibMenuItemEmoji.font = UIFont(name: "Avenir Light", size: 15)
+  }
+  
+  @IBAction func goToViewTouchUpInside(_ sender: UIButton) {
+    self.tableViewCellDelegate?.goToView()
   }
 }
