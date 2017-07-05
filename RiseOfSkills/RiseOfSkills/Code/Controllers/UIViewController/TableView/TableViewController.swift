@@ -19,6 +19,7 @@ final class TableViewController: UIViewController {
   var menuListTitle: [String]?
   var menuListEmoji: [String]?
   var menuListImage: [String]?
+  var menuListControllers: [String]?
   
   // MARK - Overrides
   
@@ -28,13 +29,11 @@ final class TableViewController: UIViewController {
     self.menuListTitle = ["Films", "Personnages", "Planètes", "Espèces", "Vaisseaux", "Véhicules"]
     self.menuListEmoji = ["🎥", "👨🏻", "🌏", "👽", "🚀", "🚡"]
     self.menuListImage = ["swfilms.jpg", "swchar.jpg", "swplanet.jpg", "swspecies.jpg", "swstarship.jpg", "swvehicles.jpeg"]
-
     
     let backgroundColor = UIColor(red: 0, green: 185, blue: 255, alpha: 1.0)
     self.navigationController?.navigationBar.barTintColor = backgroundColor
     
     self.ibTableView.register(UINib(nibName: "TableViewCell", bundle: nil), forCellReuseIdentifier: "tableViewCell")
-    self.ibTableView.register(UINib(nibName: "TableViewHeaderFooterView", bundle: nil), forHeaderFooterViewReuseIdentifier: "tableViewHeaderFooterView")
     
     self.ibTableView.rowHeight = 200
     self.ibTableView.estimatedRowHeight = 200
@@ -46,7 +45,7 @@ extension TableViewController: UITableViewDataSource {
   
   func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
     guard let menu = self.menuListTitle else {
-      fatalError("Oh no ! Theres is no menu ! ☹️")
+      fatalError("Oh no ! There is no menu ! ☹️")
     }
     return menu.count
   }
@@ -69,8 +68,9 @@ extension TableViewController: UITableViewDataSource {
 }
 
 // MARK - UITableViewDelegate
-extension TableViewController: TableViewCellDelegate {
-  func goToView() {
-    <#code#>
+extension TableViewController: UITableViewDelegate {
+  
+  func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+    
   }
 }
