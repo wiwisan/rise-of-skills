@@ -1,5 +1,5 @@
 //
-//  TableViewController.swift
+//  MenuViewController.swift
 //  RiseOfIosSkills
 //
 //  Copyright © 2017 Wildine Anthony. All rights reserved.
@@ -7,7 +7,7 @@
 
 import UIKit
 
-final class TableViewController: UIViewController {
+final class MenuViewController: UIViewController {
   
   // MARK - Outlets
   
@@ -29,10 +29,7 @@ final class TableViewController: UIViewController {
     self.menuListTitle = ["Films", "Personnages", "Planètes", "Espèces", "Vaisseaux", "Véhicules"]
     self.menuListEmoji = ["🎥", "👨🏻", "🌏", "👽", "🚀", "🚡"]
     self.menuListImage = ["swfilms.jpg", "swchar.jpg", "swplanet.jpg", "swspecies.jpg", "swstarship.jpg", "swvehicles.jpeg"]
-    
-    let backgroundColor = UIColor(red: 0, green: 185, blue: 255, alpha: 1.0)
-    self.navigationController?.navigationBar.barTintColor = backgroundColor
-    
+
     self.ibTableView.register(UINib(nibName: "TableViewCell", bundle: nil), forCellReuseIdentifier: "tableViewCell")
     
     self.ibTableView.rowHeight = 200
@@ -44,8 +41,8 @@ final class TableViewController: UIViewController {
 }
 
 // MARK - UITableViewDataSource
-extension TableViewController: UITableViewDataSource {
-  
+extension MenuViewController: UITableViewDataSource {
+
   func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
     guard let menu = self.menuListTitle else {
       fatalError("Oh no ! There is no menu ! ☹️")
@@ -71,15 +68,15 @@ extension TableViewController: UITableViewDataSource {
 }
 
 // MARK - UITableViewDelegate
-extension TableViewController: UITableViewDelegate {
+extension MenuViewController: UITableViewDelegate {
   
   func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
     
-    let storyBoard : UIStoryboard = UIStoryboard(name: "ViewController", bundle:nil)
+    let storyBoard : UIStoryboard = UIStoryboard(name: "Menu", bundle:nil)
     
-    guard let collectionViewController = storyBoard.instantiateViewController(withIdentifier: "CollectionViewController") as? CollectionViewController else {
-      fatalError("Could not instantiate CollectionViewController")
+    guard let menuDetailsViewController = storyBoard.instantiateViewController(withIdentifier: "MenuDetailsViewController") as? MenuDetailsViewController else {
+      fatalError("Could not instantiate MenuDetailsViewController")
     }
-    self.show(collectionViewController, sender: nil)
+    self.show(menuDetailsViewController, sender: nil)
   }
 }
