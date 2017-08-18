@@ -19,6 +19,7 @@
 		21A1D1DD1F45E4ED0049A641 /* MenuDetailsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21A1D1DC1F45E4ED0049A641 /* MenuDetailsTableViewCell.swift */; };
 		21A1D1DF1F45E50E0049A641 /* MenuDetailsTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 21A1D1DE1F45E50E0049A641 /* MenuDetailsTableViewCell.xib */; };
 		21A1D1E11F45F73E0049A641 /* AppDelegate+Appearance.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21A1D1E01F45F73E0049A641 /* AppDelegate+Appearance.swift */; };
+		21A1D1E41F46E32B0049A641 /* UIColor+RiseOfSkills.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21A1D1E31F46E32B0049A641 /* UIColor+RiseOfSkills.swift */; };
 		21A3628F1F06790A00F663BD /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21A3628E1F06790A00F663BD /* AppDelegate.swift */; };
 		21A3629C1F06797A00F663BD /* TableViewHeaderFooterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21A3629A1F06797A00F663BD /* TableViewHeaderFooterView.swift */; };
 		21A3629D1F06797A00F663BD /* TableViewHeaderFooterView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 21A3629B1F06797A00F663BD /* TableViewHeaderFooterView.xib */; };
@@ -63,6 +64,7 @@
 		21A1D1DC1F45E4ED0049A641 /* MenuDetailsTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MenuDetailsTableViewCell.swift; path = RiseOfSkills/Code/Views/Cell/MenuDetails/MenuDetailsTableViewCell.swift; sourceTree = SOURCE_ROOT; };
 		21A1D1DE1F45E50E0049A641 /* MenuDetailsTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = MenuDetailsTableViewCell.xib; path = RiseOfSkills/Code/Views/Cell/MenuDetails/MenuDetailsTableViewCell.xib; sourceTree = SOURCE_ROOT; };
 		21A1D1E01F45F73E0049A641 /* AppDelegate+Appearance.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "AppDelegate+Appearance.swift"; path = "RiseOfSkills/Code/AppDelegate/AppDelegate+Appearance.swift"; sourceTree = SOURCE_ROOT; };
+		21A1D1E31F46E32B0049A641 /* UIColor+RiseOfSkills.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "UIColor+RiseOfSkills.swift"; path = "RiseOfSkills/Code/Extensions/UIColor+RiseOfSkills.swift"; sourceTree = SOURCE_ROOT; };
 		21A3628E1F06790A00F663BD /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = AppDelegate.swift; path = RiseOfSkills/Code/AppDelegate/AppDelegate.swift; sourceTree = SOURCE_ROOT; };
 		21A3629A1F06797A00F663BD /* TableViewHeaderFooterView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = TableViewHeaderFooterView.swift; path = RiseOfSkills/Code/Views/UIView/TableViewHeaderFooterView/TableViewHeaderFooterView.swift; sourceTree = SOURCE_ROOT; };
 		21A3629B1F06797A00F663BD /* TableViewHeaderFooterView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = TableViewHeaderFooterView.xib; path = RiseOfSkills/Code/Views/UIView/TableViewHeaderFooterView/TableViewHeaderFooterView.xib; sourceTree = SOURCE_ROOT; };
@@ -141,6 +143,7 @@
 				2140F85F1EE04D87000942A4 /* AppDelegate */,
 				21A362B01F06891100F663BD /* Services */,
 				21E535EB1F0D297E00705D68 /* DataFetcher */,
+				21A1D1E21F46E2EA0049A641 /* Extensions */,
 				2140F8611EE04DA0000942A4 /* Model */,
 				2140F8621EE04DB6000942A4 /* Controllers */,
 				2140F8601EE04D98000942A4 /* Views */,
@@ -295,6 +298,14 @@
 				21A1D1DA1F45E4890049A641 /* MenuDetails */,
 			);
 			name = Cell;
+			sourceTree = "<group>";
+		};
+		21A1D1E21F46E2EA0049A641 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				21A1D1E31F46E32B0049A641 /* UIColor+RiseOfSkills.swift */,
+			);
+			name = Extensions;
 			sourceTree = "<group>";
 		};
 		21A362B01F06891100F663BD /* Services */ = {
@@ -521,6 +532,7 @@
 				21E535ED1F0D29AF00705D68 /* DataFetcher.swift in Sources */,
 				215340D71F0A70B8009FB0CF /* Vehicle.swift in Sources */,
 				21A1D1D91F45E1060049A641 /* MenuDetailsViewController.swift in Sources */,
+				21A1D1E41F46E32B0049A641 /* UIColor+RiseOfSkills.swift in Sources */,
 				21A362A81F0679B600F663BD /* CollectionViewCell.swift in Sources */,
 				21A1D1E11F45F73E0049A641 /* AppDelegate+Appearance.swift in Sources */,
 				21E535E51F0D1A2000705D68 /* Planet+Marshal.swift in Sources */,
