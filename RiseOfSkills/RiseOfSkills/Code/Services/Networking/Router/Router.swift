@@ -10,7 +10,7 @@ import Alamofire
 enum Router {
   
   case films(id: String)
-  case people(id: String)
+  case characters(id: String)
   case planets(id: String)
   case species(id: String)
   case starships(id: String)
@@ -30,7 +30,7 @@ extension Router: Routing {
     switch self {
     case .films(let id):
       path = "/films" + "/\(id)"
-    case .people(let id):
+    case .characters(let id):
       path = "/people" + "/\(id)"
     case .planets(let id):
       path = "/planets" + "/\(id)"
