@@ -26,6 +26,8 @@ final class MenuViewController: UIViewController {
   override func viewDidLoad() {
     super.viewDidLoad()
     
+    self.title = "Menu".uppercased()
+    
     self.menuListTitle = ["Films", "Personnages", "Planètes", "Espèces", "Vaisseaux", "Véhicules"]
     self.menuListEmoji = ["🎥", "👨🏻", "🌏", "👽", "🚀", "🚡"]
     self.menuListImage = ["swfilms.jpg", "swchar.jpg", "swplanet.jpg", "swspecies.jpg", "swstarship.jpg", "swvehicles.jpeg"]

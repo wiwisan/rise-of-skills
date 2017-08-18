@@ -9,28 +9,13 @@ import RealmSwift
 
 final class DataFetcher {
   
+  // - MARK: Properties
+  
   let characters = Character.findAll()
   let films = Film.findAll()
   let planets = Planet.findAll()
   let starships = Starship.findAll()
   let vehicles = Vehicle.findAll()
-  
-//  var hasAllData: Bool {
-//    let characters = Character.findAll()
-//    let films = Film.findAll()
-//    let planets = Planet.findAll()
-//    let starships = Starship.findAll()
-//    let vehicles = Vehicle.findAll()
-//    return !films.isEmpty && !characters.isEmpty && !planets.isEmpty && !starships.isEmpty && !vehicles.isEmpty
-//  }
-  
-//  func setUpAllData() {
-//    self.fetchCharacters()
-//    self.fetchFilms()
-//    self.fetchPlanets()
-//    self.fetchStarships()
-//    self.fetchVehicles()
-//  }
   
   // - MARK: Characters
   
@@ -115,6 +100,37 @@ final class DataFetcher {
                 for result in results {
                   if let planet: Planet = try? Planet.value(from: result) {
                     realm.add(planet, update: true)
+                  }
+                }
+              }
+            } catch {
+              print("Cannot access Realm instance for url: \(url)")
+            }
+          }
+        case .failure:
+          print("Call API Failed for url: \(url)")
+        }
+      })
+  }
+  
+  // - MARK: Species
+  
+  func fetchSpecies() {
+    
+    let url = URL(string: Router.species(id: "").baseURL)!
+    let urlRequest = URLRequest(url: url)
+    
+    Alamofire.request(urlRequest)
+      .responseJSON(completionHandler: { (response) in
+        switch response.result {
+        case .success:
+          if let valueDict = response.result.value as? [String: Any], let results = valueDict["results"] as? [Any] {
+            do {
+              let realm = try Realm()
+              try realm.write {
+                for result in results {
+                  if let specie: Species = try? Species.value(from: result) {
+                    realm.add(specie, update: true)
                   }
                 }
               }

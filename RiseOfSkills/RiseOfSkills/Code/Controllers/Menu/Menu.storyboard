@@ -56,32 +56,15 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="346-tz-VMw">
-                                <rect key="frame" x="0.0" y="169" width="375" height="498"/>
+                                <rect key="frame" x="0.0" y="20" width="375" height="647"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                             </tableView>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="FzK-Jm-ZuT">
-                                <rect key="frame" x="0.0" y="0.0" width="375" height="169"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="169" id="4By-yW-JQZ"/>
-                                </constraints>
-                            </imageView>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="uvD-2x-NiI">
-                                <rect key="frame" x="0.0" y="0.0" width="375" height="169"/>
-                                <color key="backgroundColor" red="0.0" green="0.55686274509803924" blue="0.76862745098039209" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                            </view>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstAttribute="trailing" secondItem="FzK-Jm-ZuT" secondAttribute="trailing" id="Bcd-fU-6J2"/>
-                            <constraint firstItem="uvD-2x-NiI" firstAttribute="top" secondItem="1hb-Tz-MeD" secondAttribute="top" id="VS3-5j-WTm"/>
-                            <constraint firstItem="346-tz-VMw" firstAttribute="top" secondItem="FzK-Jm-ZuT" secondAttribute="bottom" id="Wc6-WY-E8s"/>
-                            <constraint firstAttribute="trailing" secondItem="uvD-2x-NiI" secondAttribute="trailing" id="XOH-5P-CeU"/>
-                            <constraint firstItem="FzK-Jm-ZuT" firstAttribute="leading" secondItem="1hb-Tz-MeD" secondAttribute="leading" id="Z8h-Lo-eqg"/>
+                            <constraint firstItem="346-tz-VMw" firstAttribute="top" secondItem="dcQ-Ct-tfg" secondAttribute="bottom" id="OLz-e0-oYb"/>
                             <constraint firstItem="346-tz-VMw" firstAttribute="leading" secondItem="1hb-Tz-MeD" secondAttribute="leading" id="aCY-97-oRp"/>
                             <constraint firstItem="rOw-pf-aYF" firstAttribute="top" secondItem="346-tz-VMw" secondAttribute="bottom" id="gQL-4L-3r7"/>
-                            <constraint firstItem="346-tz-VMw" firstAttribute="top" secondItem="uvD-2x-NiI" secondAttribute="bottom" id="mCj-uU-SXV"/>
-                            <constraint firstItem="FzK-Jm-ZuT" firstAttribute="top" secondItem="1hb-Tz-MeD" secondAttribute="top" id="pfx-d3-3DH"/>
-                            <constraint firstItem="uvD-2x-NiI" firstAttribute="leading" secondItem="1hb-Tz-MeD" secondAttribute="leading" id="qa7-UQ-Tos"/>
                             <constraint firstAttribute="trailing" secondItem="346-tz-VMw" secondAttribute="trailing" id="ws0-2T-Nv4"/>
                         </constraints>
                     </view>

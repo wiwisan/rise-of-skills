@@ -6,6 +6,7 @@
 //
 
 import UIKit
+import RealmSwift
 
 final class MenuDetailsViewController: UIViewController {
   
@@ -15,11 +16,14 @@ final class MenuDetailsViewController: UIViewController {
   
   // - MARK: Properties
   
+  var viewTitle: String?
   
   // -MARK: Overrides
   
   override func viewDidLoad() {
     super.viewDidLoad()
+    
+    self.view.setGradientBackground()
     
     self.ibTableView.delegate = self
   }
