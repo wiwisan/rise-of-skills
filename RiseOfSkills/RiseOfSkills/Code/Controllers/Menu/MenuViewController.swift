@@ -16,9 +16,7 @@ final class MenuViewController: UIViewController {
   // MARK - Initializers
   
   let numberOfCells = 3
-  var menuListTitle: [String]?
-  var menuListEmoji: [String]?
-  var menuListImage: [String]?
+  var menuList: [MenuItem]?
   var menuListControllers: [String]?
   
   // MARK - Overrides
@@ -28,9 +26,7 @@ final class MenuViewController: UIViewController {
     
     self.title = "Menu".uppercased()
     
-    self.menuListTitle = ["Films", "Personnages", "Planètes", "Espèces", "Vaisseaux", "Véhicules"]
-    self.menuListEmoji = ["🎥", "👨🏻", "🌏", "👽", "🚀", "🚡"]
-    self.menuListImage = ["swfilms.jpg", "swchar.jpg", "swplanet.jpg", "swspecies.jpg", "swstarship.jpg", "swvehicles.jpeg"]
+    self.menuList = MenuDataFetcher.init().items
 
     self.ibTableView.register(UINib(nibName: "TableViewCell", bundle: nil), forCellReuseIdentifier: "tableViewCell")
     
@@ -46,7 +42,7 @@ final class MenuViewController: UIViewController {
 extension MenuViewController: UITableViewDataSource {
 
   func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-    guard let menu = self.menuListTitle else {
+    guard let menu = self.menuList else {
       fatalError("Oh no ! There is no menu ! ☹️")
     }
     return menu.count
@@ -59,9 +55,9 @@ extension MenuViewController: UITableViewDataSource {
       fatalError("Oh No 😯! Unable to dequeue cell with identifier: \(cellIdentifier). ☹️")
     }
     
-    cell.ibMenuTitle.text = self.menuListTitle?[indexPath.row]
-    cell.ibMenuItemEmoji.text = self.menuListEmoji?[indexPath.row]
-    if let image = self.menuListImage?[indexPath.row] {
+    cell.ibMenuTitle.text = self.menuList?[indexPath.row].title
+    cell.ibMenuItemEmoji.text = self.menuList?[indexPath.row].icon
+    if let image = self.menuList?[indexPath.row].background {
       cell.ibMenuImage.image = UIImage(named: image)
     }
     

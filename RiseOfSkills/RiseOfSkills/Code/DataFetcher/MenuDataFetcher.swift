@@ -10,7 +10,7 @@ import RealmSwift
 
 struct MenuDataFetcher {
   let items: [MenuItem]
-  let validItems: [MenuItem]? =  []
+//  let validItems: [MenuItem]? =  []
   
   init() {
     
@@ -23,7 +23,7 @@ struct MenuDataFetcher {
     
     self.items = [films, characters, planets, species, starships, vehicles]
     
-    for item in self.items {
+    /* for item in self.items {
       guard let realm = item.data.realm else {
         fatalError("")
       }
@@ -50,7 +50,7 @@ struct MenuDataFetcher {
           self.validItems?.append(item)
         }
       }
-    }
+    } */
     
   }
 }

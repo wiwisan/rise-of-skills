@@ -19,6 +19,9 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     
     self.configureAppearance(application: application)
     
+    let data = DataFetcher()
+    data.fetchAll()
+    
     let storyboard = UIStoryboard(name: "Menu", bundle: nil)
     
     guard let navigationController:UINavigationController = storyboard.instantiateInitialViewController() as? UINavigationController else {

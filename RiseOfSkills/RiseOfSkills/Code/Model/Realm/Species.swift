@@ -14,6 +14,7 @@ final class Species: Object {
     self.url = url
   }
 
+  dynamic var specieId        = UUID().uuidString
   dynamic var name            = ""
   dynamic var classification  = ""
   dynamic var designation     = ""
@@ -29,4 +30,8 @@ final class Species: Object {
   dynamic var edited          = ""
   let people                  = List<Character>()
   let films                   = List<Film>()
+  
+  override static func primaryKey() -> String? {
+    return "specieId"
+  }
 }

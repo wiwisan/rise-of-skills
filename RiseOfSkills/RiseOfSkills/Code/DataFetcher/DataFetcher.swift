@@ -9,13 +9,14 @@ import RealmSwift
 
 final class DataFetcher {
   
-  // - MARK: Properties
-  
-  let characters = Character.findAll()
-  let films = Film.findAll()
-  let planets = Planet.findAll()
-  let starships = Starship.findAll()
-  let vehicles = Vehicle.findAll()
+  func fetchAll() {
+    self.fetchFilms()
+    self.fetchPlanets()
+    self.fetchSpecies()
+    self.fetchStarships()
+    self.fetchVehicles()
+    self.fetchCharacters()
+  }
   
   // - MARK: Characters
   

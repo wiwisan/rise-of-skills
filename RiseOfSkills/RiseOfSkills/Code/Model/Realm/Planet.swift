@@ -14,6 +14,7 @@ final class Planet: Object {
     self.url = url
   }
 
+  dynamic var planetId       = UUID().uuidString
   dynamic var name           = ""
   dynamic var diameter       = ""
   dynamic var rotationPeriod = ""
@@ -29,4 +30,8 @@ final class Planet: Object {
   dynamic var edited         = ""
   let residents              = List<Character>()
   let films                  = List<Film>()
+  
+  override static func primaryKey() -> String? {
+    return "planetId"
+  }
 }

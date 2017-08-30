@@ -14,6 +14,7 @@ final class Starship: Object {
     self.url = url
   }
 
+  dynamic var starshipId           = UUID().uuidString
   dynamic var name                 = ""
   dynamic var model                = ""
   dynamic var starshipClass        = ""
@@ -32,4 +33,8 @@ final class Starship: Object {
   dynamic var edited               = ""
   let films                        = List<Film>()
   let pilots                       = List<Character>()
+  
+  override static func primaryKey() -> String? {
+    return "starshipId"
+  }
 }

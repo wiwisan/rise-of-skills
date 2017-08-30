@@ -14,6 +14,7 @@ final class Vehicle: Object {
     self.url = url
   }
 
+  dynamic var vehicleId            = UUID().uuidString
   dynamic var name                 = ""
   dynamic var model                = ""
   dynamic var vehicleClass         = ""
@@ -30,4 +31,8 @@ final class Vehicle: Object {
   dynamic var edited               = ""
   let films                        = List<Film>()
   let pilots                       = List<Character>()
+  
+  override static func primaryKey() -> String? {
+    return "vehicleId"
+  }
 }
