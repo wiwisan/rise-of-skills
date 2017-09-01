@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		214226E91F58564B005AA405 /* UITableViewController+RiseOfSkills.swift in Sources */ = {isa = PBXBuildFile; fileRef = 214226E81F58564B005AA405 /* UITableViewController+RiseOfSkills.swift */; };
 		215340D11F0A70B7009FB0CF /* Character.swift in Sources */ = {isa = PBXBuildFile; fileRef = 215340CA1F0A70B7009FB0CF /* Character.swift */; };
 		215340D21F0A70B7009FB0CF /* Film.swift in Sources */ = {isa = PBXBuildFile; fileRef = 215340CB1F0A70B7009FB0CF /* Film.swift */; };
 		215340D31F0A70B7009FB0CF /* Planet.swift in Sources */ = {isa = PBXBuildFile; fileRef = 215340CC1F0A70B7009FB0CF /* Planet.swift */; };
@@ -21,7 +22,6 @@
 		21A1D1E11F45F73E0049A641 /* AppDelegate+Appearance.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21A1D1E01F45F73E0049A641 /* AppDelegate+Appearance.swift */; };
 		21A1D1E41F46E32B0049A641 /* UIColor+RiseOfSkills.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21A1D1E31F46E32B0049A641 /* UIColor+RiseOfSkills.swift */; };
 		21A1D1E61F46E74F0049A641 /* UIView+RiseOfSkills.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21A1D1E51F46E74F0049A641 /* UIView+RiseOfSkills.swift */; };
-		21A1D1E91F46EBE50049A641 /* Alamofire+RiseOfSkills.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21A1D1E81F46EBE50049A641 /* Alamofire+RiseOfSkills.swift */; };
 		21A1D1EB1F46F4660049A641 /* Character+Realm.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21A1D1EA1F46F4660049A641 /* Character+Realm.swift */; };
 		21A1D1ED1F46F47A0049A641 /* Planet+Realm.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21A1D1EC1F46F47A0049A641 /* Planet+Realm.swift */; };
 		21A1D1EF1F46F49A0049A641 /* Species+Realm.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21A1D1EE1F46F49A0049A641 /* Species+Realm.swift */; };
@@ -61,6 +61,7 @@
 
 /* Begin PBXFileReference section */
 		2140F8421EE04BC8000942A4 /* RiseOfSkills.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RiseOfSkills.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		214226E81F58564B005AA405 /* UITableViewController+RiseOfSkills.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "UITableViewController+RiseOfSkills.swift"; path = "RiseOfSkills/Code/Extensions/UITableViewController+RiseOfSkills.swift"; sourceTree = SOURCE_ROOT; };
 		215340CA1F0A70B7009FB0CF /* Character.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Character.swift; path = RiseOfSkills/Code/Model/Realm/Character.swift; sourceTree = SOURCE_ROOT; };
 		215340CB1F0A70B7009FB0CF /* Film.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Film.swift; path = RiseOfSkills/Code/Model/Realm/Film.swift; sourceTree = SOURCE_ROOT; };
 		215340CC1F0A70B7009FB0CF /* Planet.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Planet.swift; path = RiseOfSkills/Code/Model/Realm/Planet.swift; sourceTree = SOURCE_ROOT; };
@@ -75,7 +76,6 @@
 		21A1D1E01F45F73E0049A641 /* AppDelegate+Appearance.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "AppDelegate+Appearance.swift"; path = "RiseOfSkills/Code/AppDelegate/AppDelegate+Appearance.swift"; sourceTree = SOURCE_ROOT; };
 		21A1D1E31F46E32B0049A641 /* UIColor+RiseOfSkills.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "UIColor+RiseOfSkills.swift"; path = "RiseOfSkills/Code/Extensions/UIColor+RiseOfSkills.swift"; sourceTree = SOURCE_ROOT; };
 		21A1D1E51F46E74F0049A641 /* UIView+RiseOfSkills.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "UIView+RiseOfSkills.swift"; path = "RiseOfSkills/Code/Extensions/UIView+RiseOfSkills.swift"; sourceTree = SOURCE_ROOT; };
-		21A1D1E81F46EBE50049A641 /* Alamofire+RiseOfSkills.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "Alamofire+RiseOfSkills.swift"; path = "RiseOfSkills/Code/Extensions/Alamofire/Alamofire+RiseOfSkills.swift"; sourceTree = SOURCE_ROOT; };
 		21A1D1EA1F46F4660049A641 /* Character+Realm.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "Character+Realm.swift"; path = "RiseOfSkills/Code/Model/Extensions/Realm/Character+Realm.swift"; sourceTree = SOURCE_ROOT; };
 		21A1D1EC1F46F47A0049A641 /* Planet+Realm.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "Planet+Realm.swift"; path = "RiseOfSkills/Code/Model/Extensions/Realm/Planet+Realm.swift"; sourceTree = SOURCE_ROOT; };
 		21A1D1EE1F46F49A0049A641 /* Species+Realm.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "Species+Realm.swift"; path = "RiseOfSkills/Code/Model/Extensions/Realm/Species+Realm.swift"; sourceTree = SOURCE_ROOT; };
@@ -322,19 +322,11 @@
 		21A1D1E21F46E2EA0049A641 /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
-				21A1D1E71F46EBC80049A641 /* Alamofire */,
 				21A1D1E31F46E32B0049A641 /* UIColor+RiseOfSkills.swift */,
 				21A1D1E51F46E74F0049A641 /* UIView+RiseOfSkills.swift */,
+				214226E81F58564B005AA405 /* UITableViewController+RiseOfSkills.swift */,
 			);
 			name = Extensions;
-			sourceTree = "<group>";
-		};
-		21A1D1E71F46EBC80049A641 /* Alamofire */ = {
-			isa = PBXGroup;
-			children = (
-				21A1D1E81F46EBE50049A641 /* Alamofire+RiseOfSkills.swift */,
-			);
-			name = Alamofire;
 			sourceTree = "<group>";
 		};
 		21A362B01F06891100F663BD /* Services */ = {
@@ -565,7 +557,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				21A1D1F31F46F4C60049A641 /* Vehicle+realm.swift in Sources */,
-				21A1D1E91F46EBE50049A641 /* Alamofire+RiseOfSkills.swift in Sources */,
 				21A1D1ED1F46F47A0049A641 /* Planet+Realm.swift in Sources */,
 				21E535ED1F0D29AF00705D68 /* DataFetcher.swift in Sources */,
 				215340D71F0A70B8009FB0CF /* Vehicle.swift in Sources */,
@@ -595,6 +586,7 @@
 				21A362A41F06799C00F663BD /* TableViewCell.swift in Sources */,
 				21A1D1F71F4716BD0049A641 /* MenuDataFetcher.swift in Sources */,
 				215340D31F0A70B7009FB0CF /* Planet.swift in Sources */,
+				214226E91F58564B005AA405 /* UITableViewController+RiseOfSkills.swift in Sources */,
 				21A1D1EF1F46F49A0049A641 /* Species+Realm.swift in Sources */,
 				21A3628F1F06790A00F663BD /* AppDelegate.swift in Sources */,
 				21A1D1DD1F45E4ED0049A641 /* MenuDetailsTableViewCell.swift in Sources */,

@@ -21,9 +21,10 @@ final class MenuDetailsTableViewCell: UITableViewCell {
   override func awakeFromNib() {
     super.awakeFromNib()
     
+    self.contentView.backgroundColor = .clear
     self.ibTitleLabel.textColor = .white
-    self.ibTitleLabel.font = UIFont(name: "Avenir Book", size: 32)
-    self.ibDescriptionLabel.textColor = .white
-    self.ibDescriptionLabel.font = UIFont(name: "Avenir Book", size: 28)
+    self.ibTitleLabel.font = UIFont(name: "Avenir Book", size: 30)
+    self.ibDescriptionLabel.textColor = UIColor(white: 1, alpha: 0.5)
+    self.ibDescriptionLabel.font = UIFont(name: "Avenir Book", size: 24)
   }
 }

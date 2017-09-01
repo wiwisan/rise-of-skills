@@ -75,6 +75,7 @@ extension MenuViewController: UITableViewDelegate {
     guard let menuDetailsViewController = storyBoard.instantiateViewController(withIdentifier: "MenuDetailsViewController") as? MenuDetailsViewController else {
       fatalError("Could not instantiate MenuDetailsViewController")
     }
+    menuDetailsViewController.item = self.menuList?[indexPath.row]
     self.show(menuDetailsViewController, sender: nil)
   }
 }

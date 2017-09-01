@@ -10,7 +10,6 @@ import RealmSwift
 final class DataFetcher {
   
   func fetchAll() {
-    self.fetchFilms()
     self.fetchPlanets()
     self.fetchSpecies()
     self.fetchStarships()
