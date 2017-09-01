@@ -56,6 +56,12 @@
 		21E535E81F0D1A2000705D68 /* Vehicle+Marshal.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21E535E21F0D1A2000705D68 /* Vehicle+Marshal.swift */; };
 		21E535EA1F0D1A4000705D68 /* Film+Realm.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21E535E91F0D1A4000705D68 /* Film+Realm.swift */; };
 		21E535ED1F0D29AF00705D68 /* DataFetcher.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21E535EC1F0D29AF00705D68 /* DataFetcher.swift */; };
+		21F5A3C01F59613600A1BE08 /* CharacterList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21F5A3BF1F59613600A1BE08 /* CharacterList.swift */; };
+		21F5A3C21F59626900A1BE08 /* FilmList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21F5A3C11F59626900A1BE08 /* FilmList.swift */; };
+		21F5A3C41F59629800A1BE08 /* PlanetList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21F5A3C31F59629800A1BE08 /* PlanetList.swift */; };
+		21F5A3C61F5962AB00A1BE08 /* SpeciesList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21F5A3C51F5962AB00A1BE08 /* SpeciesList.swift */; };
+		21F5A3C81F5962D900A1BE08 /* StarshipList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21F5A3C71F5962D900A1BE08 /* StarshipList.swift */; };
+		21F5A3CA1F5962F800A1BE08 /* VehicleList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21F5A3C91F5962F800A1BE08 /* VehicleList.swift */; };
 		45059EFE56308BCCB3CBEC98 /* Pods_RiseOfSkills.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CAE2AC0E39AB39429D821B9B /* Pods_RiseOfSkills.framework */; };
 /* End PBXBuildFile section */
 
@@ -110,6 +116,12 @@
 		21E535E21F0D1A2000705D68 /* Vehicle+Marshal.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "Vehicle+Marshal.swift"; path = "RiseOfSkills/Code/Model/Extensions/Marshal/Vehicle+Marshal.swift"; sourceTree = SOURCE_ROOT; };
 		21E535E91F0D1A4000705D68 /* Film+Realm.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "Film+Realm.swift"; path = "RiseOfSkills/Code/Model/Extensions/Realm/Film+Realm.swift"; sourceTree = SOURCE_ROOT; };
 		21E535EC1F0D29AF00705D68 /* DataFetcher.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = DataFetcher.swift; path = RiseOfSkills/Code/DataFetcher/DataFetcher.swift; sourceTree = SOURCE_ROOT; };
+		21F5A3BF1F59613600A1BE08 /* CharacterList.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CharacterList.swift; path = RiseOfSkills/Code/Model/Realm/List/CharacterList.swift; sourceTree = SOURCE_ROOT; };
+		21F5A3C11F59626900A1BE08 /* FilmList.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = FilmList.swift; path = RiseOfSkills/Code/Model/Realm/List/FilmList.swift; sourceTree = SOURCE_ROOT; };
+		21F5A3C31F59629800A1BE08 /* PlanetList.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = PlanetList.swift; path = RiseOfSkills/Code/Model/Realm/List/PlanetList.swift; sourceTree = SOURCE_ROOT; };
+		21F5A3C51F5962AB00A1BE08 /* SpeciesList.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SpeciesList.swift; path = RiseOfSkills/Code/Model/Realm/List/SpeciesList.swift; sourceTree = SOURCE_ROOT; };
+		21F5A3C71F5962D900A1BE08 /* StarshipList.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = StarshipList.swift; path = RiseOfSkills/Code/Model/Realm/List/StarshipList.swift; sourceTree = SOURCE_ROOT; };
+		21F5A3C91F5962F800A1BE08 /* VehicleList.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = VehicleList.swift; path = RiseOfSkills/Code/Model/Realm/List/VehicleList.swift; sourceTree = SOURCE_ROOT; };
 		426E3BB6612FC3C981406E7B /* Pods-RiseOfSkills.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RiseOfSkills.debug.xcconfig"; path = "Pods/Target Support Files/Pods-RiseOfSkills/Pods-RiseOfSkills.debug.xcconfig"; sourceTree = "<group>"; };
 		8419ED1F702D8830315879A3 /* Pods-RiseOfSkills.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RiseOfSkills.release.xcconfig"; path = "Pods/Target Support Files/Pods-RiseOfSkills/Pods-RiseOfSkills.release.xcconfig"; sourceTree = "<group>"; };
 		CAE2AC0E39AB39429D821B9B /* Pods_RiseOfSkills.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RiseOfSkills.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -282,6 +294,7 @@
 		215340C91F0A707F009FB0CF /* Realm */ = {
 			isa = PBXGroup;
 			children = (
+				21F5A3BE1F59611500A1BE08 /* List */,
 				215340CA1F0A70B7009FB0CF /* Character.swift */,
 				215340CB1F0A70B7009FB0CF /* Film.swift */,
 				215340CC1F0A70B7009FB0CF /* Planet.swift */,
@@ -401,6 +414,19 @@
 				21A1D1F61F4716BD0049A641 /* MenuDataFetcher.swift */,
 			);
 			name = DataFetcher;
+			sourceTree = "<group>";
+		};
+		21F5A3BE1F59611500A1BE08 /* List */ = {
+			isa = PBXGroup;
+			children = (
+				21F5A3BF1F59613600A1BE08 /* CharacterList.swift */,
+				21F5A3C11F59626900A1BE08 /* FilmList.swift */,
+				21F5A3C31F59629800A1BE08 /* PlanetList.swift */,
+				21F5A3C51F5962AB00A1BE08 /* SpeciesList.swift */,
+				21F5A3C71F5962D900A1BE08 /* StarshipList.swift */,
+				21F5A3C91F5962F800A1BE08 /* VehicleList.swift */,
+			);
+			name = List;
 			sourceTree = "<group>";
 		};
 		5F7B72F3DF2F80BE5A150E52 /* Frameworks */ = {
@@ -569,13 +595,16 @@
 				21A1D1D51F459C420049A641 /* MenuViewController.swift in Sources */,
 				21A362C11F068F2400F663BD /* Router.swift in Sources */,
 				215340D51F0A70B7009FB0CF /* Species.swift in Sources */,
+				21F5A3C61F5962AB00A1BE08 /* SpeciesList.swift in Sources */,
 				21E535E81F0D1A2000705D68 /* Vehicle+Marshal.swift in Sources */,
 				215340D21F0A70B7009FB0CF /* Film.swift in Sources */,
+				21F5A3C01F59613600A1BE08 /* CharacterList.swift in Sources */,
 				215340D11F0A70B7009FB0CF /* Character.swift in Sources */,
 				21A1D1F51F4715170049A641 /* MenuItem.swift in Sources */,
 				215340D61F0A70B8009FB0CF /* Starship.swift in Sources */,
 				21E535E31F0D1A2000705D68 /* Character+Marshal.swift in Sources */,
 				21A362A01F06798D00F663BD /* CollectionReusableView.swift in Sources */,
+				21F5A3C41F59629800A1BE08 /* PlanetList.swift in Sources */,
 				21A362C21F068F2400F663BD /* Routing.swift in Sources */,
 				21E535E61F0D1A2000705D68 /* Species+Marshal.swift in Sources */,
 				21E535EA1F0D1A4000705D68 /* Film+Realm.swift in Sources */,
@@ -584,10 +613,13 @@
 				21E535E71F0D1A2000705D68 /* Starship+Marshal.swift in Sources */,
 				21A1D1F11F46F4B30049A641 /* Starship+realm.swift in Sources */,
 				21A362A41F06799C00F663BD /* TableViewCell.swift in Sources */,
+				21F5A3CA1F5962F800A1BE08 /* VehicleList.swift in Sources */,
+				21F5A3C81F5962D900A1BE08 /* StarshipList.swift in Sources */,
 				21A1D1F71F4716BD0049A641 /* MenuDataFetcher.swift in Sources */,
 				215340D31F0A70B7009FB0CF /* Planet.swift in Sources */,
 				214226E91F58564B005AA405 /* UITableViewController+RiseOfSkills.swift in Sources */,
 				21A1D1EF1F46F49A0049A641 /* Species+Realm.swift in Sources */,
+				21F5A3C21F59626900A1BE08 /* FilmList.swift in Sources */,
 				21A3628F1F06790A00F663BD /* AppDelegate.swift in Sources */,
 				21A1D1DD1F45E4ED0049A641 /* MenuDetailsTableViewCell.swift in Sources */,
 				21A1D1EB1F46F4660049A641 /* Character+Realm.swift in Sources */,
