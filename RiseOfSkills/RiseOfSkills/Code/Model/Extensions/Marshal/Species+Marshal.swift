@@ -30,14 +30,16 @@ extension Species: Unmarshaling {
 
     if let people: [String] = try? object.value(for: "people") {
       for url in people {
-        let peopleObject    = Character(url: url)
-        self.people.append(peopleObject)
+        if let people = Character.findFirst(withKey: url) {
+          self.people.append(people)
+        }
       }
     }
     if let films: [String]  = try? object.value(for: "films") {
       for url in films {
-        let filmObject      = Film(url: url)
-        self.films.append(filmObject)
+        if let film = Film.findFirst(withKey: url) {
+          self.films.append(film)
+        }
       }
     }
   }

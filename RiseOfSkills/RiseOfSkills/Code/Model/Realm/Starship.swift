@@ -35,6 +35,6 @@ final class Starship: Object {
   let pilots                       = List<Character>()
   
   override static func primaryKey() -> String? {
-    return "starshipId"
+    return "url"
   }
 }

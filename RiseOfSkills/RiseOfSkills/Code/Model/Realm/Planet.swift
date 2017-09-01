@@ -32,6 +32,6 @@ final class Planet: Object {
   let films                  = List<Film>()
   
   override static func primaryKey() -> String? {
-    return "planetId"
+    return "url"
   }
 }

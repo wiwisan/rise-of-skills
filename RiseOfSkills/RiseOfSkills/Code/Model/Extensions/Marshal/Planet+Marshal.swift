@@ -29,14 +29,16 @@ extension Planet: Unmarshaling {
 
     if let films: [String]     = try? object.value(for: "films") {
       for url in films {
-        let filmObject         = Film(url: url)
-        self.films.append(filmObject)
+        if let film = Film.findFirst(withKey: url) {
+          self.films.append(film)
+        }
       }
     }
     if let residents: [String] = try? object.value(for: "residents") {
       for url in residents {
-        let residentObject     = Character(url: url)
-        self.residents.append(residentObject)
+        if let resident = Character.findFirst(withKey: url) {
+          self.residents.append(resident)
+        }
       }
     }
   }

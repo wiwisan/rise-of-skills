@@ -30,6 +30,6 @@ final class Film: Object {
   var characters           = List<Character>()
   
   override static func primaryKey() -> String? {
-    return "episodeId"
+    return "url"
   }
 }

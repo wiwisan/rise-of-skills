@@ -33,6 +33,6 @@ final class Character: Object {
   let starships             = List<Starship>()
   
   override static func primaryKey() -> String? {
-    return "characterId"
+    return "url"
   }
 }

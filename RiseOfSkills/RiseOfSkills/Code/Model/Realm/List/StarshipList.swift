@@ -9,8 +9,13 @@ import RealmSwift
 
 final class StarshipList: Object {
   
-  dynamic var count     = 0
-  dynamic var next      = ""
-  dynamic var previous  = ""
-  let results           = List<Starship>()
+  dynamic var id                   = UUID().uuidString
+  dynamic var count                = 0
+  dynamic var next: String?        = nil
+  dynamic var previous: String?    = nil
+  let results                      = List<Starship>()
+  
+  override static func primaryKey() -> String? {
+    return "id"
+  }
 }

@@ -33,14 +33,16 @@ extension Starship: Unmarshaling {
 
     if let films: [String]    = try? object.value(for: "films") {
       for url in films {
-        let filmObject        = Film(url: url)
-        self.films.append(filmObject)
+        if let film = Film.findFirst(withKey: url) {
+          self.films.append(film)
+        }
       }
     }
     if let pilots: [String]   = try? object.value(for: "pilots") {
       for url in pilots {
-        let pilotObject       = Character(url: url)
-        self.pilots.append(pilotObject)
+        if let pilot = Character.findFirst(withKey: url) {
+          self.pilots.append(pilot)
+        }
       }
     }
   }

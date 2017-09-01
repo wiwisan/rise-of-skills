@@ -26,26 +26,30 @@ extension Film: Unmarshaling {
 
     if let starships: [String]  = try? object.value(for: "starships") {
       for url in starships {
-        let starShipObject      = Starship(url: url)
-        self.starships.append(starShipObject)
+        if let starship = Starship.findFirst(withKey: url) {
+          self.starships.append(starship)
+        }
       }
     }
     if let vehicles: [String]   = try? object.value(for: "vehicles") {
       for url in vehicles {
-        let vehicleObject       = Vehicle(url: url)
-        self.vehicles.append(vehicleObject)
+        if let vehicle = Vehicle.findFirst(withKey: url) {
+          self.vehicles.append(vehicle)
+        }
       }
     }
     if let characters: [String] = try? object.value(for: "characters") {
       for url in characters {
-        let characterObject     = Character(url: url)
-        self.characters.append(characterObject)
+        if let character = Character.findFirst(withKey: url) {
+          self.characters.append(character)
+        }
       }
     }
     if let planets: [String]    = try? object.value(for: "planets") {
       for url in planets {
-        let planetObject        = Planet(url: url)
-        self.planets.append(planetObject)
+        if let planet = Planet.findFirst(withKey: url) {
+          self.planets.append(planet)
+        }
       }
     }
   }

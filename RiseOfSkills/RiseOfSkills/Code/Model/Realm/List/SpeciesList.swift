@@ -7,10 +7,15 @@
 
 import RealmSwift
 
-final class SpeiesList: Object {
+final class SpeciesList: Object {
   
-  dynamic var count     = 0
-  dynamic var next      = ""
-  dynamic var previous  = ""
-  let results           = List<Species>()
+  dynamic var id                   = UUID().uuidString
+  dynamic var count                = 0
+  dynamic var next: String?        = nil
+  dynamic var previous: String?    = nil
+  let results                      = List<Species>()
+  
+  override static func primaryKey() -> String? {
+    return "id"
+  }
 }

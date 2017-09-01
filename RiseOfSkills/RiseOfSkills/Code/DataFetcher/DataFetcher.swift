@@ -10,6 +10,7 @@ import RealmSwift
 final class DataFetcher {
   
   func fetchAll() {
+    self.fetchFilms()
     self.fetchPlanets()
     self.fetchSpecies()
     self.fetchStarships()
@@ -31,14 +32,12 @@ final class DataFetcher {
       .responseJSON(completionHandler: { (response) in
         switch response.result {
         case .success:
-          if let valueDict = response.result.value as? [String: Any], let results = valueDict["results"] as? [Any] {
+          if let valueDict = response.result.value as? [String: Any] {
             do {
               let realm = try Realm()
               try realm.write {
-                for result in results {
-                  if let character: Character = try? Character.value(from: result) {
-                    realm.add(character, update: true)
-                  }
+                if let characterList: CharacterList = try? CharacterList.value(from: valueDict) {
+                  realm.add(characterList, update: true)
                 }
               }
             } catch {
@@ -62,14 +61,12 @@ final class DataFetcher {
       .responseJSON(completionHandler: { (response) in
         switch response.result {
         case .success:
-          if let valueDict = response.result.value as? [String: Any], let results = valueDict["results"] as? [Any] {
+          if let valueDict = response.result.value as? [String: Any] {
             do {
               let realm = try Realm()
               try realm.write {
-                for result in results {
-                  if let film: Film = try? Film.value(from: result) {
-                    realm.add(film, update: true)
-                  }
+                if let filmList: FilmList = try? FilmList.value(from: valueDict) {
+                  realm.add(filmList, update: true)
                 }
               }
             } catch {
@@ -93,14 +90,12 @@ final class DataFetcher {
       .responseJSON(completionHandler: { (response) in
         switch response.result {
         case .success:
-          if let valueDict = response.result.value as? [String: Any], let results = valueDict["results"] as? [Any] {
+          if let valueDict = response.result.value as? [String: Any] {
             do {
               let realm = try Realm()
               try realm.write {
-                for result in results {
-                  if let planet: Planet = try? Planet.value(from: result) {
-                    realm.add(planet, update: true)
-                  }
+                if let planetList: PlanetList = try? PlanetList.value(from: valueDict) {
+                  realm.add(planetList, update: true)
                 }
               }
             } catch {
@@ -124,14 +119,12 @@ final class DataFetcher {
       .responseJSON(completionHandler: { (response) in
         switch response.result {
         case .success:
-          if let valueDict = response.result.value as? [String: Any], let results = valueDict["results"] as? [Any] {
+          if let valueDict = response.result.value as? [String: Any] {
             do {
               let realm = try Realm()
               try realm.write {
-                for result in results {
-                  if let specie: Species = try? Species.value(from: result) {
-                    realm.add(specie, update: true)
-                  }
+                if let speciesList: SpeciesList = try? SpeciesList.value(from: valueDict) {
+                  realm.add(speciesList, update: true)
                 }
               }
             } catch {
@@ -155,14 +148,12 @@ final class DataFetcher {
       .responseJSON(completionHandler: { (response) in
         switch response.result {
         case .success:
-          if let valueDict = response.result.value as? [String: Any], let results = valueDict["results"] as? [Any] {
+          if let valueDict = response.result.value as? [String: Any] {
             do {
               let realm = try Realm()
               try realm.write {
-                for result in results {
-                  if let starship: Starship = try? Starship.value(from: result) {
-                    realm.add(starship, update: true)
-                  }
+                if let starshipList: StarshipList = try? StarshipList.value(from: valueDict) {
+                  realm.add(starshipList, update: true)
                 }
               }
             } catch {
@@ -186,14 +177,12 @@ final class DataFetcher {
       .responseJSON(completionHandler: { (response) in
         switch response.result {
         case .success:
-          if let valueDict = response.result.value as? [String: Any], let results = valueDict["results"] as? [Any] {
+          if let valueDict = response.result.value as? [String: Any] {
             do {
               let realm = try Realm()
               try realm.write {
-                for result in results {
-                  if let vehicle: Vehicle = try? Vehicle.value(from: result) {
-                    realm.add(vehicle, update: true)
-                  }
+                if let vehicleList: VehicleList = try? VehicleList.value(from: valueDict) {
+                  realm.add(vehicleList, update: true)
                 }
               }
             } catch {

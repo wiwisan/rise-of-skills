@@ -33,6 +33,6 @@ final class Vehicle: Object {
   let pilots                       = List<Character>()
   
   override static func primaryKey() -> String? {
-    return "vehicleId"
+    return "url"
   }
 }

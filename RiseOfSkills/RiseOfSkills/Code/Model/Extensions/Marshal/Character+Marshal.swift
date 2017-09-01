@@ -29,26 +29,30 @@ extension Character: Unmarshaling {
 
     if let films: [String]     = try? object.value(for: "films") {
       for url in films {
-        let filmObject         = Film(url: url)
-        self.films.append(filmObject)
+        if let film = Film.findFirst(withKey: url) {
+          self.films.append(film)
+        }
       }
     }
     if let species: [String]   = try? object.value(for: "species") {
       for url in species {
-        let specieObject       = Species(url: url)
-        self.species.append(specieObject)
+        if let specie = Species.findFirst(withKey: url) {
+          self.species.append(specie)
+        }
       }
     }
     if let starships: [String] = try? object.value(for: "starships") {
       for url in starships {
-        let starShipObject     = Starship(url: url)
-        self.starships.append(starShipObject)
+        if let starship = Starship.findFirst(withKey: url) {
+          self.starships.append(starship)
+        }
       }
     }
     if let vehicles: [String]  = try? object.value(for: "vehicles") {
       for url in vehicles {
-        let vehicleObject      = Vehicle(url: url)
-        self.vehicles.append(vehicleObject)
+        if let vehicle = Vehicle.findFirst(withKey: url) {
+          self.vehicles.append(vehicle)
+        }
       }
     }
   }

@@ -19,6 +19,7 @@ final class MenuDetailsViewController: UIViewController {
   
   var item: MenuItem?
   var details: [Object] = []
+  var nbOfElements = 0
   
   // - MARK: Overrides
   
@@ -44,17 +45,35 @@ final class MenuDetailsViewController: UIViewController {
   func details(forItem item: MenuItem) -> [Object] {
     switch item.identifier {
     case .film:
-      return Array(Film.findAll())
+      let filmList = Array(FilmList.findAll()) as [FilmList]
+      let films = Array(filmList[0].results)
+      self.nbOfElements = films.count
+      return films
     case .character:
-      return Array(Character.findAll())
+      let characterList = Array(CharacterList.findAll()) as [CharacterList]
+      let characters = Array(characterList[0].results)
+      self.nbOfElements = characters.count
+      return characters
     case .planet:
-      return Array(Planet.findAll())
+      let planetList = Array(PlanetList.findAll()) as [PlanetList]
+      let planets = Array(planetList[0].results)
+      self.nbOfElements = planets.count
+      return planets
     case .specie:
-      return Array(Species.findAll())
+      let speciesList = Array(SpeciesList.findAll()) as [SpeciesList]
+      let species = Array(speciesList[0].results)
+      self.nbOfElements = species.count
+      return species
     case .starship:
-      return Array(Starship.findAll())
+      let starshipList = Array(StarshipList.findAll()) as [StarshipList]
+      let starships = Array(starshipList[0].results)
+      self.nbOfElements = starships.count
+      return starships
     case .vehicle:
-      return Array(Vehicle.findAll())
+      let vehicleList = Array(VehicleList.findAll()) as [VehicleList]
+      let vehicles = Array(vehicleList[0].results)
+      self.nbOfElements = vehicles.count
+      return vehicles
     }
   }
   
