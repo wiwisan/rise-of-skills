@@ -22,7 +22,7 @@ extension Planet: Unmarshaling {
     self.climate               = try object.value(for: "climate")
     self.terrain               = try object.value(for: "terrain")
     self.surfaceWater          = try object.value(for: "surface_water")
-    self.url                   = try object.value(for: "residents")
+    self.url                   = try object.value(for: "url")
     self.created               = try object.value(for: "created")
     self.edited                = try object.value(for: "edited")
 

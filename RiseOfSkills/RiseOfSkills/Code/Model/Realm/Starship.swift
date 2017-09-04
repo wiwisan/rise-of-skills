@@ -14,7 +14,6 @@ final class Starship: Object {
     self.url = url
   }
 
-  dynamic var starshipId           = UUID().uuidString
   dynamic var name                 = ""
   dynamic var model                = ""
   dynamic var starshipClass        = ""

@@ -14,7 +14,6 @@ final class Species: Object {
     self.url = url
   }
 
-  dynamic var specieId        = UUID().uuidString
   dynamic var name            = ""
   dynamic var classification  = ""
   dynamic var designation     = ""

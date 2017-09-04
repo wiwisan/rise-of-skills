@@ -14,7 +14,6 @@ final class Character: Object {
     self.url = url
   }
   
-  dynamic var characterId   = UUID().uuidString
   dynamic var name          = ""
   dynamic var birthYear     = ""
   dynamic var eyeColor      = ""

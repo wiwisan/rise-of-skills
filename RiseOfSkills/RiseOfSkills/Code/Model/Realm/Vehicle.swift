@@ -14,7 +14,6 @@ final class Vehicle: Object {
     self.url = url
   }
 
-  dynamic var vehicleId            = UUID().uuidString
   dynamic var name                 = ""
   dynamic var model                = ""
   dynamic var vehicleClass         = ""

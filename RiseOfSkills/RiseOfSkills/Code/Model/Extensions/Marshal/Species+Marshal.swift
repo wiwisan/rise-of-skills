@@ -20,7 +20,7 @@ extension Species: Unmarshaling {
     self.averageLifespan    = try object.value(for: "average_lifespan")
     self.eyeColors          = try object.value(for: "eye_colors")
     self.hairColors         = try object.value(for: "hair_colors")
-    self.skinColors         = try object.value(for: "skin_color")
+    self.skinColors         = try object.value(for: "skin_colors")
     self.language           = try object.value(for: "language")
     self.homeworld          = try object.value(for: "homeworld")
     self.url                = try object.value(for: "url")

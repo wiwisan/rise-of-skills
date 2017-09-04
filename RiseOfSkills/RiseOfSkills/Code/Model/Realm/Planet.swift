@@ -14,7 +14,6 @@ final class Planet: Object {
     self.url = url
   }
 
-  dynamic var planetId       = UUID().uuidString
   dynamic var name           = ""
   dynamic var diameter       = ""
   dynamic var rotationPeriod = ""
@@ -23,7 +22,6 @@ final class Planet: Object {
   dynamic var population     = ""
   dynamic var climate        = ""
   dynamic var terrain        = ""
-  dynamic var language       = ""
   dynamic var surfaceWater   = ""
   dynamic var url            = ""
   dynamic var created        = ""

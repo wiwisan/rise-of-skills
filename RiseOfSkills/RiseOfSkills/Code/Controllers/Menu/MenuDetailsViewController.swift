@@ -91,7 +91,7 @@ final class MenuDetailsViewController: UIViewController {
       }
     case is Planet:
       if let planet = detail as? Planet {
-        detailArr = [planet.name, planet.language]
+        detailArr = [planet.name, planet.climate]
       }
     case is Species:
       if let specie = detail as? Species {
