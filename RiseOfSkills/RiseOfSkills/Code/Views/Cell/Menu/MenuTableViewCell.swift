@@ -1,5 +1,5 @@
 //
-//  TableViewCell.swift
+//  MenuTableViewCell.swift
 //  RiseOfIosSkills
 //
 //  Copyright © 2017 Wildine Anthony. All rights reserved.
@@ -7,7 +7,7 @@
 
 import UIKit
 
-final class TableViewCell: UITableViewCell {
+final class MenuTableViewCell: UITableViewCell {
   
   // MARK - Outlets
   

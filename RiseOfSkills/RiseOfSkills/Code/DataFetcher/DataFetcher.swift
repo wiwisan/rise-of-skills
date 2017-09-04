@@ -12,15 +12,20 @@ final class DataFetcher {
   func fetchAll() {
     if FilmList.findAll().count == 0 {
       self.fetchFilms()
-    } else if PlanetList.findAll().count == 0 {
+    }
+    if PlanetList.findAll().count == 0 {
       self.fetchPlanets()
-    } else if  SpeciesList.findAll().count == 0 {
+    }
+    if SpeciesList.findAll().count == 0 {
       self.fetchSpecies()
-    } else if StarshipList.findAll().count == 0 {
+    }
+    if StarshipList.findAll().count == 0 {
       self.fetchStarships()
-    } else if  VehicleList.findAll().count == 0 {
+    }
+    if VehicleList.findAll().count == 0 {
       self.fetchVehicles()
-    } else if  CharacterList.findAll().count == 0 {
+    }
+    if CharacterList.findAll().count == 0 {
       self.fetchCharacters()
     }
   }

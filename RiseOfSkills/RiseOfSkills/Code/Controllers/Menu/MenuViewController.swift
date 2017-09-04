@@ -28,7 +28,7 @@ final class MenuViewController: UIViewController {
     
     self.menuList = MenuDataFetcher.init().items
 
-    self.ibTableView.register(UINib(nibName: "TableViewCell", bundle: nil), forCellReuseIdentifier: "tableViewCell")
+    self.ibTableView.register(UINib(nibName: "MenuTableViewCell", bundle: nil), forCellReuseIdentifier: "menuTableViewCell")
     
     self.ibTableView.rowHeight = 200
     self.ibTableView.estimatedRowHeight = 200
@@ -49,9 +49,9 @@ extension MenuViewController: UITableViewDataSource {
   }
   
   func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-    let cellIdentifier = "tableViewCell"
+    let cellIdentifier = "menuTableViewCell"
     
-    guard let cell = self.ibTableView.dequeueReusableCell(withIdentifier: cellIdentifier) as? TableViewCell else {
+    guard let cell = self.ibTableView.dequeueReusableCell(withIdentifier: cellIdentifier) as? MenuTableViewCell else {
       fatalError("Oh No 😯! Unable to dequeue cell with identifier: \(cellIdentifier). ☹️")
     }
     

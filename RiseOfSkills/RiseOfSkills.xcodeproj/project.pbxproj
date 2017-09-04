@@ -34,8 +34,6 @@
 		21A3629D1F06797A00F663BD /* TableViewHeaderFooterView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 21A3629B1F06797A00F663BD /* TableViewHeaderFooterView.xib */; };
 		21A362A01F06798D00F663BD /* CollectionReusableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21A3629E1F06798D00F663BD /* CollectionReusableView.swift */; };
 		21A362A11F06798D00F663BD /* CollectionReusableView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 21A3629F1F06798D00F663BD /* CollectionReusableView.xib */; };
-		21A362A41F06799C00F663BD /* TableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21A362A21F06799C00F663BD /* TableViewCell.swift */; };
-		21A362A51F06799C00F663BD /* TableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 21A362A31F06799C00F663BD /* TableViewCell.xib */; };
 		21A362A81F0679B600F663BD /* CollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21A362A61F0679B600F663BD /* CollectionViewCell.swift */; };
 		21A362A91F0679B600F663BD /* CollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 21A362A71F0679B600F663BD /* CollectionViewCell.xib */; };
 		21A362AC1F0679C600F663BD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 21A362AA1F0679C600F663BD /* Assets.xcassets */; };
@@ -48,6 +46,8 @@
 		21A6E7851F0C4F770018CE26 /* swspecies.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 21A6E77F1F0C4F770018CE26 /* swspecies.jpg */; };
 		21A6E7861F0C4F770018CE26 /* swstarship.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 21A6E7801F0C4F770018CE26 /* swstarship.jpg */; };
 		21A6E7871F0C4F770018CE26 /* swvehicles.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 21A6E7811F0C4F770018CE26 /* swvehicles.jpeg */; };
+		21B225481F5D9B18004EACF9 /* MenuTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21B225461F5D9B18004EACF9 /* MenuTableViewCell.swift */; };
+		21B225491F5D9B18004EACF9 /* MenuTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 21B225471F5D9B18004EACF9 /* MenuTableViewCell.xib */; };
 		21E535E31F0D1A2000705D68 /* Character+Marshal.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21E535DD1F0D1A2000705D68 /* Character+Marshal.swift */; };
 		21E535E41F0D1A2000705D68 /* Film+Marshal.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21E535DE1F0D1A2000705D68 /* Film+Marshal.swift */; };
 		21E535E51F0D1A2000705D68 /* Planet+Marshal.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21E535DF1F0D1A2000705D68 /* Planet+Marshal.swift */; };
@@ -106,8 +106,6 @@
 		21A3629B1F06797A00F663BD /* TableViewHeaderFooterView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = TableViewHeaderFooterView.xib; path = RiseOfSkills/Code/Views/UIView/TableViewHeaderFooterView/TableViewHeaderFooterView.xib; sourceTree = SOURCE_ROOT; };
 		21A3629E1F06798D00F663BD /* CollectionReusableView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CollectionReusableView.swift; path = RiseOfSkills/Code/Views/UIView/CollectionReusableView/CollectionReusableView.swift; sourceTree = SOURCE_ROOT; };
 		21A3629F1F06798D00F663BD /* CollectionReusableView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = CollectionReusableView.xib; path = RiseOfSkills/Code/Views/UIView/CollectionReusableView/CollectionReusableView.xib; sourceTree = SOURCE_ROOT; };
-		21A362A21F06799C00F663BD /* TableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = TableViewCell.swift; path = RiseOfSkills/Code/Views/UIView/TableViewCell/TableViewCell.swift; sourceTree = SOURCE_ROOT; };
-		21A362A31F06799C00F663BD /* TableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = TableViewCell.xib; path = RiseOfSkills/Code/Views/UIView/TableViewCell/TableViewCell.xib; sourceTree = SOURCE_ROOT; };
 		21A362A61F0679B600F663BD /* CollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CollectionViewCell.swift; path = RiseOfSkills/Code/Views/UIView/CollectionViewCell/CollectionViewCell.swift; sourceTree = SOURCE_ROOT; };
 		21A362A71F0679B600F663BD /* CollectionViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = CollectionViewCell.xib; path = RiseOfSkills/Code/Views/UIView/CollectionViewCell/CollectionViewCell.xib; sourceTree = SOURCE_ROOT; };
 		21A362AA1F0679C600F663BD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Assets.xcassets; path = RiseOfSkills/Ressources/Assets.xcassets; sourceTree = SOURCE_ROOT; };
@@ -120,6 +118,8 @@
 		21A6E77F1F0C4F770018CE26 /* swspecies.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = swspecies.jpg; path = RiseOfSkills/Ressources/Images/swspecies.jpg; sourceTree = SOURCE_ROOT; };
 		21A6E7801F0C4F770018CE26 /* swstarship.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = swstarship.jpg; path = RiseOfSkills/Ressources/Images/swstarship.jpg; sourceTree = SOURCE_ROOT; };
 		21A6E7811F0C4F770018CE26 /* swvehicles.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = swvehicles.jpeg; path = RiseOfSkills/Ressources/Images/swvehicles.jpeg; sourceTree = SOURCE_ROOT; };
+		21B225461F5D9B18004EACF9 /* MenuTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MenuTableViewCell.swift; path = RiseOfSkills/Code/Views/Cell/Menu/MenuTableViewCell.swift; sourceTree = SOURCE_ROOT; };
+		21B225471F5D9B18004EACF9 /* MenuTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = MenuTableViewCell.xib; path = RiseOfSkills/Code/Views/Cell/Menu/MenuTableViewCell.xib; sourceTree = SOURCE_ROOT; };
 		21E535DD1F0D1A2000705D68 /* Character+Marshal.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "Character+Marshal.swift"; path = "RiseOfSkills/Code/Model/Extensions/Marshal/Character+Marshal.swift"; sourceTree = SOURCE_ROOT; };
 		21E535DE1F0D1A2000705D68 /* Film+Marshal.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "Film+Marshal.swift"; path = "RiseOfSkills/Code/Model/Extensions/Marshal/Film+Marshal.swift"; sourceTree = SOURCE_ROOT; };
 		21E535DF1F0D1A2000705D68 /* Planet+Marshal.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "Planet+Marshal.swift"; path = "RiseOfSkills/Code/Model/Extensions/Marshal/Planet+Marshal.swift"; sourceTree = SOURCE_ROOT; };
@@ -264,19 +264,18 @@
 			children = (
 				2140F8891EE1AECE000942A4 /* tableViewHeaderFooterView */,
 				2140F8841EE18B15000942A4 /* CollectionReusableView */,
-				2140F87A1EE066FB000942A4 /* TableViewCell */,
 				2140F87B1EE06703000942A4 /* CollectionViewCell */,
 			);
 			name = UIView;
 			sourceTree = "<group>";
 		};
-		2140F87A1EE066FB000942A4 /* TableViewCell */ = {
+		2140F87A1EE066FB000942A4 /* Menu */ = {
 			isa = PBXGroup;
 			children = (
-				21A362A21F06799C00F663BD /* TableViewCell.swift */,
-				21A362A31F06799C00F663BD /* TableViewCell.xib */,
+				21B225471F5D9B18004EACF9 /* MenuTableViewCell.xib */,
+				21B225461F5D9B18004EACF9 /* MenuTableViewCell.swift */,
 			);
-			name = TableViewCell;
+			name = Menu;
 			sourceTree = "<group>";
 		};
 		2140F87B1EE06703000942A4 /* CollectionViewCell */ = {
@@ -351,6 +350,7 @@
 		21A1D1DB1F45E4D20049A641 /* Cell */ = {
 			isa = PBXGroup;
 			children = (
+				2140F87A1EE066FB000942A4 /* Menu */,
 				21A1D1DA1F45E4890049A641 /* MenuDetails */,
 			);
 			name = Cell;
@@ -533,7 +533,7 @@
 				TargetAttributes = {
 					2140F8411EE04BC8000942A4 = {
 						CreatedOnToolsVersion = 8.3.2;
-						DevelopmentTeam = X4T87569LN;
+						DevelopmentTeam = R78Q854ZRC;
 						LastSwiftMigration = 0830;
 						ProvisioningStyle = Manual;
 					};
@@ -570,7 +570,7 @@
 				21A3629D1F06797A00F663BD /* TableViewHeaderFooterView.xib in Resources */,
 				21A362A11F06798D00F663BD /* CollectionReusableView.xib in Resources */,
 				21A6E7851F0C4F770018CE26 /* swspecies.jpg in Resources */,
-				21A362A51F06799C00F663BD /* TableViewCell.xib in Resources */,
+				21B225491F5D9B18004EACF9 /* MenuTableViewCell.xib in Resources */,
 				21A362A91F0679B600F663BD /* CollectionViewCell.xib in Resources */,
 				21A6E7871F0C4F770018CE26 /* swvehicles.jpeg in Resources */,
 				21A1D1DF1F45E50E0049A641 /* MenuDetailsTableViewCell.xib in Resources */,
@@ -662,6 +662,7 @@
 				21F5A3C01F59613600A1BE08 /* CharacterList.swift in Sources */,
 				215340D11F0A70B7009FB0CF /* Character.swift in Sources */,
 				21A1D1F51F4715170049A641 /* MenuItem.swift in Sources */,
+				21B225481F5D9B18004EACF9 /* MenuTableViewCell.swift in Sources */,
 				215340D61F0A70B8009FB0CF /* Starship.swift in Sources */,
 				21E535E31F0D1A2000705D68 /* Character+Marshal.swift in Sources */,
 				21A362A01F06798D00F663BD /* CollectionReusableView.swift in Sources */,
@@ -674,7 +675,6 @@
 				21F5A3DC1F59662F00A1BE08 /* FilmList+Marshal.swift in Sources */,
 				21E535E71F0D1A2000705D68 /* Starship+Marshal.swift in Sources */,
 				21A1D1F11F46F4B30049A641 /* Starship+realm.swift in Sources */,
-				21A362A41F06799C00F663BD /* TableViewCell.swift in Sources */,
 				21F5A3CA1F5962F800A1BE08 /* VehicleList.swift in Sources */,
 				21F5A3C81F5962D900A1BE08 /* StarshipList.swift in Sources */,
 				21A1D1F71F4716BD0049A641 /* MenuDataFetcher.swift in Sources */,
@@ -795,14 +795,14 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "iPhone Developer: Edouard MERCIER (6AX3P97W8D)";
-				DEVELOPMENT_TEAM = X4T87569LN;
+				DEVELOPMENT_TEAM = R78Q854ZRC;
 				INFOPLIST_FILE = "$(SRCROOT)/RiseOfSkills/Ressources/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.wildine.RiseOfSkills;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "988cf381-6d9e-4227-b0ce-1344ca25d45c";
-				PROVISIONING_PROFILE_SPECIFIER = "Equinoa DEV Wildcard any Bundle";
+				PROVISIONING_PROFILE = "e316eca3-6b99-4368-bc83-c66a42092086";
+				PROVISIONING_PROFILE_SPECIFIER = "InHouse wildcard Profile";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 3.0;
 			};
@@ -821,7 +821,8 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.wildine.RiseOfSkills;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE_SPECIFIER = "InHouse wildcard Profile";
+				PROVISIONING_PROFILE = "6bb98b43-3b14-4ae6-921a-71ce934f2752";
+				PROVISIONING_PROFILE_SPECIFIER = "Equinoa DEV Wildcard any Bundle";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Release;

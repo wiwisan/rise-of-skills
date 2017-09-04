@@ -11,7 +11,7 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
-        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="tableViewCell" rowHeight="209" id="6w9-4M-shP" customClass="TableViewCell" customModule="RiseOfSkills" customModuleProvider="target">
+        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="menuTableViewCell" rowHeight="209" id="6w9-4M-shP" customClass="MenuTableViewCell" customModule="RiseOfSkills" customModuleProvider="target">
             <rect key="frame" x="0.0" y="0.0" width="568" height="209"/>
             <autoresizingMask key="autoresizingMask"/>
             <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="6w9-4M-shP" id="mvo-LV-yiG">
@@ -65,6 +65,7 @@
                     <constraint firstItem="jlC-mn-FkK" firstAttribute="bottom" secondItem="WJO-lg-KyD" secondAttribute="bottom" id="ypF-Lx-Jsj"/>
                 </constraints>
             </tableViewCellContentView>
+            <accessibility key="accessibilityConfiguration" identifier="menuCell"/>
             <connections>
                 <outlet property="ibMenuImage" destination="WJO-lg-KyD" id="exW-y8-NCo"/>
                 <outlet property="ibMenuItemEmoji" destination="ac0-pG-DBp" id="D5m-ak-eYi"/>
