@@ -19,13 +19,13 @@
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="252" text="Titre 1" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PnG-nj-YtR">
-                        <rect key="frame" x="13" y="2" width="47.5" height="21"/>
+                        <rect key="frame" x="13" y="2" width="480" height="21"/>
                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                         <nil key="textColor"/>
                         <nil key="highlightedColor"/>
                     </label>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Description" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="des-HR-t8A">
-                        <rect key="frame" x="13" y="23" width="88" height="29.5"/>
+                        <rect key="frame" x="13" y="23" width="480" height="29.5"/>
                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                         <nil key="textColor"/>
                         <nil key="highlightedColor"/>
@@ -44,9 +44,11 @@
                     <constraint firstItem="3sc-v9-q0C" firstAttribute="leading" secondItem="hXa-IX-oeM" secondAttribute="leading" id="ESD-ba-dVV"/>
                     <constraint firstAttribute="bottom" secondItem="3sc-v9-q0C" secondAttribute="bottom" id="EYZ-eW-IRR"/>
                     <constraint firstItem="3sc-v9-q0C" firstAttribute="top" secondItem="des-HR-t8A" secondAttribute="bottom" constant="1" id="PNf-iH-ibu"/>
+                    <constraint firstAttribute="trailingMargin" secondItem="PnG-nj-YtR" secondAttribute="trailing" constant="5" id="WPq-me-GtE"/>
                     <constraint firstItem="des-HR-t8A" firstAttribute="leading" secondItem="PnG-nj-YtR" secondAttribute="leading" id="XcL-N0-dTe"/>
                     <constraint firstItem="des-HR-t8A" firstAttribute="top" secondItem="PnG-nj-YtR" secondAttribute="bottom" id="fnL-f8-uaP"/>
                     <constraint firstItem="PnG-nj-YtR" firstAttribute="top" secondItem="hXa-IX-oeM" secondAttribute="top" constant="2" id="gjO-wv-CO7"/>
+                    <constraint firstItem="des-HR-t8A" firstAttribute="trailing" secondItem="PnG-nj-YtR" secondAttribute="trailing" id="oUa-dZ-zmr"/>
                     <constraint firstAttribute="trailing" secondItem="3sc-v9-q0C" secondAttribute="trailing" id="qe0-oD-Dia"/>
                 </constraints>
             </tableViewCellContentView>

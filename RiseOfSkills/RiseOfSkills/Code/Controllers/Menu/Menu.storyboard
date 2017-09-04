@@ -41,13 +41,21 @@
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="603"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                             </tableView>
+                            <view userInteractionEnabled="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="N1A-Bl-g25" userLabel="Overlay View">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="603"/>
+                                <color key="backgroundColor" red="0.1137254902" green="0.1137254902" blue="0.14901960780000001" alpha="0.10000000000000001" colorSpace="calibratedRGB"/>
+                            </view>
                         </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="backgroundColor" red="0.0" green="0.72941176470588232" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
                             <constraint firstAttribute="trailing" secondItem="Ioj-06-OhR" secondAttribute="trailing" id="Nhc-f3-sAp"/>
                             <constraint firstItem="4eH-Ha-cSI" firstAttribute="top" secondItem="Ioj-06-OhR" secondAttribute="bottom" id="Tan-ts-qV2"/>
+                            <constraint firstItem="4eH-Ha-cSI" firstAttribute="top" secondItem="N1A-Bl-g25" secondAttribute="bottom" id="cgg-KO-rPV"/>
+                            <constraint firstAttribute="trailing" secondItem="N1A-Bl-g25" secondAttribute="trailing" id="elM-e9-VMN"/>
                             <constraint firstItem="Ioj-06-OhR" firstAttribute="top" secondItem="TX0-TU-1kW" secondAttribute="bottom" id="ftx-xz-rR0"/>
+                            <constraint firstItem="N1A-Bl-g25" firstAttribute="leading" secondItem="QBC-iT-nmx" secondAttribute="leading" id="j9Q-Dp-UIu"/>
                             <constraint firstItem="Ioj-06-OhR" firstAttribute="leading" secondItem="QBC-iT-nmx" secondAttribute="leading" id="tno-ZG-809"/>
+                            <constraint firstItem="N1A-Bl-g25" firstAttribute="top" secondItem="TX0-TU-1kW" secondAttribute="bottom" id="uGi-GO-5KT"/>
                         </constraints>
                     </view>
                     <connections>
@@ -56,7 +64,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="SiA-AQ-O1W" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-2719" y="90"/>
+            <point key="canvasLocation" x="-2719.1999999999998" y="89.505247376311857"/>
         </scene>
         <!--Menu Details View Controller-->
         <scene sceneID="dd9-Ek-lIV">
@@ -78,17 +86,25 @@
                                 <rect key="frame" x="0.0" y="20" width="375" height="647"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                             </tableView>
+                            <view userInteractionEnabled="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="OSV-iI-GGd" userLabel="Overlay View">
+                                <rect key="frame" x="0.0" y="20" width="375" height="647"/>
+                                <color key="backgroundColor" red="0.11372549019607843" green="0.11372549019607843" blue="0.14901960784313725" alpha="0.10000000000000001" colorSpace="calibratedRGB"/>
+                            </view>
                         </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="backgroundColor" red="0.0" green="0.72941176470588232" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
+                            <constraint firstItem="OSV-iI-GGd" firstAttribute="top" secondItem="uQ0-Vz-Z57" secondAttribute="bottom" id="7TY-4I-Bts"/>
                             <constraint firstItem="jBG-NN-anR" firstAttribute="top" secondItem="uQ0-Vz-Z57" secondAttribute="bottom" id="C99-6m-qhc"/>
                             <constraint firstItem="owC-yP-9ch" firstAttribute="top" secondItem="7ds-RZ-4ln" secondAttribute="bottom" id="DhQ-LP-MKt"/>
                             <constraint firstItem="7ds-RZ-4ln" firstAttribute="leading" secondItem="kfw-Fq-bfU" secondAttribute="leading" id="Ke6-zr-mx8"/>
                             <constraint firstAttribute="trailing" secondItem="jBG-NN-anR" secondAttribute="trailing" id="QaO-57-ohd"/>
                             <constraint firstItem="jBG-NN-anR" firstAttribute="leading" secondItem="kfw-Fq-bfU" secondAttribute="leading" id="V8C-1c-Rjp"/>
                             <constraint firstItem="7ds-RZ-4ln" firstAttribute="top" secondItem="uQ0-Vz-Z57" secondAttribute="bottom" id="cwa-ad-HzA"/>
+                            <constraint firstAttribute="trailing" secondItem="OSV-iI-GGd" secondAttribute="trailing" id="dgx-9Y-JSX"/>
                             <constraint firstItem="owC-yP-9ch" firstAttribute="top" secondItem="jBG-NN-anR" secondAttribute="bottom" id="eVh-Rf-6l2"/>
+                            <constraint firstItem="owC-yP-9ch" firstAttribute="top" secondItem="OSV-iI-GGd" secondAttribute="bottom" id="j4b-7v-dyF"/>
                             <constraint firstAttribute="trailing" secondItem="7ds-RZ-4ln" secondAttribute="trailing" id="vQq-AF-BrL"/>
+                            <constraint firstItem="OSV-iI-GGd" firstAttribute="leading" secondItem="kfw-Fq-bfU" secondAttribute="leading" id="zqi-jq-gk7"/>
                         </constraints>
                     </view>
                     <connections>
