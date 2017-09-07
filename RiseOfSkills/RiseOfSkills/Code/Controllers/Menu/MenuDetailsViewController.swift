@@ -141,4 +141,12 @@ extension MenuDetailsViewController: UITableViewDataSource {
 
 extension MenuDetailsViewController: UITableViewDelegate {
   
+  func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+    let storyBoard : UIStoryboard = UIStoryboard(name: "Details", bundle:nil)
+    guard let detailsCollectionViewController = storyBoard.instantiateViewController(withIdentifier: "detailsCollectionViewController") as? DetailsCollectionViewController else {
+      fatalError("Could not instantiate viewController with identifier: detailsCollectionViewController")
+    }
+    
+    self.show(detailsCollectionViewController, sender: nil)
+  }
 }
