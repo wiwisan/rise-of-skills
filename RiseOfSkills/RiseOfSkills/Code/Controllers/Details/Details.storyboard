@@ -5,52 +5,37 @@
     </device>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
         <!--Details Collection View Controller-->
-        <scene sceneID="LSW-Xv-gRw">
+        <scene sceneID="TvK-KN-FWM">
             <objects>
-                <viewController storyboardIdentifier="detailsCollectionViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="HBn-dr-J9N" customClass="DetailsCollectionViewController" customModule="RiseOfSkills" customModuleProvider="target" sceneMemberID="viewController">
-                    <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="LMt-Ji-asI"/>
-                        <viewControllerLayoutGuide type="bottom" id="yZ0-xb-4fH"/>
-                    </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="FY7-3T-AQQ">
+                <collectionViewController storyboardIdentifier="detailsCollectionViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="9Oi-9h-4fR" customClass="DetailsCollectionViewController" customModule="RiseOfSkills" customModuleProvider="target" sceneMemberID="viewController">
+                    <collectionView key="view" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" misplaced="YES" pagingEnabled="YES" dataMode="prototypes" id="6Fh-4M-0PQ">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="kDU-4X-amz">
-                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="r0Y-0y-tIB">
-                                    <size key="itemSize" width="50" height="50"/>
-                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
-                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
-                                    <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
-                                </collectionViewFlowLayout>
-                                <cells/>
-                                <connections>
-                                    <outlet property="dataSource" destination="HBn-dr-J9N" id="UvW-uq-QdG"/>
-                                    <outlet property="delegate" destination="HBn-dr-J9N" id="tda-KY-lJa"/>
-                                </connections>
-                            </collectionView>
-                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                        <constraints>
-                            <constraint firstItem="kDU-4X-amz" firstAttribute="leading" secondItem="FY7-3T-AQQ" secondAttribute="leading" id="OFc-NN-Aw0"/>
-                            <constraint firstAttribute="trailing" secondItem="kDU-4X-amz" secondAttribute="trailing" id="gJj-PI-UyI"/>
-                            <constraint firstItem="kDU-4X-amz" firstAttribute="top" secondItem="FY7-3T-AQQ" secondAttribute="top" id="lbg-BN-HmJ"/>
-                            <constraint firstItem="yZ0-xb-4fH" firstAttribute="top" secondItem="kDU-4X-amz" secondAttribute="bottom" id="vbc-Qi-LeF"/>
-                        </constraints>
-                    </view>
+                        <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" minimumLineSpacing="10" minimumInteritemSpacing="10" id="sDg-Um-FiM">
+                            <size key="itemSize" width="50" height="50"/>
+                            <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                            <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                            <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                        </collectionViewFlowLayout>
+                        <cells/>
+                        <connections>
+                            <outlet property="dataSource" destination="9Oi-9h-4fR" id="XzT-os-xhZ"/>
+                            <outlet property="delegate" destination="9Oi-9h-4fR" id="Akw-JW-uGy"/>
+                        </connections>
+                    </collectionView>
                     <connections>
-                        <outlet property="ibCollectionView" destination="kDU-4X-amz" id="tgG-Ca-bBn"/>
+                        <outlet property="ibCollectionView" destination="6Fh-4M-0PQ" id="OKK-ka-3Cp"/>
                     </connections>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="9lw-vi-KTn" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                </collectionViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="0ju-cR-zf5" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-76" y="-33.733133433283363"/>
+            <point key="canvasLocation" x="-82" y="-36"/>
         </scene>
         <!--Details View Controller-->
         <scene sceneID="ffF-Ix-k5t">
@@ -63,12 +48,24 @@
                     <view key="view" contentMode="scaleToFill" id="CWT-YJ-tZi">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" red="0.74509803919999995" green="0.058823529409999999" blue="0.20392156859999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="nkj-AH-p7d">
+                                <rect key="frame" x="67" y="269" width="115" height="128"/>
+                                <color key="backgroundColor" cocoaTouchSystemColor="darkTextColor"/>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="0.6211859722130546" blue="0.18991804370585785" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="trailingMargin" secondItem="nkj-AH-p7d" secondAttribute="trailing" constant="177" id="8Zv-3v-ARJ"/>
+                            <constraint firstItem="Kov-O2-qbx" firstAttribute="top" secondItem="nkj-AH-p7d" secondAttribute="bottom" constant="270" id="Qca-ut-5hd"/>
+                            <constraint firstItem="nkj-AH-p7d" firstAttribute="leading" secondItem="CWT-YJ-tZi" secondAttribute="leadingMargin" constant="51" id="b1t-t9-wPw"/>
+                            <constraint firstItem="nkj-AH-p7d" firstAttribute="top" secondItem="3Am-Sc-txT" secondAttribute="bottom" constant="249" id="dmC-BN-ymA"/>
+                        </constraints>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="e0k-AF-GxN" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="614" y="-36"/>
+            <point key="canvasLocation" x="613.60000000000002" y="-36.431784107946029"/>
         </scene>
     </scenes>
 </document>

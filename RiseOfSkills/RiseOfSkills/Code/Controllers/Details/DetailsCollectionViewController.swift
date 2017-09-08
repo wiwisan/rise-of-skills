@@ -7,7 +7,7 @@
 
 import UIKit
 
-final class DetailsCollectionViewController: UIViewController {
+final class DetailsCollectionViewController: UICollectionViewController {
   
   // MARK: Properties
   
@@ -19,25 +19,23 @@ final class DetailsCollectionViewController: UIViewController {
     super.viewDidLoad()
     
     self.ibCollectionView.register(DetailsCollectionViewCell.self, forCellWithReuseIdentifier: "detailsCollectionViewCell")
+    self.ibCollectionView.isPagingEnabled = true
   }
   
   // MARK: Internal Methods
   
   func configureCell(withViewController controller: UIViewController, forContentView view: UIView) {
     self.addChildViewController(controller)
-    controller.view.frame = view.bounds
+    controller.view.frame = self.ibCollectionView.bounds
     view.addSubview(controller.view)
     controller.didMove(toParentViewController: self)
   }
-}
-
-extension DetailsCollectionViewController: UICollectionViewDataSource {
   
-  func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
+  override func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
     return 3
   }
-
-  func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
+  
+  override func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
     let cellIdentifier = "detailsCollectionViewCell"
     guard let cell = self.ibCollectionView.dequeueReusableCell(withReuseIdentifier: cellIdentifier, for: indexPath) as? DetailsCollectionViewCell else {
       fatalError("Oh No 😯! Unable to dequeue cell with identifier: \(cellIdentifier). ☹️")
@@ -48,7 +46,26 @@ extension DetailsCollectionViewController: UICollectionViewDataSource {
       fatalError("Could not instantiate viewController with identifier: detailsViewController")
     }
     self.configureCell(withViewController: detailsViewController, forContentView: cell.contentView)
+
     return cell
   }
 }
 
+extension DetailsCollectionViewController: UICollectionViewDelegateFlowLayout {
+  
+  func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
+    return self.ibCollectionView.bounds.size
+  }
+  
+  func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, insetForSectionAt section: Int) -> UIEdgeInsets {
+    return UIEdgeInsetsMake(0, 0, 0, 0)
+  }
+  
+  func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, minimumInteritemSpacingForSectionAt section: Int) -> CGFloat {
+    return 0
+  }
+  
+  func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, minimumLineSpacingForSectionAt section: Int) -> CGFloat {
+    return 0
+  }
+}
