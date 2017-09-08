@@ -22,17 +22,8 @@ final class DetailsCollectionViewController: UICollectionViewController {
     self.ibCollectionView.isPagingEnabled = true
   }
   
-  // MARK: Internal Methods
-  
-  func configureCell(withViewController controller: UIViewController, forContentView view: UIView) {
-    self.addChildViewController(controller)
-    controller.view.frame = self.ibCollectionView.bounds
-    view.addSubview(controller.view)
-    controller.didMove(toParentViewController: self)
-  }
-  
   override func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-    return 3
+    return 5
   }
   
   override func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
@@ -48,6 +39,14 @@ final class DetailsCollectionViewController: UICollectionViewController {
     self.configureCell(withViewController: detailsViewController, forContentView: cell.contentView)
 
     return cell
+  }
+  
+  // MARK: Internal Methods
+  
+  func configureCell(withViewController controller: UIViewController, forContentView view: UIView) {
+    self.addChildViewController(controller)
+    view.addSubview(controller.view)
+    controller.didMove(toParentViewController: self)
   }
 }
 
