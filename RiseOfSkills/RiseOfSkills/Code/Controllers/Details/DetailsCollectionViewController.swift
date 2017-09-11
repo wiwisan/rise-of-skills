@@ -43,25 +43,13 @@ final class DetailsCollectionViewController: UICollectionViewController {
       fatalError("Oh No 😯! Unable to dequeue cell with identifier: \(cellIdentifier). ☹️")
     }
     
-    let storyBoard : UIStoryboard = UIStoryboard(name: "Details", bundle:nil)
-    guard let detailsViewController = storyBoard.instantiateViewController(withIdentifier: "detailsViewController") as? DetailsViewController else {
-      fatalError("Could not instantiate viewController with identifier: detailsViewController")
-    }
-    self.configureCell(withViewController: detailsViewController, forContentView: cell.contentView, forIndexPath: indexPath)
+    cell.configure(withParent: self, data: self.details[indexPath.row])
     
     return cell
   }
   
   // MARK: Internal Methods
   
-  func configureCell(withViewController controller: DetailsViewController, forContentView view: UIView, forIndexPath index: IndexPath) {
-    // Configure view controller
-    controller.detail = self.details[index.row]
-    
-    self.addChildViewController(controller)
-    view.addSubview(controller.view)
-    controller.didMove(toParentViewController: self)
-  }
 }
 
 extension DetailsCollectionViewController: UICollectionViewDelegateFlowLayout {

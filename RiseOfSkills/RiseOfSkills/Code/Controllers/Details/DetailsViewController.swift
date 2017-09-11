@@ -23,6 +23,7 @@ final class DetailsViewController: UIViewController {
     
     if let detail = self.detail, !self.data(forDetail: detail).isEmpty {
       self.ibTitleLabel.text = self.data(forDetail: detail)[0]
+      print(self.ibTitleLabel.text)
     }
   }
   
