@@ -47,14 +47,17 @@ final class DetailsCollectionViewController: UICollectionViewController {
     guard let detailsViewController = storyBoard.instantiateViewController(withIdentifier: "detailsViewController") as? DetailsViewController else {
       fatalError("Could not instantiate viewController with identifier: detailsViewController")
     }
-    self.configureCell(withViewController: detailsViewController, forContentView: cell.contentView)
-
+    self.configureCell(withViewController: detailsViewController, forContentView: cell.contentView, forIndexPath: indexPath)
+    
     return cell
   }
   
   // MARK: Internal Methods
   
-  func configureCell(withViewController controller: UIViewController, forContentView view: UIView) {
+  func configureCell(withViewController controller: DetailsViewController, forContentView view: UIView, forIndexPath index: IndexPath) {
+    // Configure view controller
+    controller.detail = self.details[index.row]
+    
     self.addChildViewController(controller)
     view.addSubview(controller.view)
     controller.didMove(toParentViewController: self)

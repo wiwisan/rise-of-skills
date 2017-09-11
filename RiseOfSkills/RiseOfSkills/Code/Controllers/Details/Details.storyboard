@@ -5,7 +5,6 @@
     </device>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
-        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -13,7 +12,7 @@
         <scene sceneID="TvK-KN-FWM">
             <objects>
                 <collectionViewController storyboardIdentifier="detailsCollectionViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="9Oi-9h-4fR" customClass="DetailsCollectionViewController" customModule="RiseOfSkills" customModuleProvider="target" sceneMemberID="viewController">
-                    <collectionView key="view" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" misplaced="YES" pagingEnabled="YES" dataMode="prototypes" id="6Fh-4M-0PQ">
+                    <collectionView key="view" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" pagingEnabled="YES" dataMode="prototypes" id="6Fh-4M-0PQ">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -49,19 +48,22 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="nkj-AH-p7d">
-                                <rect key="frame" x="67" y="269" width="115" height="128"/>
-                                <color key="backgroundColor" cocoaTouchSystemColor="darkTextColor"/>
-                            </view>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="U4v-vv-hjp">
+                                <rect key="frame" x="164" y="322" width="46.5" height="23"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="19"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" red="1" green="0.6211859722130546" blue="0.18991804370585785" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstAttribute="trailingMargin" secondItem="nkj-AH-p7d" secondAttribute="trailing" constant="177" id="8Zv-3v-ARJ"/>
-                            <constraint firstItem="Kov-O2-qbx" firstAttribute="top" secondItem="nkj-AH-p7d" secondAttribute="bottom" constant="270" id="Qca-ut-5hd"/>
-                            <constraint firstItem="nkj-AH-p7d" firstAttribute="leading" secondItem="CWT-YJ-tZi" secondAttribute="leadingMargin" constant="51" id="b1t-t9-wPw"/>
-                            <constraint firstItem="nkj-AH-p7d" firstAttribute="top" secondItem="3Am-Sc-txT" secondAttribute="bottom" constant="249" id="dmC-BN-ymA"/>
+                            <constraint firstItem="U4v-vv-hjp" firstAttribute="centerX" secondItem="CWT-YJ-tZi" secondAttribute="centerX" id="6LK-i0-vXR"/>
+                            <constraint firstItem="U4v-vv-hjp" firstAttribute="centerY" secondItem="CWT-YJ-tZi" secondAttribute="centerY" id="DCC-BE-1Gm"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="ibTitleLabel" destination="U4v-vv-hjp" id="wP4-ih-GhA"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="e0k-AF-GxN" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
