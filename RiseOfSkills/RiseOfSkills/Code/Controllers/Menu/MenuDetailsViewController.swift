@@ -147,6 +147,8 @@ extension MenuDetailsViewController: UITableViewDelegate {
       fatalError("Could not instantiate viewController with identifier: detailsCollectionViewController")
     }
     
+    detailsCollectionViewController.details = self.details
+    detailsCollectionViewController.currentIndexPath = indexPath
     self.show(detailsCollectionViewController, sender: nil)
   }
 }

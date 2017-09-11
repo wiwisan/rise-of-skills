@@ -6,6 +6,7 @@
 //
 
 import UIKit
+import RealmSwift
 
 final class DetailsCollectionViewController: UICollectionViewController {
   
@@ -13,17 +14,27 @@ final class DetailsCollectionViewController: UICollectionViewController {
   
   @IBOutlet weak var ibCollectionView: UICollectionView!
   
+  var details: [Object] = []
+  var currentIndexPath: IndexPath?
+  
   // MARK: Overrides
   
   override func viewDidLoad() {
     super.viewDidLoad()
     
     self.ibCollectionView.register(DetailsCollectionViewCell.self, forCellWithReuseIdentifier: "detailsCollectionViewCell")
-    self.ibCollectionView.isPagingEnabled = true
+  }
+  
+  override func viewDidAppear(_ animated: Bool) {
+    super.viewDidAppear(animated)
+    
+    if let indexPath = self.currentIndexPath {
+      self.ibCollectionView.scrollToItem(at: indexPath, at: UICollectionViewScrollPosition.right, animated: false)
+    }
   }
   
   override func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-    return 5
+    return self.details.count
   }
   
   override func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
