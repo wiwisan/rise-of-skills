@@ -10,6 +10,7 @@
 		210D99A41F603CC100BE1DF6 /* Details.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 210D99A31F603CC100BE1DF6 /* Details.storyboard */; };
 		210D99A61F60533E00BE1DF6 /* DetailsCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 210D99A51F60533E00BE1DF6 /* DetailsCollectionViewController.swift */; };
 		214226E91F58564B005AA405 /* UITableViewController+RiseOfSkills.swift in Sources */ = {isa = PBXBuildFile; fileRef = 214226E81F58564B005AA405 /* UITableViewController+RiseOfSkills.swift */; };
+		214B1FED1F682994002C8062 /* DetailsIpadViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 214B1FEC1F682994002C8062 /* DetailsIpadViewController.swift */; };
 		215340D11F0A70B7009FB0CF /* Character.swift in Sources */ = {isa = PBXBuildFile; fileRef = 215340CA1F0A70B7009FB0CF /* Character.swift */; };
 		215340D21F0A70B7009FB0CF /* Film.swift in Sources */ = {isa = PBXBuildFile; fileRef = 215340CB1F0A70B7009FB0CF /* Film.swift */; };
 		215340D31F0A70B7009FB0CF /* Planet.swift in Sources */ = {isa = PBXBuildFile; fileRef = 215340CC1F0A70B7009FB0CF /* Planet.swift */; };
@@ -87,6 +88,7 @@
 		210D99A51F60533E00BE1DF6 /* DetailsCollectionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = DetailsCollectionViewController.swift; path = RiseOfSkills/Code/Controllers/Details/DetailsCollectionViewController.swift; sourceTree = SOURCE_ROOT; };
 		2140F8421EE04BC8000942A4 /* RiseOfSkills.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RiseOfSkills.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		214226E81F58564B005AA405 /* UITableViewController+RiseOfSkills.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "UITableViewController+RiseOfSkills.swift"; path = "RiseOfSkills/Code/Extensions/UITableViewController+RiseOfSkills.swift"; sourceTree = SOURCE_ROOT; };
+		214B1FEC1F682994002C8062 /* DetailsIpadViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = DetailsIpadViewController.swift; path = RiseOfSkills/Code/Controllers/Details/DetailsIpadViewController.swift; sourceTree = SOURCE_ROOT; };
 		215340CA1F0A70B7009FB0CF /* Character.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Character.swift; path = RiseOfSkills/Code/Model/Realm/Character.swift; sourceTree = SOURCE_ROOT; };
 		215340CB1F0A70B7009FB0CF /* Film.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Film.swift; path = RiseOfSkills/Code/Model/Realm/Film.swift; sourceTree = SOURCE_ROOT; };
 		215340CC1F0A70B7009FB0CF /* Planet.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Planet.swift; path = RiseOfSkills/Code/Model/Realm/Planet.swift; sourceTree = SOURCE_ROOT; };
@@ -179,6 +181,7 @@
 				210D99A31F603CC100BE1DF6 /* Details.storyboard */,
 				21B123CB1F618D9F00DFF430 /* DetailsViewController.swift */,
 				210D99A51F60533E00BE1DF6 /* DetailsCollectionViewController.swift */,
+				214B1FEC1F682994002C8062 /* DetailsIpadViewController.swift */,
 			);
 			name = Details;
 			sourceTree = "<group>";
@@ -680,6 +683,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				21A1D1F31F46F4C60049A641 /* Vehicle+realm.swift in Sources */,
+				214B1FED1F682994002C8062 /* DetailsIpadViewController.swift in Sources */,
 				21F5A3CF1F5964AC00A1BE08 /* FilmList+Realm.swift in Sources */,
 				21F5A3D91F59660400A1BE08 /* CharacterList+Marshal.swift in Sources */,
 				21A1D1ED1F46F47A0049A641 /* Planet+Realm.swift in Sources */,

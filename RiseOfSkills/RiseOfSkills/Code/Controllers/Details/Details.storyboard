@@ -8,6 +8,50 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
+        <!--Details Ipad View Controller-->
+        <scene sceneID="y3w-tL-Dnh">
+            <objects>
+                <viewController storyboardIdentifier="detailsIpadViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="REo-m8-QAu" customClass="DetailsIpadViewController" customModule="RiseOfSkills" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="655-KM-n5y"/>
+                        <viewControllerLayoutGuide type="bottom" id="Rr4-B1-U94"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="2qy-cX-Wxp">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="s4e-Cn-SKD">
+                                <rect key="frame" x="0.0" y="0.0" width="125" height="667"/>
+                                <color key="backgroundColor" red="0.0" green="0.72941176470000002" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="5M3-Rt-3yA">
+                                <rect key="frame" x="125" y="0.0" width="250" height="667"/>
+                                <color key="backgroundColor" red="0.74509803919999995" green="0.058823529409999999" blue="0.20392156859999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="250" id="Zky-wD-fwB"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="5M3-Rt-3yA" secondAttribute="trailing" id="0J4-2J-PmE"/>
+                            <constraint firstItem="Rr4-B1-U94" firstAttribute="top" secondItem="s4e-Cn-SKD" secondAttribute="bottom" id="D3h-nx-btg"/>
+                            <constraint firstItem="s4e-Cn-SKD" firstAttribute="top" secondItem="2qy-cX-Wxp" secondAttribute="top" id="DE0-CH-Mbg"/>
+                            <constraint firstItem="s4e-Cn-SKD" firstAttribute="leading" secondItem="2qy-cX-Wxp" secondAttribute="leading" id="U5h-Sf-9Hq"/>
+                            <constraint firstItem="5M3-Rt-3yA" firstAttribute="leading" secondItem="s4e-Cn-SKD" secondAttribute="trailing" id="d2f-Qk-TYn"/>
+                            <constraint firstItem="Rr4-B1-U94" firstAttribute="top" secondItem="5M3-Rt-3yA" secondAttribute="bottom" id="lKn-Ue-gR8"/>
+                            <constraint firstItem="5M3-Rt-3yA" firstAttribute="top" secondItem="2qy-cX-Wxp" secondAttribute="top" id="x7w-Zi-cr1"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="ibLeftViewContainer" destination="s4e-Cn-SKD" id="wRh-Oz-xFa"/>
+                        <outlet property="ibRightViewContainer" destination="5M3-Rt-3yA" id="0RT-au-dio"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="PD6-q4-TdA" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-756" y="-36.431784107946029"/>
+        </scene>
         <!--Details Collection View Controller-->
         <scene sceneID="TvK-KN-FWM">
             <objects>
