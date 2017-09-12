@@ -14,9 +14,7 @@ final class DetailsCollectionViewCell: UICollectionViewCell {
   
   
   // MARK - Initializers
-  
-  var childViewController: UIViewController?
-  var parentViewController: UIViewController?
+  var detailsViewController: DetailsViewController?
   
   // MARK - Overrides
   
@@ -25,30 +23,24 @@ final class DetailsCollectionViewCell: UICollectionViewCell {
     
   }
   
-  override func prepareForReuse() {
-    super.prepareForReuse()
-    
-  }
-  
   // MARK - Internal Methods
   
   func configure(withParent parent: UIViewController, data: Object) {
-    if self.childViewController == nil, self.parentViewController == nil {
+    if self.detailsViewController == nil {
       
       let storyBoard : UIStoryboard = UIStoryboard(name: "Details", bundle:nil)
       guard let detailsViewController = storyBoard.instantiateViewController(withIdentifier: "detailsViewController") as? DetailsViewController else {
         fatalError("Could not instantiate viewController with identifier: detailsViewController")
       }
-      detailsViewController.detail = data
+      self.detailsViewController = detailsViewController
       
-      detailsViewController.willMove(toParentViewController: parent)
-      // Set variables
-      self.childViewController = detailsViewController
-      self.parentViewController = parent
-      
-      parent.addChildViewController(detailsViewController)
-      self.contentView.addSubview(detailsViewController.view)
-      detailsViewController.didMove(toParentViewController: parent)
+      if let childViewController = self.detailsViewController {
+        childViewController.willMove(toParentViewController: parent)
+        parent.addChildViewController(childViewController)
+        self.contentView.addSubview(childViewController.view)
+        childViewController.didMove(toParentViewController: parent)
+      }
     }
+    self.detailsViewController?.detail = data
   }
 }

@@ -29,7 +29,7 @@ final class DetailsCollectionViewController: UICollectionViewController {
     super.viewDidAppear(animated)
     
     if let indexPath = self.currentIndexPath {
-      self.ibCollectionView.scrollToItem(at: indexPath, at: UICollectionViewScrollPosition.right, animated: false)
+      self.ibCollectionView.scrollToItem(at: indexPath, at: .right, animated: false)
     }
   }
   

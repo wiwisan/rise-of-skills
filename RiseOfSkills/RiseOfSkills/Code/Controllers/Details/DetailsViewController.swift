@@ -14,18 +14,20 @@ final class DetailsViewController: UIViewController {
   
   @IBOutlet weak var ibTitleLabel: UILabel!
   
-  var detail: Object?
+  var detail: Object? {
+    didSet {
+      if let detail = self.detail, !self.data(forDetail: detail).isEmpty {
+        self.ibTitleLabel.text = self.data(forDetail: detail)[0]
+      }
+    }
+  }
   
   // MARK: Overrides
   
   override func viewDidLoad() {
     super.viewDidLoad()
-    
-    if let detail = self.detail, !self.data(forDetail: detail).isEmpty {
-      self.ibTitleLabel.text = self.data(forDetail: detail)[0]
-      print(self.ibTitleLabel.text)
-    }
   }
+  
   
   // MARK: Internal Methods
   
