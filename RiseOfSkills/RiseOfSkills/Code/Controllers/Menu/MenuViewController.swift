@@ -70,12 +70,25 @@ extension MenuViewController: UITableViewDelegate {
   
   func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
     
-    let storyBoard : UIStoryboard = UIStoryboard(name: "Menu", bundle:nil)
-    
-    guard let menuDetailsViewController = storyBoard.instantiateViewController(withIdentifier: "MenuDetailsViewController") as? MenuDetailsViewController else {
-      fatalError("Could not instantiate MenuDetailsViewController")
+    if (UIDevice.current.userInterfaceIdiom == .pad) {
+      let storyBoard : UIStoryboard = UIStoryboard(name: "Details", bundle:nil)
+      guard let detailsIpadViewController = storyBoard.instantiateViewController(withIdentifier: "detailsIpadViewController") as? DetailsIpadViewController else {
+        fatalError("Could not instantiate viewController with identifier: detailsIpadViewController")
+      }
+      
+      detailsIpadViewController.item = self.menuList?[indexPath.row]
+      // detailsIpadViewController.currentIndexPath = indexPath
+      self.show(detailsIpadViewController, sender: nil)
+    } else {
+      let storyBoard : UIStoryboard = UIStoryboard(name: "Menu", bundle:nil)
+      
+      guard let menuDetailsViewController = storyBoard.instantiateViewController(withIdentifier: "MenuDetailsViewController") as? MenuDetailsViewController else {
+        fatalError("Could not instantiate MenuDetailsViewController")
+      }
+      menuDetailsViewController.item = self.menuList?[indexPath.row]
+      self.show(menuDetailsViewController, sender: nil)
     }
-    menuDetailsViewController.item = self.menuList?[indexPath.row]
-    self.show(menuDetailsViewController, sender: nil)
+    
+    
   }
 }

@@ -142,28 +142,13 @@ extension MenuDetailsViewController: UITableViewDataSource {
 extension MenuDetailsViewController: UITableViewDelegate {
   
   func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-    
-    
-    if (UIDevice.current.userInterfaceIdiom == .pad)
-    {
-      let storyBoard : UIStoryboard = UIStoryboard(name: "Details", bundle:nil)
-      guard let detailsIpadViewController = storyBoard.instantiateViewController(withIdentifier: "detailsIpadViewController") as? DetailsIpadViewController else {
-        fatalError("Could not instantiate viewController with identifier: detailsIpadViewController")
-      }
-      
-//      detailsIpadViewController.details = self.details
-      // detailsIpadViewController.currentIndexPath = indexPath
-      self.show(detailsIpadViewController, sender: nil)
+    let storyBoard : UIStoryboard = UIStoryboard(name: "Details", bundle:nil)
+    guard let detailsCollectionViewController = storyBoard.instantiateViewController(withIdentifier: "detailsCollectionViewController") as? DetailsCollectionViewController else {
+      fatalError("Could not instantiate viewController with identifier: detailsCollectionViewController")
     }
-    else {
-      let storyBoard : UIStoryboard = UIStoryboard(name: "Details", bundle:nil)
-      guard let detailsCollectionViewController = storyBoard.instantiateViewController(withIdentifier: "detailsCollectionViewController") as? DetailsCollectionViewController else {
-        fatalError("Could not instantiate viewController with identifier: detailsCollectionViewController")
-      }
-      
-      detailsCollectionViewController.details = self.details
-      detailsCollectionViewController.currentIndexPath = indexPath
-      self.show(detailsCollectionViewController, sender: nil)
-    }
+    
+    detailsCollectionViewController.details = self.details
+    detailsCollectionViewController.currentIndexPath = indexPath
+    self.show(detailsCollectionViewController, sender: nil)
   }
 }

@@ -20,16 +20,13 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="s4e-Cn-SKD">
+                            <view contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="s4e-Cn-SKD">
                                 <rect key="frame" x="0.0" y="0.0" width="125" height="667"/>
-                                <color key="backgroundColor" red="0.0" green="0.72941176470000002" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="backgroundColor" red="0.93725533787935977" green="1" blue="0.36218020823404795" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             </view>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="5M3-Rt-3yA">
+                            <view contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="5M3-Rt-3yA">
                                 <rect key="frame" x="125" y="0.0" width="250" height="667"/>
                                 <color key="backgroundColor" red="0.74509803919999995" green="0.058823529409999999" blue="0.20392156859999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="250" id="Zky-wD-fwB"/>
-                                </constraints>
                             </view>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -99,7 +96,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
-                        <color key="backgroundColor" red="1" green="0.6211859722130546" blue="0.18991804370585785" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="backgroundColor" red="0.99029013791854792" green="0.60603829798666853" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="U4v-vv-hjp" firstAttribute="centerX" secondItem="CWT-YJ-tZi" secondAttribute="centerX" id="6LK-i0-vXR"/>
                             <constraint firstItem="U4v-vv-hjp" firstAttribute="centerY" secondItem="CWT-YJ-tZi" secondAttribute="centerY" id="DCC-BE-1Gm"/>

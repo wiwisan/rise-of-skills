@@ -6,11 +6,15 @@
 //
 
 import UIKit
+import RealmSwift
 
 final class DetailsIpadViewController: UIViewController {
   
   @IBOutlet weak var ibLeftViewContainer: UIView!
   @IBOutlet weak var ibRightViewContainer: UIView!
+  
+  var details: [Object] = []
+  var item: MenuItem?
   
   // MARK: Overrides
   
@@ -22,10 +26,11 @@ final class DetailsIpadViewController: UIViewController {
   }
   
   func configureLeftContainer() {
-    let storyBoard : UIStoryboard = UIStoryboard(name: "Details", bundle:nil)
-    guard let menuDetailsViewController = storyBoard.instantiateViewController(withIdentifier: "menuDetailsViewController") as? MenuDetailsViewController else {
+    let storyBoard : UIStoryboard = UIStoryboard(name: "Menu", bundle:nil)
+    guard let menuDetailsViewController = storyBoard.instantiateViewController(withIdentifier: "MenuDetailsViewController") as? MenuDetailsViewController else {
       fatalError("Could not instantiate viewController with identifier: menuDetailsViewController")
     }
+    menuDetailsViewController.item = self.item
     
     menuDetailsViewController.willMove(toParentViewController: self)
     self.addChildViewController(menuDetailsViewController)
