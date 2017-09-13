@@ -22,7 +22,6 @@ extension UIView {
     } else {
       gradientLayer.frame = self.bounds
     }
-    
     self.layer.addSublayer(gradientLayer)
   }
 }

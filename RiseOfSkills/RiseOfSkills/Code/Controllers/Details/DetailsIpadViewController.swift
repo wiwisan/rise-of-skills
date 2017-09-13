@@ -15,11 +15,7 @@ final class DetailsIpadViewController: UIViewController {
   
   var details: [Object] = []
   var item: MenuItem?
-  var iPadDetailsViewController: DetailsViewController? {
-    didSet {
-      
-    }
-  }
+  var iPadDetailsViewController: DetailsViewController?
   
   // MARK: Overrides
   
@@ -37,12 +33,13 @@ final class DetailsIpadViewController: UIViewController {
     }
     menuDetailsViewController.item = self.item
     menuDetailsViewController.iPadDetailsViewController = self.iPadDetailsViewController
+    menuDetailsViewController.view.frame.size = self.ibLeftViewContainer.bounds.size
+    menuDetailsViewController.ibBackgroundView.frame.size = self.ibLeftViewContainer.bounds.size
     
     menuDetailsViewController.willMove(toParentViewController: self)
     self.addChildViewController(menuDetailsViewController)
     self.ibLeftViewContainer.addSubview(menuDetailsViewController.view)
     menuDetailsViewController.didMove(toParentViewController: self)
-    
   }
   
   func configureRightContainer() {

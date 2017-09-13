@@ -88,7 +88,5 @@ extension MenuViewController: UITableViewDelegate {
       menuDetailsViewController.item = self.menuList?[indexPath.row]
       self.show(menuDetailsViewController, sender: nil)
     }
-    
-    
   }
 }
