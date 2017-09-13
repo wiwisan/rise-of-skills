@@ -15,14 +15,19 @@ final class DetailsIpadViewController: UIViewController {
   
   var details: [Object] = []
   var item: MenuItem?
+  var iPadDetailsViewController: DetailsViewController? {
+    didSet {
+      
+    }
+  }
   
   // MARK: Overrides
   
   override func viewDidLoad() {
     super.viewDidLoad()
     
-    self.configureLeftContainer()
     self.configureRightContainer()
+    self.configureLeftContainer()
   }
   
   func configureLeftContainer() {
@@ -31,11 +36,13 @@ final class DetailsIpadViewController: UIViewController {
       fatalError("Could not instantiate viewController with identifier: menuDetailsViewController")
     }
     menuDetailsViewController.item = self.item
+    menuDetailsViewController.iPadDetailsViewController = self.iPadDetailsViewController
     
     menuDetailsViewController.willMove(toParentViewController: self)
     self.addChildViewController(menuDetailsViewController)
     self.ibLeftViewContainer.addSubview(menuDetailsViewController.view)
     menuDetailsViewController.didMove(toParentViewController: self)
+    
   }
   
   func configureRightContainer() {
@@ -43,6 +50,9 @@ final class DetailsIpadViewController: UIViewController {
     guard let detailsViewController = storyBoard.instantiateViewController(withIdentifier: "detailsViewController") as? DetailsViewController else {
       fatalError("Could not instantiate viewController with identifier: detailsViewController")
     }
+    
+    detailsViewController.view.frame.size = self.ibRightViewContainer.bounds.size
+    self.iPadDetailsViewController = detailsViewController
     
     detailsViewController.willMove(toParentViewController: self)
     self.addChildViewController(detailsViewController)

@@ -24,7 +24,9 @@ final class MenuDetailsTableViewCell: UITableViewCell {
     self.contentView.backgroundColor = .clear
     self.ibTitleLabel.textColor = .white
     self.ibTitleLabel.font = UIFont(name: "Avenir Book", size: 30)
+    self.ibTitleLabel.minimumScaleFactor = 0.1
     self.ibDescriptionLabel.textColor = UIColor(white: 1, alpha: 0.5)
     self.ibDescriptionLabel.font = UIFont(name: "Avenir Book", size: 24)
+    self.ibDescriptionLabel.minimumScaleFactor = 0.1
   }
 }

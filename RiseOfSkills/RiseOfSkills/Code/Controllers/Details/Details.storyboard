@@ -5,6 +5,7 @@
     </device>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -20,23 +21,24 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <view contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="s4e-Cn-SKD">
-                                <rect key="frame" x="0.0" y="0.0" width="125" height="667"/>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="s4e-Cn-SKD">
+                                <rect key="frame" x="0.0" y="0.0" width="112.5" height="667"/>
                                 <color key="backgroundColor" red="0.93725533787935977" green="1" blue="0.36218020823404795" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             </view>
-                            <view contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="5M3-Rt-3yA">
-                                <rect key="frame" x="125" y="0.0" width="250" height="667"/>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="5M3-Rt-3yA">
+                                <rect key="frame" x="112.5" y="0.0" width="262.5" height="667"/>
                                 <color key="backgroundColor" red="0.74509803919999995" green="0.058823529409999999" blue="0.20392156859999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             </view>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstAttribute="trailing" secondItem="5M3-Rt-3yA" secondAttribute="trailing" id="0J4-2J-PmE"/>
-                            <constraint firstItem="Rr4-B1-U94" firstAttribute="top" secondItem="s4e-Cn-SKD" secondAttribute="bottom" id="D3h-nx-btg"/>
                             <constraint firstItem="s4e-Cn-SKD" firstAttribute="top" secondItem="2qy-cX-Wxp" secondAttribute="top" id="DE0-CH-Mbg"/>
+                            <constraint firstItem="5M3-Rt-3yA" firstAttribute="width" secondItem="2qy-cX-Wxp" secondAttribute="width" multiplier="0.7" id="Spp-Hf-Odr"/>
                             <constraint firstItem="s4e-Cn-SKD" firstAttribute="leading" secondItem="2qy-cX-Wxp" secondAttribute="leading" id="U5h-Sf-9Hq"/>
                             <constraint firstItem="5M3-Rt-3yA" firstAttribute="leading" secondItem="s4e-Cn-SKD" secondAttribute="trailing" id="d2f-Qk-TYn"/>
                             <constraint firstItem="Rr4-B1-U94" firstAttribute="top" secondItem="5M3-Rt-3yA" secondAttribute="bottom" id="lKn-Ue-gR8"/>
+                            <constraint firstItem="Rr4-B1-U94" firstAttribute="top" secondItem="s4e-Cn-SKD" secondAttribute="bottom" id="quU-ff-YSX"/>
                             <constraint firstItem="5M3-Rt-3yA" firstAttribute="top" secondItem="2qy-cX-Wxp" secondAttribute="top" id="x7w-Zi-cr1"/>
                         </constraints>
                     </view>

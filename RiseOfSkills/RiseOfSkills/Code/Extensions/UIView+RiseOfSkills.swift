@@ -17,7 +17,11 @@ extension UIView {
     let gradientLayer = CAGradientLayer()
     gradientLayer.colors = [ colorTop, colorBottom]
     gradientLayer.locations = [ 0.0, 1.0]
-    gradientLayer.frame = self.bounds
+    if let parentView = self.superview {
+      gradientLayer.frame = parentView.bounds
+    } else {
+      gradientLayer.frame = self.bounds
+    }
     
     self.layer.addSublayer(gradientLayer)
   }

@@ -20,6 +20,7 @@ final class MenuDetailsViewController: UIViewController {
   var item: MenuItem?
   var details: [Object] = []
   var nbOfElements = 0
+  var iPadDetailsViewController: DetailsViewController?
   
   // - MARK: Overrides
   
@@ -31,12 +32,19 @@ final class MenuDetailsViewController: UIViewController {
     self.ibTableView.dataSource = self
     self.ibTableView.delegate = self
     self.ibBackgroundView.setGradientBackground()
+//    self.ibTableView.contentSize = self.view.frame.size
     self.ibTableView.register(UINib(nibName: "MenuDetailsTableViewCell", bundle: nil), forCellReuseIdentifier: "menuDetailsCell")
     self.ibTableView.estimatedRowHeight = 80.0
     self.ibTableView.rowHeight = UITableViewAutomaticDimension
     
     if let item = self.item {
       self.details = self.details(forItem: item)
+    }
+    
+    let index = IndexPath(row: 0, section: 0)
+    self.ibTableView.selectRow(at: index, animated: false, scrollPosition: .top)
+    if UIDevice.current.userInterfaceIdiom == .pad {
+      self.iPadDetailsViewController?.detail = self.details[index.row]
     }
   }
   
@@ -142,13 +150,19 @@ extension MenuDetailsViewController: UITableViewDataSource {
 extension MenuDetailsViewController: UITableViewDelegate {
   
   func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-    let storyBoard : UIStoryboard = UIStoryboard(name: "Details", bundle:nil)
-    guard let detailsCollectionViewController = storyBoard.instantiateViewController(withIdentifier: "detailsCollectionViewController") as? DetailsCollectionViewController else {
-      fatalError("Could not instantiate viewController with identifier: detailsCollectionViewController")
-    }
     
-    detailsCollectionViewController.details = self.details
-    detailsCollectionViewController.currentIndexPath = indexPath
-    self.show(detailsCollectionViewController, sender: nil)
+    if UIDevice.current.userInterfaceIdiom == .pad {
+      self.iPadDetailsViewController?.detail = self.details[indexPath.row]
+    }
+    else {
+      let storyBoard : UIStoryboard = UIStoryboard(name: "Details", bundle:nil)
+      guard let detailsCollectionViewController = storyBoard.instantiateViewController(withIdentifier: "detailsCollectionViewController") as? DetailsCollectionViewController else {
+        fatalError("Could not instantiate viewController with identifier: detailsCollectionViewController")
+      }
+      
+      detailsCollectionViewController.details = self.details
+      detailsCollectionViewController.currentIndexPath = indexPath
+      self.show(detailsCollectionViewController, sender: nil)
+    }
   }
 }
