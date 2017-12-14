@@ -23,6 +23,11 @@ final class DetailsCollectionViewCell: UICollectionViewCell {
     
   }
   
+  override func prepareForReuse() {
+    super.prepareForReuse()
+    
+  }
+  
   // MARK - Internal Methods
   
   func configure(withParent parent: UIViewController, data: Object) {
@@ -32,14 +37,13 @@ final class DetailsCollectionViewCell: UICollectionViewCell {
       guard let detailsViewController = storyBoard.instantiateViewController(withIdentifier: "detailsViewController") as? DetailsViewController else {
         fatalError("Could not instantiate viewController with identifier: detailsViewController")
       }
-      self.detailsViewController = detailsViewController
       
-      if let childViewController = self.detailsViewController {
-        childViewController.willMove(toParentViewController: parent)
-        parent.addChildViewController(childViewController)
-        self.contentView.addSubview(childViewController.view)
-        childViewController.didMove(toParentViewController: parent)
-      }
+      detailsViewController.willMove(toParentViewController: parent)
+      parent.addChildViewController(detailsViewController)
+      self.contentView.addSubview(detailsViewController.view)
+      detailsViewController.didMove(toParentViewController: parent)
+      
+      self.detailsViewController = detailsViewController
     }
     self.detailsViewController?.detail = data
   }

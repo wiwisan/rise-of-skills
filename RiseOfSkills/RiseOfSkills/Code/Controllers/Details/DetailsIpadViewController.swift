@@ -33,13 +33,28 @@ final class DetailsIpadViewController: UIViewController {
     }
     menuDetailsViewController.item = self.item
     menuDetailsViewController.iPadDetailsViewController = self.iPadDetailsViewController
-    menuDetailsViewController.view.frame.size = self.ibLeftViewContainer.bounds.size
-    menuDetailsViewController.ibBackgroundView.frame.size = self.ibLeftViewContainer.bounds.size
+//    menuDetailsViewController.view.frame.size = self.ibLeftViewContainer.bounds.size
+//    menuDetailsViewController.ibBackgroundView.frame.size = self.ibLeftViewContainer.bounds.size
+    
     
     menuDetailsViewController.willMove(toParentViewController: self)
     self.addChildViewController(menuDetailsViewController)
     self.ibLeftViewContainer.addSubview(menuDetailsViewController.view)
     menuDetailsViewController.didMove(toParentViewController: self)
+    
+//    var viewConstraints = [NSLayoutConstraint]()
+//    let views: [String: UIView] = ["menuDetailsView" : menuDetailsViewController.view, "menuDetailsViewbackground" : menuDetailsViewController.ibBackgroundView]
+//    let menuDetailsViewConstraints = NSLayoutConstraint.constraints(withVisualFormat: "|-0-[menuDetailsView]-0-|", options: [], metrics: nil, views: views)
+//    viewConstraints += menuDetailsViewConstraints
+//    let menuDetailsViewbackgroundConstraints = NSLayoutConstraint.constraints(withVisualFormat:  "|-[menuDetailsViewbackground]-|", options: [], metrics: nil, views: views)
+//    viewConstraints += menuDetailsViewbackgroundConstraints
+    
+    
+    let leading = NSLayoutConstraint(item: menuDetailsViewController.view, attribute: .leading, relatedBy: .equal, toItem: self.ibLeftViewContainer, attribute: .leading, multiplier: 1.0, constant: 0)
+    let trailing = NSLayoutConstraint(item: menuDetailsViewController.ibBackgroundView, attribute: .trailing, relatedBy: .equal, toItem: self.ibLeftViewContainer, attribute: .trailing, multiplier: 1.0, constant: 0)
+
+    self.ibLeftViewContainer.addConstraint(leading)
+    self.ibLeftViewContainer.addConstraint(trailing)
   }
   
   func configureRightContainer() {

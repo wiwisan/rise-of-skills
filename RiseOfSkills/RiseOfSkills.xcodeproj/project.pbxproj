@@ -210,8 +210,7 @@
 				2140F8571EE04C16000942A4 /* Code */,
 				2140F8581EE04C21000942A4 /* Resources */,
 			);
-			name = RiseOfSkills;
-			path = RiseOfIosSkills;
+			path = RiseOfSkills;
 			sourceTree = "<group>";
 		};
 		2140F8571EE04C16000942A4 /* Code */ = {
