@@ -14,18 +14,18 @@ final class Character: Object {
     self.url = url
   }
   
-  dynamic var name          = ""
-  dynamic var birthYear     = ""
-  dynamic var eyeColor      = ""
-  dynamic var gender        = ""
-  dynamic var hairColor     = ""
-  dynamic var height        = ""
-  dynamic var mass          = ""
-  dynamic var skinColor     = ""
-  dynamic var homeworld     = ""
-  dynamic var url           = ""
-  dynamic var created       = ""
-  dynamic var edited        = ""
+  @objc dynamic var name          = ""
+  @objc dynamic var birthYear     = ""
+  @objc dynamic var eyeColor      = ""
+  @objc dynamic var gender        = ""
+  @objc dynamic var hairColor     = ""
+  @objc dynamic var height        = ""
+  @objc dynamic var mass          = ""
+  @objc dynamic var skinColor     = ""
+  @objc dynamic var homeworld     = ""
+  @objc dynamic var url           = ""
+  @objc dynamic var created       = ""
+  @objc dynamic var edited        = ""
   let species               = List<Species>()
   let vehicles              = List<Vehicle>()
   let films                 = List<Film>()

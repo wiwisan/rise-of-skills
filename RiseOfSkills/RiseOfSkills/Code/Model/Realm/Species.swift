@@ -14,19 +14,19 @@ final class Species: Object {
     self.url = url
   }
 
-  dynamic var name            = ""
-  dynamic var classification  = ""
-  dynamic var designation     = ""
-  dynamic var averageHeight   = ""
-  dynamic var averageLifespan = ""
-  dynamic var eyeColors       = ""
-  dynamic var hairColors      = ""
-  dynamic var skinColors      = ""
-  dynamic var language        = ""
-  dynamic var homeworld       = ""
-  dynamic var url             = ""
-  dynamic var created         = ""
-  dynamic var edited          = ""
+  @objc dynamic var name            = ""
+  @objc dynamic var classification  = ""
+  @objc dynamic var designation     = ""
+  @objc dynamic var averageHeight   = ""
+  @objc dynamic var averageLifespan = ""
+  @objc dynamic var eyeColors       = ""
+  @objc dynamic var hairColors      = ""
+  @objc dynamic var skinColors      = ""
+  @objc dynamic var language        = ""
+  @objc dynamic var homeworld       = ""
+  @objc dynamic var url             = ""
+  @objc dynamic var created         = ""
+  @objc dynamic var edited          = ""
   let people                  = List<Character>()
   let films                   = List<Film>()
   

@@ -5,7 +5,7 @@ target 'RiseOfSkills' do
   # Pods for RiseOfSkills
   pod 'Alamofire',  '~> 4.4.0'
   pod 'Marshal',    '~> 1.2.4'
-  pod 'RealmSwift', '~> 2.8.3'
+  pod 'RealmSwift', '~> 3.0.0'
 
 end
 

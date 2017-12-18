@@ -14,18 +14,18 @@ final class Planet: Object {
     self.url = url
   }
 
-  dynamic var name           = ""
-  dynamic var diameter       = ""
-  dynamic var rotationPeriod = ""
-  dynamic var orbitalPeriod  = ""
-  dynamic var gravity        = ""
-  dynamic var population     = ""
-  dynamic var climate        = ""
-  dynamic var terrain        = ""
-  dynamic var surfaceWater   = ""
-  dynamic var url            = ""
-  dynamic var created        = ""
-  dynamic var edited         = ""
+  @objc dynamic var name           = ""
+  @objc dynamic var diameter       = ""
+  @objc dynamic var rotationPeriod = ""
+  @objc dynamic var orbitalPeriod  = ""
+  @objc dynamic var gravity        = ""
+  @objc dynamic var population     = ""
+  @objc dynamic var climate        = ""
+  @objc dynamic var terrain        = ""
+  @objc dynamic var surfaceWater   = ""
+  @objc dynamic var url            = ""
+  @objc dynamic var created        = ""
+  @objc dynamic var edited         = ""
   let residents              = List<Character>()
   let films                  = List<Film>()
   

@@ -9,10 +9,10 @@ import RealmSwift
 
 final class PlanetList: Object {
   
-  dynamic var id                   = UUID().uuidString
-  dynamic var count                = 0
-  dynamic var next: String?        = nil
-  dynamic var previous: String?    = nil
+  @objc dynamic var id                   = UUID().uuidString
+  @objc dynamic var count                = 0
+  @objc dynamic var next: String?        = nil
+  @objc dynamic var previous: String?    = nil
   let results                      = List<Planet>()
   
   override static func primaryKey() -> String? {

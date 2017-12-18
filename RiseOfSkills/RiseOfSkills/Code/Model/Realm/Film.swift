@@ -14,15 +14,15 @@ final class Film: Object {
     self.url = url
   }
 
-  dynamic var title        = ""
-  dynamic var episodeId    = 0
-  dynamic var openingCrawl = ""
-  dynamic var director     = ""
-  dynamic var producer     = ""
-  dynamic var releaseDate  = ""
-  dynamic var url          = ""
-  dynamic var created      = ""
-  dynamic var edited       = ""
+  @objc dynamic var title        = ""
+  @objc dynamic var episodeId    = 0
+  @objc dynamic var openingCrawl = ""
+  @objc dynamic var director     = ""
+  @objc dynamic var producer     = ""
+  @objc dynamic var releaseDate  = ""
+  @objc dynamic var url          = ""
+  @objc dynamic var created      = ""
+  @objc dynamic var edited       = ""
   var planets              = List<Planet>()
   var species              = List<Species>()
   var vehicles             = List<Vehicle>()

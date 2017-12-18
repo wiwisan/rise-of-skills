@@ -28,8 +28,8 @@ extension AppDelegate {
     appearance.shadowImage = UIImage()
     
     let font = UIFont(name: "Avenir Book", size: 24)
-    let titleTextAttributes: [String: Any] = [NSForegroundColorAttributeName: UIColor.white,
-                                              NSFontAttributeName: font ?? .systemFont(ofSize: 24)]
+    let titleTextAttributes: [NSAttributedStringKey: Any] = [NSAttributedStringKey(rawValue: NSAttributedStringKey.foregroundColor.rawValue): UIColor.white,
+                                                             NSAttributedStringKey(rawValue: NSAttributedStringKey.font.rawValue): font ?? .systemFont(ofSize: 24)]
     appearance.titleTextAttributes = titleTextAttributes
   }
 }
