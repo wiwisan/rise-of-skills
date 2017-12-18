@@ -13,11 +13,13 @@ final class DetailsViewController: UIViewController {
   // MARK: Properties
   
   @IBOutlet weak var ibTitleLabel: UILabel!
+  @IBOutlet weak var ibSubTitleLabel: UILabel!
   
   var detail: Object? {
     didSet {
       if let detail = self.detail, !self.data(forDetail: detail).isEmpty {
         self.ibTitleLabel.text = self.data(forDetail: detail)[0]
+        self.ibSubTitleLabel.text = self.data(forDetail: detail)[1]
       }
     }
   }
@@ -39,27 +41,27 @@ final class DetailsViewController: UIViewController {
     switch detail {
     case is Film:
       if let film = detail as? Film, film.title != "" {
-        detailArr = [film.title]
+        detailArr = [film.title, film.director]
       }
     case is Character:
       if let character = detail as? Character {
-        detailArr = [character.name]
+        detailArr = [character.name, character.gender]
       }
     case is Planet:
       if let planet = detail as? Planet {
-        detailArr = [planet.name]
+        detailArr = [planet.name, planet.climate]
       }
     case is Species:
       if let specie = detail as? Species {
-        detailArr = [specie.name]
+        detailArr = [specie.name, specie.classification]
       }
     case is Starship:
       if let starship = detail as? Starship {
-        detailArr = [starship.name]
+        detailArr = [starship.name, starship.model]
       }
     case is Vehicle:
       if let vehicle = detail as? Vehicle {
-        detailArr = [vehicle.name]
+        detailArr = [vehicle.name, vehicle.model]
       }
     default:
       detailArr = []

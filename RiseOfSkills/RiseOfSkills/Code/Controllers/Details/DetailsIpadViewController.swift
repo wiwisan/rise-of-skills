@@ -42,6 +42,7 @@ final class DetailsIpadViewController: UIViewController {
     self.ibLeftViewContainer.addSubview(menuDetailsViewController.view)
     menuDetailsViewController.didMove(toParentViewController: self)
     
+    
 //    var viewConstraints = [NSLayoutConstraint]()
 //    let views: [String: UIView] = ["menuDetailsView" : menuDetailsViewController.view, "menuDetailsViewbackground" : menuDetailsViewController.ibBackgroundView]
 //    let menuDetailsViewConstraints = NSLayoutConstraint.constraints(withVisualFormat: "|-0-[menuDetailsView]-0-|", options: [], metrics: nil, views: views)

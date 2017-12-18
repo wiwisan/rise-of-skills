@@ -91,18 +91,27 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="U4v-vv-hjp">
-                                <rect key="frame" x="164.5" y="322" width="46.5" height="23"/>
+                                <rect key="frame" x="164" y="28" width="47" height="23"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="19"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qhp-A4-SYQ">
+                                <rect key="frame" x="164" y="59" width="47" height="23"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="19"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
                         <constraints>
-                            <constraint firstItem="U4v-vv-hjp" firstAttribute="centerX" secondItem="CWT-YJ-tZi" secondAttribute="centerX" id="6LK-i0-vXR"/>
-                            <constraint firstItem="U4v-vv-hjp" firstAttribute="centerY" secondItem="CWT-YJ-tZi" secondAttribute="centerY" id="DCC-BE-1Gm"/>
+                            <constraint firstItem="U4v-vv-hjp" firstAttribute="leading" secondItem="qhp-A4-SYQ" secondAttribute="leading" id="NhS-8D-uUL"/>
+                            <constraint firstItem="U4v-vv-hjp" firstAttribute="centerX" secondItem="CWT-YJ-tZi" secondAttribute="centerX" id="UxX-E6-7LH"/>
+                            <constraint firstItem="U4v-vv-hjp" firstAttribute="top" secondItem="3Am-Sc-txT" secondAttribute="bottom" constant="8" id="Y4x-qF-hDQ"/>
+                            <constraint firstItem="qhp-A4-SYQ" firstAttribute="top" secondItem="U4v-vv-hjp" secondAttribute="bottom" constant="8" id="lmT-oJ-csY"/>
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="ibSubTitleLabel" destination="qhp-A4-SYQ" id="lF4-6k-Red"/>
                         <outlet property="ibTitleLabel" destination="U4v-vv-hjp" id="wP4-ih-GhA"/>
                     </connections>
                 </viewController>

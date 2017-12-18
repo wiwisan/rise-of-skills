@@ -566,7 +566,7 @@
 				TargetAttributes = {
 					2140F8411EE04BC8000942A4 = {
 						CreatedOnToolsVersion = 8.3.2;
-						DevelopmentTeam = X4T87569LN;
+						DevelopmentTeam = R78Q854ZRC;
 						LastSwiftMigration = 0830;
 						ProvisioningStyle = Manual;
 					};
@@ -845,15 +845,16 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
-				CODE_SIGN_IDENTITY = "iPhone Developer";
-				DEVELOPMENT_TEAM = X4T87569LN;
+				CODE_SIGN_IDENTITY = "iPhone Developer: Edouard MERCIER (6AX3P97W8D)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Edouard MERCIER (6AX3P97W8D)";
+				DEVELOPMENT_TEAM = R78Q854ZRC;
 				INFOPLIST_FILE = "$(SRCROOT)/RiseOfSkills/Ressources/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.wildine.RiseOfSkills;
+				PRODUCT_BUNDLE_IDENTIFIER = sns.fr.clarins.sofragrances;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "988cf381-6d9e-4227-b0ce-1344ca25d45c";
-				PROVISIONING_PROFILE_SPECIFIER = "Equinoa DEV Wildcard any Bundle";
+				PROVISIONING_PROFILE = "c9a8ac44-b2b4-4852-83f5-2f69fbada6d2";
+				PROVISIONING_PROFILE_SPECIFIER = "match Development sns.fr.clarins.sofragrances";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 4.0;
 			};
@@ -865,15 +866,16 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
-				CODE_SIGN_IDENTITY = "iPhone Developer: Edouard MERCIER (6AX3P97W8D)";
-				DEVELOPMENT_TEAM = R78Q854ZRC;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution";
+				DEVELOPMENT_TEAM = 5V5SV8ABN5;
 				INFOPLIST_FILE = "$(SRCROOT)/RiseOfSkills/Ressources/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.wildine.RiseOfSkills;
+				PRODUCT_BUNDLE_IDENTIFIER = sns.fr.clarins.sofragrances;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "6bb98b43-3b14-4ae6-921a-71ce934f2752";
-				PROVISIONING_PROFILE_SPECIFIER = "Equinoa DEV Wildcard any Bundle";
+				PROVISIONING_PROFILE = "e316eca3-6b99-4368-bc83-c66a42092086";
+				PROVISIONING_PROFILE_SPECIFIER = "InHouse wildcard Profile";
 				SWIFT_VERSION = 4.0;
 			};
 			name = Release;

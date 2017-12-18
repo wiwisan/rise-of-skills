@@ -21,6 +21,7 @@ final class MenuDetailsViewController: UIViewController {
   var details: [Object] = []
   var nbOfElements = 0
   var iPadDetailsViewController: DetailsViewController?
+  var previewingContext: UIViewControllerPreviewing?
   
   // - MARK: Overrides
   
@@ -29,10 +30,14 @@ final class MenuDetailsViewController: UIViewController {
     
     self.title = self.item?.title
     
+    // May the Force Touch Be With You: Check if device has 3D Touch
+    if (traitCollection.forceTouchCapability == .available) {
+      self.previewingContext = self.registerForPreviewing(with: self, sourceView: self.ibTableView)
+    }
+    
     self.ibTableView.dataSource = self
     self.ibTableView.delegate = self
     self.ibBackgroundView.setGradientBackground()
-//    self.ibTableView.contentSize = self.view.frame.size
     self.ibTableView.register(UINib(nibName: "MenuDetailsTableViewCell", bundle: nil), forCellReuseIdentifier: "menuDetailsCell")
     self.ibTableView.estimatedRowHeight = 80.0
     self.ibTableView.rowHeight = UITableViewAutomaticDimension
@@ -149,6 +154,21 @@ extension MenuDetailsViewController: UITableViewDataSource {
 
 extension MenuDetailsViewController: UITableViewDelegate {
   
+  override func traitCollectionDidChange(_ previousTraitCollection: UITraitCollection?) {
+    super.traitCollectionDidChange(previousTraitCollection)
+    
+    if traitCollection.forceTouchCapability == .available {
+      if self.previewingContext == nil {
+        self.previewingContext = self.registerForPreviewing(with: self, sourceView: self.ibTableView)
+      }
+    } else {
+      if let previewingContext = self.previewingContext {
+        self.unregisterForPreviewing(withContext: previewingContext)
+        self.previewingContext = nil
+      }
+    }
+  }
+  
   func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
     
     if UIDevice.current.userInterfaceIdiom == .pad {
@@ -164,5 +184,36 @@ extension MenuDetailsViewController: UITableViewDelegate {
       detailsCollectionViewController.currentIndexPath = indexPath
       self.show(detailsCollectionViewController, sender: nil)
     }
+  }
+}
+
+// - MARK: UIViewControllerPreviewingDelegate
+
+extension MenuDetailsViewController: UIViewControllerPreviewingDelegate {
+  
+  func previewingContext(_ previewingContext: UIViewControllerPreviewing, viewControllerForLocation location: CGPoint) -> UIViewController? {
+    
+    guard let indexPath = self.ibTableView?.indexPathForRow(at: location) else {
+      return nil
+    }
+    guard let cell = self.ibTableView?.cellForRow(at: indexPath) else {
+      return nil
+    }
+    
+    let storyBoard : UIStoryboard = UIStoryboard(name: "Details", bundle:nil)
+    guard let detailsCollectionViewController = storyBoard.instantiateViewController(withIdentifier: "detailsCollectionViewController") as? DetailsCollectionViewController else {
+      fatalError("Could not instantiate viewController with identifier: detailsCollectionViewController")
+    }
+    detailsCollectionViewController.preferredContentSize = CGSize(width: 0.0, height: 500)
+    detailsCollectionViewController.details = self.details
+    detailsCollectionViewController.currentIndexPath = indexPath
+    
+    previewingContext.sourceRect = cell.frame
+    
+    return detailsCollectionViewController
+  }
+  
+  func previewingContext(_ previewingContext: UIViewControllerPreviewing, commit viewControllerToCommit: UIViewController) {
+   self.show(viewControllerToCommit, sender: self)
   }
 }
