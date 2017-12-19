@@ -96,27 +96,33 @@ final class MenuDetailsViewController: UIViewController {
     switch detail {
     case is Film:
       if let film = detail as? Film, film.title != "" {
-        detailArr = [film.title, film.director]
+        let subTitle = "\(film.created) - \(film.director)"
+        detailArr = [film.title, subTitle]
       }
     case is Character:
       if let character = detail as? Character {
-        detailArr = [character.name, character.gender]
+        let subTitle = "\(character.species) - \(character.gender)"
+        detailArr = [character.name, subTitle]
       }
     case is Planet:
       if let planet = detail as? Planet {
-        detailArr = [planet.name, planet.climate]
+        let subTitle = "\(planet.population) - \(planet.climate)"
+        detailArr = [planet.name, subTitle]
       }
     case is Species:
       if let specie = detail as? Species {
-        detailArr = [specie.name, specie.classification]
+        let subTitle = "\(specie.classification) - \(specie.language)"
+        detailArr = [specie.name, subTitle]
       }
     case is Starship:
       if let starship = detail as? Starship {
-        detailArr = [starship.name, starship.model]
+        let subTitle = "\(starship.starshipClass) - \(starship.model)"
+        detailArr = [starship.name, subTitle]
       }
     case is Vehicle:
       if let vehicle = detail as? Vehicle {
-        detailArr = [vehicle.name, vehicle.model]
+        let subTitle = "\(vehicle.vehicleClass) - \(vehicle.model)"
+        detailArr = [vehicle.name, subTitle]
       }
     default:
       detailArr = []

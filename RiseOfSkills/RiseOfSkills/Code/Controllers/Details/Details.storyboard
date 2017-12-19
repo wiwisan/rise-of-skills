@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13527"/>
         <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -90,24 +90,38 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="U4v-vv-hjp">
-                                <rect key="frame" x="164" y="28" width="47" height="23"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="U4v-vv-hjp">
+                                <rect key="frame" x="0.0" y="28" width="375" height="23"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="19"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qhp-A4-SYQ">
-                                <rect key="frame" x="164" y="59" width="47" height="23"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qhp-A4-SYQ">
+                                <rect key="frame" x="0.0" y="59" width="375" height="23"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="19"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aPr-J7-kQi">
+                                <rect key="frame" x="0.0" y="129" width="375" height="30"/>
+                                <state key="normal" title="Flip it !"/>
+                                <connections>
+                                    <action selector="flipView:" destination="QWj-G7-S9O" eventType="touchUpInside" id="Pa4-Z7-j66"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <constraints>
+                            <constraint firstItem="aPr-J7-kQi" firstAttribute="top" secondItem="qhp-A4-SYQ" secondAttribute="bottom" constant="47" id="258-NV-xYh"/>
+                            <constraint firstItem="qhp-A4-SYQ" firstAttribute="leading" secondItem="CWT-YJ-tZi" secondAttribute="leading" id="2oS-9c-yhE"/>
+                            <constraint firstAttribute="trailing" secondItem="qhp-A4-SYQ" secondAttribute="trailing" id="7It-ps-thN"/>
                             <constraint firstItem="U4v-vv-hjp" firstAttribute="leading" secondItem="qhp-A4-SYQ" secondAttribute="leading" id="NhS-8D-uUL"/>
+                            <constraint firstItem="U4v-vv-hjp" firstAttribute="leading" secondItem="CWT-YJ-tZi" secondAttribute="leading" id="P0j-ff-Tkw"/>
                             <constraint firstItem="U4v-vv-hjp" firstAttribute="centerX" secondItem="CWT-YJ-tZi" secondAttribute="centerX" id="UxX-E6-7LH"/>
                             <constraint firstItem="U4v-vv-hjp" firstAttribute="top" secondItem="3Am-Sc-txT" secondAttribute="bottom" constant="8" id="Y4x-qF-hDQ"/>
+                            <constraint firstAttribute="trailing" secondItem="U4v-vv-hjp" secondAttribute="trailing" id="g69-ta-hGM"/>
                             <constraint firstItem="qhp-A4-SYQ" firstAttribute="top" secondItem="U4v-vv-hjp" secondAttribute="bottom" constant="8" id="lmT-oJ-csY"/>
+                            <constraint firstItem="aPr-J7-kQi" firstAttribute="leading" secondItem="CWT-YJ-tZi" secondAttribute="leading" id="tTD-FD-GLI"/>
+                            <constraint firstAttribute="trailing" secondItem="aPr-J7-kQi" secondAttribute="trailing" id="vVW-Ae-YqB"/>
                         </constraints>
                     </view>
                     <connections>
@@ -118,6 +132,61 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="e0k-AF-GxN" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="613.60000000000002" y="-36.431784107946029"/>
+        </scene>
+        <!--Details Cover View Controller-->
+        <scene sceneID="AFK-ZL-us1">
+            <objects>
+                <viewController storyboardIdentifier="detailsCoverViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="Dbx-Cl-NUk" customClass="DetailsCoverViewController" customModule="RiseOfSkills" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="sUd-3p-kxG"/>
+                        <viewControllerLayoutGuide type="bottom" id="MMz-FU-cFW"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="uAw-Od-5Mo">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="e1d-Oq-bh8">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="What are you doing here ?!  There's nothing here !" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mv8-mH-wQ6">
+                                        <rect key="frame" x="82.5" y="313" width="209.5" height="41"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2lu-rW-Jq5">
+                                        <rect key="frame" x="0.0" y="374" width="375" height="30"/>
+                                        <color key="backgroundColor" red="0.0" green="0.0" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                        <state key="normal" title="Go away!">
+                                            <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="flipView:" destination="Dbx-Cl-NUk" eventType="touchUpInside" id="esY-2z-LCB"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" red="0.36406948952657214" green="0.4508902029941112" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstItem="mv8-mH-wQ6" firstAttribute="centerY" secondItem="e1d-Oq-bh8" secondAttribute="centerY" id="EUh-f1-OYt"/>
+                                    <constraint firstItem="2lu-rW-Jq5" firstAttribute="leading" secondItem="e1d-Oq-bh8" secondAttribute="leading" id="Rwm-qq-ASc"/>
+                                    <constraint firstItem="mv8-mH-wQ6" firstAttribute="centerX" secondItem="e1d-Oq-bh8" secondAttribute="centerX" id="a9S-YK-8wQ"/>
+                                    <constraint firstAttribute="trailing" secondItem="2lu-rW-Jq5" secondAttribute="trailing" id="fFJ-cu-TGc"/>
+                                    <constraint firstItem="2lu-rW-Jq5" firstAttribute="top" secondItem="mv8-mH-wQ6" secondAttribute="bottom" constant="20" id="hv0-Jh-LKA"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="e1d-Oq-bh8" firstAttribute="top" secondItem="uAw-Od-5Mo" secondAttribute="top" id="9oL-N0-y1p"/>
+                            <constraint firstItem="MMz-FU-cFW" firstAttribute="top" secondItem="e1d-Oq-bh8" secondAttribute="bottom" id="KFz-EG-Mi6"/>
+                            <constraint firstItem="e1d-Oq-bh8" firstAttribute="leading" secondItem="uAw-Od-5Mo" secondAttribute="leading" id="XmS-rT-WxF"/>
+                            <constraint firstAttribute="trailing" secondItem="e1d-Oq-bh8" secondAttribute="trailing" id="YKO-1v-iwQ"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="tNw-ZZ-yms" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1280.8" y="-36.431784107946029"/>
         </scene>
     </scenes>
 </document>

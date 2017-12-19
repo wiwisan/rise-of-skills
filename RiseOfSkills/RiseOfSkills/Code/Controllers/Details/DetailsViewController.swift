@@ -32,6 +32,15 @@ final class DetailsViewController: UIViewController {
     //
   }
   
+  @IBAction func flipView(_ sender: UIButton) {
+    let storyBoard : UIStoryboard = UIStoryboard(name: "Details", bundle:nil)
+    guard let detailsCoverViewController = storyBoard.instantiateViewController(withIdentifier: "detailsCoverViewController") as? DetailsCoverViewController else {
+      fatalError("Could not instantiate viewController with identifier: detailsCoverViewController")
+    }
+    UIView.transition(with: self.navigationController!.view, duration: 1.0, options: .transitionFlipFromLeft, animations: {
+      self.navigationController?.pushViewController(detailsCoverViewController, animated: false)
+    }, completion: nil)
+  }
   
   // MARK: Internal Methods
   
