@@ -6,14 +6,21 @@
 */
 
 /* --MENU-- */
-"menu"       = "Menu";
-"films"      = "Films";
-"characters" = "Characters";
-"planets"    = "Planets";
-"species"    = "Species";
-"starships"  = "Starships";
-"vehicules"  = "Vehicules";
+"menu.title.menu"       = "Menu";
+"menu.title.films"      = "Movies";
+"menu.title.characters" = "Characters";
+"menu.title.planets"    = "Planets";
+"menu.title.species"    = "Species";
+"menu.title.starships"  = "Starships";
+"menu.title.vehicules"  = "Vehicules";
+
+"menu.icon.films"      = "🎥";
+"menu.icon.characters" = "👨🏻";
+"menu.icon.planets"    = "🌏";
+"menu.icon.species"    = "👽";
+"menu.icon.starships"  = "🚀";
+"menu.icon.vehicules"  = "🚡";
 
 /* --DETAILS-- */
-// Films details
-"detailsFilmSubtitle"       = "Episode %d released in %d";
+// -Films
+"details.films.listSubtitle" = "Episode %d released in %@";

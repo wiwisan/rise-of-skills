@@ -103,13 +103,18 @@ final class MenuDetailsViewController: UIViewController {
         if let releaseDate = formatter.date(from: film.releaseDate) {
           formatter.dateFormat = "yyyy"
           let releaseDateString = formatter.string(from: releaseDate)
-          subTitle = "Épisode \(film.episodeId) sortie en \(releaseDateString)"
+          subTitle = L10n.Details.Films.listSubtitle(film.episodeId, releaseDateString)
         }
         detailArr = [film.title, subTitle]
       }
     case is Character:
       if let character = detail as? Character {
-        let subTitle = "\(character.species) - \(character.gender)"
+        var specie = ""
+        if let charSpecie = character.species.first {
+          specie = charSpecie.classification
+        }
+        let homeworld = Planet.findFirst(withKey: character.homeworld)
+        let subTitle = "\(specie) \(character.gender). Homeworld: \(homeworld)"
         detailArr = [character.name, subTitle]
       }
     case is Planet:

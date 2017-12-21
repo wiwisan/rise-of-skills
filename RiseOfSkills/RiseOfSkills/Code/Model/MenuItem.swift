@@ -22,6 +22,6 @@ struct MenuItem {
   let index: Int
   let title: String
   let icon: String
-  let background: String
+  let background: UIImage
   let data: Object
 }

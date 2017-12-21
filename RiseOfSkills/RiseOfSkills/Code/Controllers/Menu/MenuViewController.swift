@@ -24,7 +24,7 @@ final class MenuViewController: UIViewController {
   override func viewDidLoad() {
     super.viewDidLoad()
     
-    self.title = "Menu".uppercased()
+    self.title = L10n.Menu.Title.menu.uppercased()
     
     self.menuList = MenuDataFetcher.init().items
 
@@ -58,7 +58,7 @@ extension MenuViewController: UITableViewDataSource {
     cell.ibMenuTitle.text = self.menuList?[indexPath.row].title
     cell.ibMenuItemEmoji.text = self.menuList?[indexPath.row].icon
     if let image = self.menuList?[indexPath.row].background {
-      cell.ibMenuImage.image = UIImage(named: image)
+      cell.ibMenuImage.image = image
     }
     
     return cell
