@@ -1,0 +1,19 @@
+/* 
+  Localizable.strings
+  RiseOfSkills
+
+  Copyright © 2017 Wildine Anthony. All rights reserved.
+*/
+
+/* --MENU-- */
+"menu"       = "Menu";
+"films"      = "Films";
+"characters" = "Characters";
+"planets"    = "Planets";
+"species"    = "Species";
+"starships"  = "Starships";
+"vehicules"  = "Vehicules";
+
+/* --DETAILS-- */
+// Films details
+"detailsFilmSubtitle"       = "Episode %d released in %d";

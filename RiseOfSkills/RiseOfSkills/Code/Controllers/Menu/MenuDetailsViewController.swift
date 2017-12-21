@@ -96,7 +96,15 @@ final class MenuDetailsViewController: UIViewController {
     switch detail {
     case is Film:
       if let film = detail as? Film, film.title != "" {
-        let subTitle = "\(film.created) - \(film.director)"
+        var subTitle = ""
+        
+        let formatter = DateFormatter()
+        formatter.dateFormat = "yyyy-MM-dd"
+        if let releaseDate = formatter.date(from: film.releaseDate) {
+          formatter.dateFormat = "yyyy"
+          let releaseDateString = formatter.string(from: releaseDate)
+          subTitle = "Épisode \(film.episodeId) sortie en \(releaseDateString)"
+        }
         detailArr = [film.title, subTitle]
       }
     case is Character:

@@ -42,19 +42,25 @@
 		21A362A11F06798D00F663BD /* CollectionReusableView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 21A3629F1F06798D00F663BD /* CollectionReusableView.xib */; };
 		21A362A81F0679B600F663BD /* CollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21A362A61F0679B600F663BD /* CollectionViewCell.swift */; };
 		21A362A91F0679B600F663BD /* CollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 21A362A71F0679B600F663BD /* CollectionViewCell.xib */; };
-		21A362AC1F0679C600F663BD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 21A362AA1F0679C600F663BD /* Assets.xcassets */; };
-		21A362AD1F0679C600F663BD /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 21A362AB1F0679C600F663BD /* Info.plist */; };
 		21A362C11F068F2400F663BD /* Router.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21A362BF1F068F2400F663BD /* Router.swift */; };
 		21A362C21F068F2400F663BD /* Routing.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21A362C01F068F2400F663BD /* Routing.swift */; };
-		21A6E7821F0C4F770018CE26 /* swchar.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 21A6E77C1F0C4F770018CE26 /* swchar.jpg */; };
-		21A6E7831F0C4F770018CE26 /* swfilms.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 21A6E77D1F0C4F770018CE26 /* swfilms.jpg */; };
-		21A6E7841F0C4F770018CE26 /* swplanet.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 21A6E77E1F0C4F770018CE26 /* swplanet.jpg */; };
-		21A6E7851F0C4F770018CE26 /* swspecies.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 21A6E77F1F0C4F770018CE26 /* swspecies.jpg */; };
-		21A6E7861F0C4F770018CE26 /* swstarship.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 21A6E7801F0C4F770018CE26 /* swstarship.jpg */; };
-		21A6E7871F0C4F770018CE26 /* swvehicles.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 21A6E7811F0C4F770018CE26 /* swvehicles.jpeg */; };
 		21B123CC1F618D9F00DFF430 /* DetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21B123CB1F618D9F00DFF430 /* DetailsViewController.swift */; };
 		21B225481F5D9B18004EACF9 /* MenuTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21B225461F5D9B18004EACF9 /* MenuTableViewCell.swift */; };
 		21B225491F5D9B18004EACF9 /* MenuTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 21B225471F5D9B18004EACF9 /* MenuTableViewCell.xib */; };
+		21E289431FEAAAE3008DAF40 /* Storyboards.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21E289421FEAAAE3008DAF40 /* Storyboards.swift */; };
+		21E289451FEAAAFD008DAF40 /* Images.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21E289441FEAAAFD008DAF40 /* Images.swift */; };
+		21E289471FEAAB19008DAF40 /* Colors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21E289461FEAAB19008DAF40 /* Colors.swift */; };
+		21E289491FEAAB3C008DAF40 /* Fonts.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21E289481FEAAB3C008DAF40 /* Fonts.swift */; };
+		21E2894B1FEAAB56008DAF40 /* Strings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21E2894A1FEAAB56008DAF40 /* Strings.swift */; };
+		21E2894F1FEAAC28008DAF40 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 21E2894C1FEAAC28008DAF40 /* Localizable.strings */; };
+		21E289501FEAAC28008DAF40 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 21E2894D1FEAAC28008DAF40 /* Images.xcassets */; };
+		21E289581FEAAC38008DAF40 /* swchar.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 21E289521FEAAC38008DAF40 /* swchar.jpg */; };
+		21E289591FEAAC38008DAF40 /* swspecies.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 21E289531FEAAC38008DAF40 /* swspecies.jpg */; };
+		21E2895A1FEAAC38008DAF40 /* swstarship.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 21E289541FEAAC38008DAF40 /* swstarship.jpg */; };
+		21E2895B1FEAAC38008DAF40 /* swplanet.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 21E289551FEAAC38008DAF40 /* swplanet.jpg */; };
+		21E2895C1FEAAC38008DAF40 /* swvehicles.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 21E289561FEAAC38008DAF40 /* swvehicles.jpeg */; };
+		21E2895D1FEAAC38008DAF40 /* swfilms.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 21E289571FEAAC38008DAF40 /* swfilms.jpg */; };
+		21E289621FEAAD75008DAF40 /* colors.txt in Resources */ = {isa = PBXBuildFile; fileRef = 21E289611FEAAD75008DAF40 /* colors.txt */; };
 		21E535E31F0D1A2000705D68 /* Character+Marshal.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21E535DD1F0D1A2000705D68 /* Character+Marshal.swift */; };
 		21E535E41F0D1A2000705D68 /* Film+Marshal.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21E535DE1F0D1A2000705D68 /* Film+Marshal.swift */; };
 		21E535E51F0D1A2000705D68 /* Planet+Marshal.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21E535DF1F0D1A2000705D68 /* Planet+Marshal.swift */; };
@@ -121,19 +127,26 @@
 		21A3629F1F06798D00F663BD /* CollectionReusableView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = CollectionReusableView.xib; path = RiseOfSkills/Code/Views/UIView/CollectionReusableView/CollectionReusableView.xib; sourceTree = SOURCE_ROOT; };
 		21A362A61F0679B600F663BD /* CollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CollectionViewCell.swift; path = RiseOfSkills/Code/Views/UIView/CollectionViewCell/CollectionViewCell.swift; sourceTree = SOURCE_ROOT; };
 		21A362A71F0679B600F663BD /* CollectionViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = CollectionViewCell.xib; path = RiseOfSkills/Code/Views/UIView/CollectionViewCell/CollectionViewCell.xib; sourceTree = SOURCE_ROOT; };
-		21A362AA1F0679C600F663BD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Assets.xcassets; path = RiseOfSkills/Ressources/Assets.xcassets; sourceTree = SOURCE_ROOT; };
-		21A362AB1F0679C600F663BD /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Info.plist; path = RiseOfSkills/Ressources/Info.plist; sourceTree = SOURCE_ROOT; };
 		21A362BF1F068F2400F663BD /* Router.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Router.swift; sourceTree = "<group>"; };
 		21A362C01F068F2400F663BD /* Routing.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Routing.swift; sourceTree = "<group>"; };
-		21A6E77C1F0C4F770018CE26 /* swchar.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = swchar.jpg; path = RiseOfSkills/Ressources/Images/swchar.jpg; sourceTree = SOURCE_ROOT; };
-		21A6E77D1F0C4F770018CE26 /* swfilms.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = swfilms.jpg; path = RiseOfSkills/Ressources/Images/swfilms.jpg; sourceTree = SOURCE_ROOT; };
-		21A6E77E1F0C4F770018CE26 /* swplanet.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = swplanet.jpg; path = RiseOfSkills/Ressources/Images/swplanet.jpg; sourceTree = SOURCE_ROOT; };
-		21A6E77F1F0C4F770018CE26 /* swspecies.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = swspecies.jpg; path = RiseOfSkills/Ressources/Images/swspecies.jpg; sourceTree = SOURCE_ROOT; };
-		21A6E7801F0C4F770018CE26 /* swstarship.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = swstarship.jpg; path = RiseOfSkills/Ressources/Images/swstarship.jpg; sourceTree = SOURCE_ROOT; };
-		21A6E7811F0C4F770018CE26 /* swvehicles.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = swvehicles.jpeg; path = RiseOfSkills/Ressources/Images/swvehicles.jpeg; sourceTree = SOURCE_ROOT; };
 		21B123CB1F618D9F00DFF430 /* DetailsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = DetailsViewController.swift; path = RiseOfSkills/Code/Controllers/Details/DetailsViewController.swift; sourceTree = SOURCE_ROOT; };
 		21B225461F5D9B18004EACF9 /* MenuTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MenuTableViewCell.swift; path = RiseOfSkills/Code/Views/Cell/Menu/MenuTableViewCell.swift; sourceTree = SOURCE_ROOT; };
 		21B225471F5D9B18004EACF9 /* MenuTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = MenuTableViewCell.xib; path = RiseOfSkills/Code/Views/Cell/Menu/MenuTableViewCell.xib; sourceTree = SOURCE_ROOT; };
+		21E289421FEAAAE3008DAF40 /* Storyboards.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = Storyboards.swift; path = Code/Constants/SwiftGen/Storyboards.swift; sourceTree = "<group>"; };
+		21E289441FEAAAFD008DAF40 /* Images.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = Images.swift; path = Code/Constants/SwiftGen/Images.swift; sourceTree = "<group>"; };
+		21E289461FEAAB19008DAF40 /* Colors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = Colors.swift; path = Code/Constants/SwiftGen/Colors.swift; sourceTree = "<group>"; };
+		21E289481FEAAB3C008DAF40 /* Fonts.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = Fonts.swift; path = Code/Constants/SwiftGen/Fonts.swift; sourceTree = "<group>"; };
+		21E2894A1FEAAB56008DAF40 /* Strings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = Strings.swift; path = Code/Constants/SwiftGen/Strings.swift; sourceTree = "<group>"; };
+		21E2894C1FEAAC28008DAF40 /* Localizable.strings */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.strings; name = Localizable.strings; path = Resources/Localizable.strings; sourceTree = "<group>"; };
+		21E2894D1FEAAC28008DAF40 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Images.xcassets; path = Resources/Images.xcassets; sourceTree = "<group>"; };
+		21E2894E1FEAAC28008DAF40 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Info.plist; path = Resources/Info.plist; sourceTree = "<group>"; };
+		21E289521FEAAC38008DAF40 /* swchar.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = swchar.jpg; path = Resources/Images/swchar.jpg; sourceTree = "<group>"; };
+		21E289531FEAAC38008DAF40 /* swspecies.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = swspecies.jpg; path = Resources/Images/swspecies.jpg; sourceTree = "<group>"; };
+		21E289541FEAAC38008DAF40 /* swstarship.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = swstarship.jpg; path = Resources/Images/swstarship.jpg; sourceTree = "<group>"; };
+		21E289551FEAAC38008DAF40 /* swplanet.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = swplanet.jpg; path = Resources/Images/swplanet.jpg; sourceTree = "<group>"; };
+		21E289561FEAAC38008DAF40 /* swvehicles.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = swvehicles.jpeg; path = Resources/Images/swvehicles.jpeg; sourceTree = "<group>"; };
+		21E289571FEAAC38008DAF40 /* swfilms.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = swfilms.jpg; path = Resources/Images/swfilms.jpg; sourceTree = "<group>"; };
+		21E289611FEAAD75008DAF40 /* colors.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = colors.txt; path = Resources/colors.txt; sourceTree = "<group>"; };
 		21E535DD1F0D1A2000705D68 /* Character+Marshal.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "Character+Marshal.swift"; path = "RiseOfSkills/Code/Model/Extensions/Marshal/Character+Marshal.swift"; sourceTree = SOURCE_ROOT; };
 		21E535DE1F0D1A2000705D68 /* Film+Marshal.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "Film+Marshal.swift"; path = "RiseOfSkills/Code/Model/Extensions/Marshal/Film+Marshal.swift"; sourceTree = SOURCE_ROOT; };
 		21E535DF1F0D1A2000705D68 /* Planet+Marshal.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "Planet+Marshal.swift"; path = "RiseOfSkills/Code/Model/Extensions/Marshal/Planet+Marshal.swift"; sourceTree = SOURCE_ROOT; };
@@ -219,6 +232,7 @@
 		2140F8571EE04C16000942A4 /* Code */ = {
 			isa = PBXGroup;
 			children = (
+				2166A6151FEAA2E40017F07B /* Constants */,
 				2140F85F1EE04D87000942A4 /* AppDelegate */,
 				21A362B01F06891100F663BD /* Services */,
 				21E535EB1F0D297E00705D68 /* DataFetcher */,
@@ -234,9 +248,12 @@
 		2140F8581EE04C21000942A4 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				21E2894D1FEAAC28008DAF40 /* Images.xcassets */,
+				21E2894E1FEAAC28008DAF40 /* Info.plist */,
+				21E2894C1FEAAC28008DAF40 /* Localizable.strings */,
+				21E289611FEAAD75008DAF40 /* colors.txt */,
+				21E2895E1FEAACBF008DAF40 /* Fonts */,
 				21A6E7791F0C4C5E0018CE26 /* Images */,
-				21A362AA1F0679C600F663BD /* Assets.xcassets */,
-				21A362AB1F0679C600F663BD /* Info.plist */,
 			);
 			name = Resources;
 			sourceTree = "<group>";
@@ -363,6 +380,14 @@
 			name = Details;
 			sourceTree = "<group>";
 		};
+		2166A6151FEAA2E40017F07B /* Constants */ = {
+			isa = PBXGroup;
+			children = (
+				21E289411FEAAAC1008DAF40 /* SwiftGen */,
+			);
+			name = Constants;
+			sourceTree = "<group>";
+		};
 		21A1D1D31F459BCD0049A641 /* Menu */ = {
 			isa = PBXGroup;
 			children = (
@@ -431,14 +456,33 @@
 		21A6E7791F0C4C5E0018CE26 /* Images */ = {
 			isa = PBXGroup;
 			children = (
-				21A6E77C1F0C4F770018CE26 /* swchar.jpg */,
-				21A6E77D1F0C4F770018CE26 /* swfilms.jpg */,
-				21A6E77E1F0C4F770018CE26 /* swplanet.jpg */,
-				21A6E77F1F0C4F770018CE26 /* swspecies.jpg */,
-				21A6E7801F0C4F770018CE26 /* swstarship.jpg */,
-				21A6E7811F0C4F770018CE26 /* swvehicles.jpeg */,
+				21E289521FEAAC38008DAF40 /* swchar.jpg */,
+				21E289571FEAAC38008DAF40 /* swfilms.jpg */,
+				21E289551FEAAC38008DAF40 /* swplanet.jpg */,
+				21E289531FEAAC38008DAF40 /* swspecies.jpg */,
+				21E289541FEAAC38008DAF40 /* swstarship.jpg */,
+				21E289561FEAAC38008DAF40 /* swvehicles.jpeg */,
 			);
 			name = Images;
+			sourceTree = "<group>";
+		};
+		21E289411FEAAAC1008DAF40 /* SwiftGen */ = {
+			isa = PBXGroup;
+			children = (
+				21E289421FEAAAE3008DAF40 /* Storyboards.swift */,
+				21E289441FEAAAFD008DAF40 /* Images.swift */,
+				21E289461FEAAB19008DAF40 /* Colors.swift */,
+				21E289481FEAAB3C008DAF40 /* Fonts.swift */,
+				21E2894A1FEAAB56008DAF40 /* Strings.swift */,
+			);
+			name = SwiftGen;
+			sourceTree = "<group>";
+		};
+		21E2895E1FEAACBF008DAF40 /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Fonts;
 			sourceTree = "<group>";
 		};
 		21E535DB1F0D19D300705D68 /* Marshal */ = {
@@ -542,6 +586,7 @@
 			buildConfigurationList = 2140F8541EE04BC8000942A4 /* Build configuration list for PBXNativeTarget "RiseOfSkills" */;
 			buildPhases = (
 				27BD3FCBE9E770CDADB721D1 /* [CP] Check Pods Manifest.lock */,
+				2145F2EE1FEA79A60071F323 /* SwiftGen */,
 				2140F83E1EE04BC8000942A4 /* Sources */,
 				2140F83F1EE04BC8000942A4 /* Frameworks */,
 				2140F8401EE04BC8000942A4 /* Resources */,
@@ -598,22 +643,23 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				21E2895C1FEAAC38008DAF40 /* swvehicles.jpeg in Resources */,
 				21A1D1D71F459C770049A641 /* Menu.storyboard in Resources */,
-				21A362AD1F0679C600F663BD /* Info.plist in Resources */,
+				21E289621FEAAD75008DAF40 /* colors.txt in Resources */,
+				21E2895A1FEAAC38008DAF40 /* swstarship.jpg in Resources */,
+				21E289501FEAAC28008DAF40 /* Images.xcassets in Resources */,
+				21E289591FEAAC38008DAF40 /* swspecies.jpg in Resources */,
 				216192FB1F61A5BF00F6CE99 /* DetailsCollectionViewCell.xib in Resources */,
-				21A6E7861F0C4F770018CE26 /* swstarship.jpg in Resources */,
-				21A6E7841F0C4F770018CE26 /* swplanet.jpg in Resources */,
-				21A6E7821F0C4F770018CE26 /* swchar.jpg in Resources */,
+				21E2895B1FEAAC38008DAF40 /* swplanet.jpg in Resources */,
+				21E2895D1FEAAC38008DAF40 /* swfilms.jpg in Resources */,
 				21A3629D1F06797A00F663BD /* TableViewHeaderFooterView.xib in Resources */,
 				21A362A11F06798D00F663BD /* CollectionReusableView.xib in Resources */,
-				21A6E7851F0C4F770018CE26 /* swspecies.jpg in Resources */,
 				21B225491F5D9B18004EACF9 /* MenuTableViewCell.xib in Resources */,
+				21E289581FEAAC38008DAF40 /* swchar.jpg in Resources */,
 				21A362A91F0679B600F663BD /* CollectionViewCell.xib in Resources */,
 				210D99A41F603CC100BE1DF6 /* Details.storyboard in Resources */,
-				21A6E7871F0C4F770018CE26 /* swvehicles.jpeg in Resources */,
+				21E2894F1FEAAC28008DAF40 /* Localizable.strings in Resources */,
 				21A1D1DF1F45E50E0049A641 /* MenuDetailsTableViewCell.xib in Resources */,
-				21A6E7831F0C4F770018CE26 /* swfilms.jpg in Resources */,
-				21A362AC1F0679C600F663BD /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -659,6 +705,20 @@
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-RiseOfSkills/Pods-RiseOfSkills-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
+		2145F2EE1FEA79A60071F323 /* SwiftGen */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = SwiftGen;
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\nif which $PODS_ROOT/SwiftGen/bin/swiftgen >/dev/null; then\nSRCDIR=\"$PROJECT_DIR/$PROJECT_NAME\"\n$PODS_ROOT/SwiftGen/bin/swiftgen storyboards \"$SRCDIR\" --output \"$SRCDIR/Code/Constants/SwiftGen/Storyboards.swift\" -t swift4\n$PODS_ROOT/SwiftGen/bin/swiftgen xcassets \"$SRCDIR/Resources/Images.xcassets\" --output \"$SRCDIR/Code/Constants/SwiftGen/Images.swift\" -t swift4\n$PODS_ROOT/SwiftGen/bin/swiftgen colors \"$SRCDIR/Resources/colors.txt\" --output \"$SRCDIR/Code/Constants/SwiftGen/Colors.swift\" -t swift4\n$PODS_ROOT/SwiftGen/bin/swiftgen fonts \"$SRCDIR/Resources/Fonts\" --output \"$SRCDIR/Code/Constants/SwiftGen/Fonts.swift\" -t swift4\n$PODS_ROOT/SwiftGen/bin/swiftgen strings \"$SRCDIR/Resources/Localizable.strings\" --output \"$SRCDIR/Code/Constants/SwiftGen/Strings.swift\" -t structured-swift4\nelse\necho \"warning: SwiftGen not installed, download it from https://github.com/AliSoftware/SwiftGen\"\nfi";
+		};
 		27BD3FCBE9E770CDADB721D1 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -700,6 +760,7 @@
 				21A362A81F0679B600F663BD /* CollectionViewCell.swift in Sources */,
 				21A1D1E11F45F73E0049A641 /* AppDelegate+Appearance.swift in Sources */,
 				21F5A3E01F59665A00A1BE08 /* SpeciesList+Marshal.swift in Sources */,
+				21E289431FEAAAE3008DAF40 /* Storyboards.swift in Sources */,
 				21B123CC1F618D9F00DFF430 /* DetailsViewController.swift in Sources */,
 				21F5A3CD1F59648A00A1BE08 /* CharacterList+Realm.swift in Sources */,
 				21E535E51F0D1A2000705D68 /* Planet+Marshal.swift in Sources */,
@@ -707,6 +768,7 @@
 				21F5A3E41F59668500A1BE08 /* VehicleList+Marshal.swift in Sources */,
 				21A362C11F068F2400F663BD /* Router.swift in Sources */,
 				21F5A3E21F59667100A1BE08 /* StarshipList+Marshal.swift in Sources */,
+				21E289491FEAAB3C008DAF40 /* Fonts.swift in Sources */,
 				215340D51F0A70B7009FB0CF /* Species.swift in Sources */,
 				21F5A3C61F5962AB00A1BE08 /* SpeciesList.swift in Sources */,
 				21F5A3D51F5964F600A1BE08 /* StarshipList+Realm.swift in Sources */,
@@ -720,10 +782,12 @@
 				21E535E31F0D1A2000705D68 /* Character+Marshal.swift in Sources */,
 				21A362A01F06798D00F663BD /* CollectionReusableView.swift in Sources */,
 				21F5A3C41F59629800A1BE08 /* PlanetList.swift in Sources */,
+				21E289451FEAAAFD008DAF40 /* Images.swift in Sources */,
 				210D99A61F60533E00BE1DF6 /* DetailsCollectionViewController.swift in Sources */,
 				21A362C21F068F2400F663BD /* Routing.swift in Sources */,
 				21E535E61F0D1A2000705D68 /* Species+Marshal.swift in Sources */,
 				21E535EA1F0D1A4000705D68 /* Film+Realm.swift in Sources */,
+				21E289471FEAAB19008DAF40 /* Colors.swift in Sources */,
 				21A3629C1F06797A00F663BD /* TableViewHeaderFooterView.swift in Sources */,
 				21E535E41F0D1A2000705D68 /* Film+Marshal.swift in Sources */,
 				21F5A3DC1F59662F00A1BE08 /* FilmList+Marshal.swift in Sources */,
@@ -735,6 +799,7 @@
 				215340D31F0A70B7009FB0CF /* Planet.swift in Sources */,
 				21F5A3D71F59650F00A1BE08 /* VehicleList+Realm.swift in Sources */,
 				214226E91F58564B005AA405 /* UITableViewController+RiseOfSkills.swift in Sources */,
+				21E2894B1FEAAB56008DAF40 /* Strings.swift in Sources */,
 				21A1D1EF1F46F49A0049A641 /* Species+Realm.swift in Sources */,
 				214882221FE95ED600628E55 /* DetailsCoverViewControler.swift in Sources */,
 				21F5A3D31F5964DF00A1BE08 /* SpeciesList+Realm.swift in Sources */,
@@ -852,7 +917,7 @@
 				CODE_SIGN_IDENTITY = "iPhone Developer: Edouard MERCIER (6AX3P97W8D)";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Edouard MERCIER (6AX3P97W8D)";
 				DEVELOPMENT_TEAM = R78Q854ZRC;
-				INFOPLIST_FILE = "$(SRCROOT)/RiseOfSkills/Ressources/Info.plist";
+				INFOPLIST_FILE = "$(SRCROOT)/RiseOfSkills/Resources/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = sns.fr.clarins.sofragrances;
@@ -873,7 +938,7 @@
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution";
 				DEVELOPMENT_TEAM = 5V5SV8ABN5;
-				INFOPLIST_FILE = "$(SRCROOT)/RiseOfSkills/Ressources/Info.plist";
+				INFOPLIST_FILE = "$(SRCROOT)/RiseOfSkills/Resources/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = sns.fr.clarins.sofragrances;

@@ -22,5 +22,4 @@ final class DetailsCoverViewController : UIViewController {
       self.navigationController?.popViewController(animated: false)
     }, completion: nil)
   }
-  
 }

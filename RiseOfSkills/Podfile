@@ -3,16 +3,21 @@ target 'RiseOfSkills' do
   use_frameworks!
 
   # Pods for RiseOfSkills
-  pod 'Alamofire',  '~> 4.4.0'
+  pod 'Alamofire',  '~> 4.5'
   pod 'Marshal',    '~> 1.2.4'
   pod 'RealmSwift', '~> 3.0.0'
+  pod 'SwiftGen', '~> 5.2.1'
 
 end
 
 post_install do |installer|
+  
+  swift3_pods = %w(Marshal)
+  
   installer.pods_project.targets.each do |target|
     target.build_configurations.each do |config|
-      config.build_settings['SWIFT_VERSION'] = '3.0'
+      version = swift3_pods.include?(target.name) ? '3.2' : '4.0'
+      config.build_settings['SWIFT_VERSION'] = version
     end
   end
 end
